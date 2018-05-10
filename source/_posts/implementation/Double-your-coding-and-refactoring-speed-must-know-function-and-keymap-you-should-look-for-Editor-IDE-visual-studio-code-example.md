@@ -1,10 +1,24 @@
 ---
 title: >-
-  Double your coding and refactoring speed, must know function and keymap you
-  should look for Editor & IDE(visual studio code example for react&node js) from effective software engineer
+  Double your development speed in visual studio for Javascript
 date: 2018-05-04 10:28:21
-tags:
+category: Implementation
 ---
+
+# Before Reading
+
+## What can you learn?
+
+Must know **function** and **keymap** you should look for IDE for
+
+* Coding
+* Factoring
+
+(for **react&node js**) to double your ~~coding~~ **development speed** from **pro software engineer**
+
+## How many times it take to read this article?
+
+25 mins
 
 # Read and coding
 

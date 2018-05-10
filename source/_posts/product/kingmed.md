@@ -19,6 +19,8 @@ toc: true
 
 * parallel computing engine and function library for pathology image analytics
 
+* Develop two computer-aided diagnosis applications through the medical image data analytics platform, with measurable performance benchmark comparison to existing systems
+
 ## Develop a standard recommendation for web-based digital pathology information exchange in tele-diagnosis including
 
 * an annotation and markup data model

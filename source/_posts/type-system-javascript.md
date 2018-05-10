@@ -87,6 +87,8 @@ https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
 
 https://github.com/Microsoft/TypeScript/issues/15479
 
+https://github.com/wmonk/create-react-app-typescript/issues/254
+
 CRA-TS use babel & ts-loader
 
 feasible but a little bit stuck at path resolution
@@ -123,3 +125,24 @@ No good solution to the ide
 Flow
 
 # Record
+
+    "baseUrl": "src",
+    "paths": {
+        //without baseUrl,the default+-
+        ---
+        -------
+        "*": ["*"]
+        //after baseUrl,the default
+        "*":["src/*]
+
+    },
+
+## Conversion
+
+tspath -f --jsPath ./dist
+
+return relativePath.replace("/" + mapping, "");
+
+https://stackoverflow.com/questions/42356508/how-to-get-tsc-to-resolve-absolute-paths-when-importing-modules-using-baseurl
+
+https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#concatenate-amd-and-system-modules-with---outfile

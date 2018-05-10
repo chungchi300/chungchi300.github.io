@@ -103,10 +103,7 @@ You need `'jsconfig.json'` or `'tsconfig.json'`(when you use typescript) with fo
 ```
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "src/*": ["*"]
-    },
+    "baseUrl": "src"
   }
 }
 ```

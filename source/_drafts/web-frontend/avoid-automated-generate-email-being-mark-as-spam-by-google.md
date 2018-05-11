@@ -20,6 +20,9 @@ date: 2018-04-28 16:09:02
 
 DKIM
 
+https://www.sparkpost.com/email-tools/
+https://www.sparkpost.com/resources/white-papers-guides/email-best-practices-101/
+
 ## 什么样的内容?
 
 * 外部链接（特别是相同的链接）

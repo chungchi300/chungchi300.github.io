@@ -38,4 +38,4 @@ I can provide detail consulting services on
 
 https://vimeo.com/267182668
 
-To help you build successful business!My email [chungchi300@hotmail.com](mailto:chungchi300@hotmail.com)
+To help you build successful business!My email [master-craftsman@jeff-chung.com](mailto:master-craftsman@jeff-chung.com)

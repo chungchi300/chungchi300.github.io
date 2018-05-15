@@ -4,15 +4,6 @@ date: 2018-05-10 17:17:20
 tags:
 ---
 
----
-
-title: >-
-Double your development speed in visual studio for Javascript
-date: 2018-05-04 10:28:21
-category: Implementation
-
----
-
 # Before Reading
 
 ## What can you learn?

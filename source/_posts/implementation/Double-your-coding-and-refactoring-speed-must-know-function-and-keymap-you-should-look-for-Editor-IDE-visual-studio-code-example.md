@@ -5,6 +5,8 @@ date: 2018-05-04 10:28:21
 category: Implementation
 ---
 
+![](https://www.nobledesktop.com/image/sem-graphic/code-faster.jpg)
+
 # Before Reading
 
 ## What can you learn?

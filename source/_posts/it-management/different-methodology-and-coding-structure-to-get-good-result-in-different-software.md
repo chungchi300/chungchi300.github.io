@@ -49,7 +49,9 @@ Many function - FP
 
 ## Unit Test
 
-100% unit test coverage on component of reducer
+100% unit test coverage on component of **reducer**&**helper**
+
+http://learntesting123.blogspot.hk/2015/03/21-practical-guide-to-software-unit.html
 
 ## Maintain code standard
 

@@ -33,37 +33,37 @@ Need [project configuration](#Project-configuration) when absolute import is use
 ## Find in one file
 
 Vscode Command : actions.find  
-Vscode Keymap : Ctrl + F
+Vscode Keymap : `Ctrl` + `F`
 
 ## Replace in one file
 
 Vscode Command : editor.action.startFindReplaceAction  
-Vscode Keymap : Ctrl + H  
-Suggested Rename Keymap : Ctrl + R
+Vscode Keymap : `Ctrl` + `H`  
+Suggested Rename Keymap : `Ctrl` + `R`
 
 ## Find in files(or a project)
 
 Vscode Command : workbench.action.findInFiles  
-Vscode Keymap : Ctrl + Shift + F
+Vscode Keymap : `Ctrl` + `Shift` + `F`
 
 ## Replace in files
 
 Vscode Command : workbench.action.replaceInFiles  
-Vscode Keymap : Ctrl + Shift + H  
-Suggested Rename Keymap : Ctrl + Shift + R
+Vscode Keymap : `Ctrl` + `Shift` + `H`  
+Suggested Rename Keymap : `Ctrl` + `Shift` + `R`
 
 ## Quick Fix
 
 Vscode Command : editor.action.quickFix  
-Vscode Keymap : Ctrl + .
+Vscode Keymap : `Ctrl` + `.`
 
 ## Move Line
 
-Alt + arrow up/down
+`Alt` + `arrow up/down`
 
 ## Multi cursor editing
 
-Alt + Shift + arrow up/down
+`Alt` + `Shift` + `arrow up/down`
 
 # File navigating
 
@@ -72,28 +72,28 @@ Need [project configuration](#Project-configuration) when absolute import is use
 ## Open File
 
 Vscode Command : workbench.action.files.openFile  
-Vscode Keymap : Ctrl + P
+Vscode Keymap : `Ctrl` + `P`
 
 ## Go to symbol
 
 Vscode Command : workbench.action.gotoSymbol  
-Vscode Keymap : Ctrl + Shift + O  
-Suggested Rename Keymap : Ctrl + O
+Vscode Keymap : `Ctrl` + `Shift` + `O`  
+Suggested Rename Keymap : `Ctrl` + `O`
 
 ## Go to definition
 
 Vscode Command : editor.action.goToDeclaration  
-Vscode Keymap : F12
+Vscode Keymap : `F12`
 
 ## Go to Line
 
 Vscode Command : workbench.action.gotoLine  
-Vscode Keymap : Ctrl + g
+Vscode Keymap : `Ctrl` + `g`
 
 ## Close current editor
 
 Vscode Command : workbench.action.closeWindow  
-Vscode Keymap : Ctrl + w
+Vscode Keymap : `Ctrl` + `w`
 
 **Reference**
 [File Navigation](https://code.visualstudio.com/docs/editor/editingevolved)
@@ -105,7 +105,7 @@ Need [project configuration](#Project-configuration) when absolute import is use
 ## Rewrite function/variable name
 
 Vscode Command : workbench.action.closeWindow  
-Vscode Keymap : F2
+Vscode Keymap : `F2`
 
 **Reference**
 [Refactoring](https://code.visualstudio.com/docs/editor/refactoring)
@@ -120,6 +120,14 @@ You need `'jsconfig.json'` or `'tsconfig.json'`(when you use typescript) with fo
     "baseUrl": "src"
   }
 }
+```
+
+# Setting
+
+## Format on save
+
+```
+ "editor.formatOnSave": true,
 ```
 
 # Extension

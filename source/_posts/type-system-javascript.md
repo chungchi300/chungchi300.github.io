@@ -52,36 +52,60 @@ Both of them need to support type in
 | Basic Syntax          | equal                                                                                                                        | equal                                                                                           |
 | High Level Concept    | [structural typing for objects and functions, nominal typing for classes](https://flow.org/en/docs/lang/nominal-structural/) | [Mostly Structural](https://basarat.gitbooks.io/typescript/docs/tips/nominalTyping.html)        |
 
-Create react library
+## Rerference
+
 https://github.com/DimiMikadze/create-react-library
 
 https://github.com/alexjoverm/typescript-library-starter
 
-https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87
+## React Redux Typescript Guide
+
+https://github.com/piotrwitek/react-redux-typescript-guide
+
+regeneratorRuntime
+
+## Typescript Logic
 
 https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
 https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
 
+## Webpack solution for abs=>relative when exporting
+
 https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/
 
-https://github.com/ant-design/ant-design
-
-https://www.npmjs.com/package/module-alias
-
-https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
-
-https://github.com/Microsoft/TypeScript/issues/10866
+## Babel solution for abs=>relative when exporting
 
 https://github.com/entwicklerstube/babel-plugin-root-import
 
-https://github.com/angular/material2/blob/master/src/lib/checkbox/checkbox.ts
+## Compile source code solution
 
-https://www.npmjs.com/package/convert-root-import
+* https://www.npmjs.com/package/@coldmind/tspath (Adopted)
+* https://www.npmjs.com/package/convert-root-import
 
-https://gist.github.com/azarus/f369ee2ab0283ba0793b0ccf0e9ec590
+## Share Regenerator runtime
 
-http://10.6.64.19:10080/jeffchung/cra-lib
+https://github.com/wmonk/create-react-app-typescript/issues/88
+
+## Regenerator runtime package
+
+git@github.com:agraboso/redux-api-middleware.git
+
+## TS official for module resolution& abs=>relative when exporting
+
+https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
+
+## Existing Famous library
+
+https://github.com/ant-design/ant-design
+
+## Typscript issue
+
+https://github.com/webpack/webpack/issues/4039
+
+## Useful
+
+https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87
 
 https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
 

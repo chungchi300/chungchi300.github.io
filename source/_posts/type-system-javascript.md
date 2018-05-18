@@ -68,6 +68,8 @@ regeneratorRuntime
 
 https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
+npx tsc --traceResolution | code -
+
 https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
 
 ## Webpack solution for abs=>relative when exporting

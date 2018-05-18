@@ -17,7 +17,12 @@ Regular expression tutorial & Tool
 
 # Tutorial
 
-[正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
+[正则表达式 30 分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
 
 # Tester Tool
+
 https://regex101.com/
+
+# Capture & match example in javascript
+
+https://stackoverflow.com/questions/432493/how-do-you-access-the-matched-groups-in-a-javascript-regular-expression

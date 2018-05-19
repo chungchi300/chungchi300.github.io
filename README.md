@@ -46,3 +46,18 @@ hexo g -d
 * Docker
 * Backend admin on rest
 * Api Generation
+
+# Ability
+
+Requirement capture after product->B
+Program design - Front End A - successful story
+Implementation - Front End A - successful story
+Implementation - Backend A - successful story
+
+Team work
+
+* testing - B
+* graphical design - A
+
+Business
+Position & Marketing - B+

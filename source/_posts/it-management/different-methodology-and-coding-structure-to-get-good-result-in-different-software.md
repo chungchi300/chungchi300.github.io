@@ -9,7 +9,9 @@ toc: true
 
 # Technical exploration
 
-**Prefer**
+Duration:1 week
+
+**PREFER**
 
 * Purpose
 * Rapidly
@@ -19,10 +21,14 @@ toc: true
 
 # MVP
 
-Fast
-Feasible
+Duration:3 months
+
+* Fast
+* Feasible
 
 # Project
+
+Duration:1 year
 
 ## General
 
@@ -59,6 +65,8 @@ https://github.com/shimohq/react-cookbook#%E5%AE%B9%E5%99%A8%E7%BB%84%E4%BB%B6
 https://github.com/airbnb/javascript/tree/master/react
 
 # Product
+
+Duration:2 year
 
 Refactor 實踐
 Tdd 實踐

@@ -92,6 +92,21 @@ Vscode Keymap : `F12`
 Vscode Command : workbench.action.gotoLine  
 Vscode Keymap : `Ctrl` + `g`
 
+## Go to next Editor
+
+Vscode Command : workbench.action.nextEditor  
+Vscode Keymap : `Ctrl` + `Page Down`
+
+## Go to previous Editor
+
+Vscode Command : workbench.action.previousEditor
+Vscode Keymap : `Ctrl` + `Page Up`
+
+## Go to specific Editor
+
+Vscode Command : workbench.action.openEditorAtIndex1
+Vscode Keymap : `alt` + `1`
+
 ## Close current editor
 
 Vscode Command : workbench.action.closeWindow  
@@ -111,6 +126,13 @@ Vscode Keymap : `F2`
 
 **Reference**
 [Refactoring](https://code.visualstudio.com/docs/editor/refactoring)
+
+# Command terminal
+
+## Show All Commands
+
+Vscode Command : workbench.action.showCommands
+Vscode Keymap : `Ctrl` + `shift` + `P`
 
 # Project configuration
 

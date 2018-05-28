@@ -6,7 +6,11 @@ category: 写作
 keywords:
 ---
 
-Accept your feeling doesn't mean let them control me,it gives me more ability to use mine free will. 
+Accept your feeling(accept hatred can also make you accept love) doesn't mean let them control me,it gives me more ability to use mine free will. 
+
+
+
+
 
 很喜歡他老師咒魔對他的評價。。。“你只能以野獸的方式在人類社會裏生活”，也很喜歡魔王那句“要按自己的意志生活，總要付出點代價”。。。。。。而我們都害怕付出哪個代價。。。
 

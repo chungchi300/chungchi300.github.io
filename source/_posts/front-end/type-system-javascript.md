@@ -15,7 +15,7 @@ Introduce type system to our **application** and **library** project.
 
 # Rapidly
 
-Develop
+**Develop new empty project as explorer tool**
 
 * One application that have type system
 * One library that have type system and can be used by application we develop before

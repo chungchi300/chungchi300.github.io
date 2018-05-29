@@ -5,19 +5,12 @@ tags:
 category: 前端开发
 ---
 
-* Purpose
-* Rapidly
-* Explore
-* Feedback
-* Eliminate
-* Record
-
 # Purpose
 
 Introduce type system to our **application** and **library** project.
 
-* avoid type error when calling functions in **run time**
 * discover and remove type error in **compile time**
+* Increase the **ease of refactoring**
 * help developers to **use function easily** as the **project size/complexity increase**
 
 # Rapidly
@@ -38,6 +31,13 @@ Both of them need to support type in
 
 # Explore
 
+Candidates:
+
+1.  Typescript
+2.  Flow
+
+## Compare
+
 * [Typscript-vs-flow](https://github.com/niieani/typescript-vs-flowtype) is a good **general compare**
 * [Type Systems: Structural vs. Nominal typing explained](https://medium.com/@thejameskyle/type-systems-structural-vs-nominal-typing-explained-56511dd969f4)
 
@@ -53,123 +53,149 @@ Both of them need to support type in
 | Basic Syntax          | equal                                                                                                                        | equal                                                                                           |
 | High Level Concept    | [structural typing for objects and functions, nominal typing for classes](https://flow.org/en/docs/lang/nominal-structural/) | [Mostly Structural](https://basarat.gitbooks.io/typescript/docs/tips/nominalTyping.html)        |
 
-## Rerference
+## Knowledge about type system
+
+[Nominal Type](https://en.wikipedia.org/wiki/Nominal_type_system)
+[Structural Type](https://en.wikipedia.org/wiki/Structural_type_system)
+
+## Typescript Compiler
+
+### Option
+
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+### Path mapping when you use absolute path
+
+https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
+
+### Debug skill
+
+```
+npx tsc --traceResolution | code -
+```
+
+## Absolute path problem when export library
+
+### Fact
+
+typescript module resolution don't rewrite path when export
+
+### Compile source code solution
+
+* https://www.npmjs.com/package/@coldmind/tspath
+* https://www.npmjs.com/package/convert-root-import
+
+### Webpack solution for absolute=>relative when exporting
+
+https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/
+
+### Babel solution for absolute=>relative when exporting
+
+https://github.com/entwicklerstube/babel-plugin-root-import
+
+## React Redux Typescript Coding Guide
+
+https://github.com/piotrwitek/react-redux-typescript-guide
+
+## Use library with babel RegeneratorRuntime when your build tool is typescript
+
+Project like git@github.com:agraboso/redux-api-middleware.git regeneratorRuntime as babel async,we need to rebuild by typescript version
+
+https://github.com/wmonk/create-react-app-typescript/issues/88
+
+## Use create-react-app-ts to create library&application
+
+https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87
+
+## Create Library Reference
 
 https://github.com/DimiMikadze/create-react-library
 
 https://github.com/alexjoverm/typescript-library-starter
 
-## React Redux Typescript Guide
-
-https://github.com/piotrwitek/react-redux-typescript-guide
-
-regeneratorRuntime
-
-## Typescript Logic
-
-https://www.typescriptlang.org/docs/handbook/compiler-options.html
-
-npx tsc --traceResolution | code -
-
-https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
-
-## Webpack solution for abs=>relative when exporting
-
-https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/
-
-## Babel solution for abs=>relative when exporting
-
-https://github.com/entwicklerstube/babel-plugin-root-import
-
-## Compile source code solution
-
-* https://www.npmjs.com/package/@coldmind/tspath (Adopted)
-* https://www.npmjs.com/package/convert-root-import
-
-## Share Regenerator runtime
-
-https://github.com/wmonk/create-react-app-typescript/issues/88
-
-## Regenerator runtime package
-
-git@github.com:agraboso/redux-api-middleware.git
-
-## TS official for module resolution& abs=>relative when exporting
-
-https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
-
-## Existing Famous library
+## Existing Famous library using typescript
 
 https://github.com/ant-design/ant-design
 
-## Typscript issue
+## Jest
 
-https://github.com/webpack/webpack/issues/4039
+* Install ts-jest to compile .ts file
+* Tell Jest for module resolution like this in package.json
 
-## Useful
-
-https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87
-
-https://github.com/Microsoft/TypeScript/issues/9910#issuecomment-234729007
-
-https://github.com/Microsoft/TypeScript/issues/15479
-
-https://github.com/wmonk/create-react-app-typescript/issues/254
-
-CRA-TS use babel & ts-loader
-
-feasible but a little bit stuck at path resolution
+```
+ "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+```
 
 # Feedback
 
 ## Typescript
 
-Build application using typescript - Done
-Build library using typescript - Done
-resolve absolute path issue with typescript lib -
+Build application using typescript - Done  
+Build library using typescript - Done  
+resolve absolute path issue with typescript lib - Done
 
-### Fact
+## Solution for different issue
 
-typescript module resolution don't rewrite path
+### Absolute path problem when export library
 
-### Solution
+**Compile source code solution** is adopted for no configuration for the library user.
 
-* Rewrite ~ to ../ e.g convert-root-import ,low maintainability
-* Typescript to webpack(module resolver to one big bundle)
-* Typescript to AMD package
-* Angular (module resolver to one big bundle)
+### Coding Guide
 
-## Flow
+[Airbnb](https://github.com/airbnb/javascript)
+[React Redux Typescript guide](https://github.com/piotrwitek/react-redux-typescript-guide)
 
-Build application using typescript - very slow ide performance when using atom
+is adopted
 
-### Fact
+### Test
 
-No good solution to the ide
+ts-jest is adopted for running .test.ts file
 
 # Eliminate
 
 Flow
 
+* very slow ide performance when using atom
+* very slow/buggy language server resolution
+
 # Record
 
-    "baseUrl": "src",
-    "paths": {
-        //without baseUrl,the default+-
-        ---
-        -------
-        "*": ["*"]
-        //after baseUrl,the default
-        "*":["src/*]
+Successfully substitute our stack to **typescript** for project that have **large scale**
 
-    },
+## Main-Advantage
 
-## Conversion
+* Simplified build tool chain for lib & app
 
-tspath -f --jsPath ./dist
+## Extra Benefit
 
-return relativePath.replace("/" + mapping, "");
+### General
 
-https://stackoverflow.com/questions/42356508/how-to-get-tsc-to-resolve-absolute-paths-when-importing-modules-using-baseurl
+* VSCode support make **Unit Test && Refactor** Faster
+* API generation
+* styleguide make **Dummy Component Development** Faster
+* Function(**jsx nested called**) calling **faster due to auto complete**
+* Discover type error in **compile type**
 
-https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#concatenate-amd-and-system-modules-with---outfile
+### Specific
+
+* Library generated in Common Js format instead of **big umd file** so significantly increase **Readability of library**
+* Able to generate test coverage
+* Able to generate style guide
+* Remove export file that reduce code redundancy(because the user is directly utilize the code)

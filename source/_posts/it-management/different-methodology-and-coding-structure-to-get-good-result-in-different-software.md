@@ -17,6 +17,7 @@ Duration:1 week
 * Rapidly
 * Explore
 * Feedback
+* Eliminate
 * Record
 
 # MVP

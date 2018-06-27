@@ -13,19 +13,21 @@ Duration:1 week
 
 **PREFER**
 
-* Purpose
-* Rapidly
-* Explore
-* Feedback
-* Eliminate
-* Record
+- Purpose
+- Rapidly
+- Explore
+- Feedback
+- Eliminate
+- Record
 
 # MVP
 
 Duration:3 months
 
-* Fast
-* Feasible
+- Fast
+- Feasible
+
+Global Search Number of React Element
 
 # Project
 
@@ -33,12 +35,12 @@ Duration:1 year
 
 ## General
 
-* KISS 原則
+- KISS 原則
 
 ## Component Design
 
-* S.O.L.I.D 原則
-* DRY 原則
+- S.O.L.I.D 原則
+- DRY 原則
 
 ## Methodology
 
@@ -47,12 +49,12 @@ Many function - FP
 
 ## Main Component types and interconnected method
 
-* MVC
-* Redux
+- MVC
+- Redux
 
 ## Data structure Design and Implementation
 
-* Single Source of Truth for data component
+- Single Source of Truth for data component
 
 ## Unit Test
 
@@ -75,3 +77,13 @@ Pure function 實踐
 Curring 實踐
 Naming clean code
 訂立 coding 約定並每䢛决定 實踐
+
+# Improvement(Paying technical dept)
+
+e.g es6 react project to typescript project
+
+## Total Effort evaluation for progress
+
+## Minimal effort take to get visible result
+
+## Relevancy to new task

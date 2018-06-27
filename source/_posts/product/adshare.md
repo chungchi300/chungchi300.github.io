@@ -7,7 +7,7 @@ date: 2018-05-09 16:09:02
 toc: true
 ---
 
-[www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台](www.abshare.com)
+[www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台](http://www.abshare.com)
 
 # Business Feature
 
@@ -35,7 +35,7 @@ Support Chinese and English
 
 I can provide detail consulting services on
 
-* business requirement
-* technical
+- business requirement
+- technical
 
 To help you build successful business!My email [master-craftsman@jeff-chung.com](mailto:master-craftsman@jeff-chung.com)

@@ -4,12 +4,18 @@ date: 2018-06-27 10:28:44
 category: Program design
 ---
 
+{% asset_img analogy.jpg %}
+
 # Basic knowledge and problem
+
+> Selecting format is selecting proper container for your lunch,it just contains all your food properly without taking unnecessary size and it looks good
+>
+> -- <cite>Jeff Chung</cite>
 
 ## Basic
 
 All data eventually sent in binary format.  
-Binary don't necessary program memory,it can be **transfer protocol**
+Binary don't necessary means program memory,it can be **transfer protocol**
 
 ## Problem
 

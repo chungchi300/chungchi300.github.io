@@ -41,7 +41,7 @@ Normally specific content-type is json will make the browser automatically seria
 
 ## Byte Array Transfer
 
-we use 1 byte ,8 digit to describe 255,0,128.It take **1 bytes** to describe **one number in array**
+we use 1 byte ,8 bit to describe 255,0,128.It take **1 bytes** to describe **one number in array**
 
 **Serialization** : Array(e.g 255) => Blob(1111 1111) = [**browser direct send**] > binary
 **De-serialization** : binary = [**server direct get**] > Blob(1111 1111) => array(e.g 255)
@@ -62,9 +62,9 @@ Content-Type: application/octet-stream
 
 ## Form data
 
-we use 1 byte ,8 digit to describe 255,0,128.It take **1 bytes** to describe **one character array**
+we use 1 byte ,8 bit to describe every character in 255,0,128.It take **1 bytes** to describe **one character array**
 
-**Serialization** : Array(e.g 255) => utf8 (1 x 3 bit = 3 bit) => binary
+**Serialization** : Array(e.g 255) => utf8 (1 x 3 byte = 3 byte) => binary
 **De-serialization** : binary => utf8(1x 3 = 3 bit) => array(e.g 255)
 
 # Conclusion

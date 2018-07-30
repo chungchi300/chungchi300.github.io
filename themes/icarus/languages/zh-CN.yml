@@ -15,6 +15,7 @@ widget:
     archives: '归档'
     categories: '分类'
     links: '作品墙'
+    open_source: '开源工具'    
     tags: '标签'
     tag_cloud: '标签云'
 article:

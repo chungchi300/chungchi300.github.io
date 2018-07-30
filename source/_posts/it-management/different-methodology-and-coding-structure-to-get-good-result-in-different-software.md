@@ -47,7 +47,7 @@ Duration:1 year
 Many object - OOP
 Many function - FP
 
-## Main Component types and interconnected method
+## Structural Pattern
 
 - MVC
 - Redux
@@ -61,6 +61,8 @@ Many function - FP
 100% unit test coverage on component of **reducer**&**helper**
 
 http://learntesting123.blogspot.hk/2015/03/21-practical-guide-to-software-unit.html
+
+https://github.com/ghsukumar/SFDC_Best_Practices/wiki/F.I.R.S.T-Principles-of-Unit-Testing
 
 ## Maintain code standard
 

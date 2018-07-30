@@ -38,6 +38,7 @@ customize:
 # Widgets
 widgets:
     - links
+    - open_source
 #    - recent_posts
     - category
     - archive
@@ -100,6 +101,9 @@ miscellaneous:
         www.okibook.com - 全香港最优惠的自助餐预订平台 : /2018/04/28/product/okibook.html
         www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台 : /2018/05/09/product/adshare.html
         Kingmed - 中国龙头第三方医学检验数字化病理诊断工具:  /2018/05/08/product/kingmed.html
+      
+    open_source_links:
         Eaglet - 最简單直接的 Koa2 的脚手架: https://github.com/chungchi300/eaglet
-        Min-doc - hackable文档生成工具: https://github.com/chungchi300/min-doc
+        Min-doc - hackable文档生成工具: https://github.com/chungchi300/min-doc        
+        Simple File Upload - File Upload Widget : https://github.com/chungchi300/simple-file-upload
 #        Hexo: http://hexo.io

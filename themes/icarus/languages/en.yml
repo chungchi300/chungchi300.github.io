@@ -15,6 +15,7 @@ widget:
     archives: 'archives'
     categories: 'categories'
     links: 'links'
+    open_source: '开源工具'    
     tags: 'tags'
     tag_cloud: 'tag cloud'
 article:

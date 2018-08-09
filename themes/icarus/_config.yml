@@ -18,7 +18,7 @@ customize:
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: Jeff Chung
-        author_title: 有影响力的软件工程师
+        author_title: 有影响力的软件工程师,Not a fast learner but a deep learner.,Not a solution provider but a problem solver.
         location: 深圳，香港
 
     highlight: monokai

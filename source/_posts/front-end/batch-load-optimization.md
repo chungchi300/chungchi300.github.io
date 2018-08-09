@@ -2,7 +2,7 @@
 title: Optimization of creating svg
 date: 2018-05-23 10:20:15
 tags:
-category: 前端开发
+category: Web depevelopment
 ---
 
 ## Performance record

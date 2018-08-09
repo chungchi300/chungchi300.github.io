@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 避免自动生成的电子邮件被谷歌(或任何所有电子邮件软件)标记为垃圾邮件(10分钟看完系列)
-category: 前端开发
+category: Web depevelopment
 keywords:
 date: 2018-04-28 16:09:02
 ---

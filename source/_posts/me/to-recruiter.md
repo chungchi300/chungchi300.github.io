@@ -73,4 +73,15 @@ date: 2018-04-28 16:09:02
 
 ## 谢谢阅读
 
-如果你阅读后仍然对我感兴趣，请发邮件给 master-craftsman@jeff-chung.com，题目是“向真正的用户提出真正的问题，解决真正的问题！”，我保证会在 30 分钟内回复你。
+### Contact me
+
+如果你阅读后仍然对我感兴趣，请发邮件给 master-craftsman@jeff-chung.com，题目是**向真正的用户提出真正的问题，解决真正的问题！**，我保证会在 30 分钟内回复你。
+
+### CV
+
+[我的中文简历](/ChineseCV.pdf)
+[My English CV](/EnglishCV.pdf)
+
+### 当前工资和期望薪金
+
+[点击](/currentSalary.html)

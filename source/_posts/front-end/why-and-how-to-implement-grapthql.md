@@ -13,10 +13,72 @@ Critical problem **Over-fetching & Too many round trip of api network layer**
 
 # Relation
 
+## Basic Model
+
+### Grapthql Model
+
+Rest: Entities based api  
+GrapthQl: Tree based api
+
+#### Server
+
+- API is a tree(Grapth).
+- Each node correspond to a field and it's argument.
+
+#### Client(Query)
+
+- Our query is a tree-like query language which describe the data it's want based on server GrapthQL API
+
+### Implementation
+
+#### Schema - Describe the tree(Server Side)
+
+The syntax is TypeScript like but looser
+
+```javascript
+  input bookFilter {
+      id: ID
+      title: String
+      author: String
+      isbn: String
+      url: String
+  }
+
+  // The Actual GraphQL Tree
+  type Query {
+    # arguments filter for filter is just an convention
+    allBook(filter: bookFilter): [Book!]!
+  }
+
+  type Mutation {
+    createBook(title: String!, author: String!): Book
+  }
+```
+
+#### Query - Usage of tree(Client Side)
+
+Define fields and field parameter
+Query name is optional, won't send to server
+
+```javascript
+query {
+  allBooks {
+    author,
+    title
+  }
+}
+query{
+  allBooks(filter:{
+    id:17
+  }) {
+    isbn
+  }
+}
+```
+
 ## GrapthQL Scope and testing online
 
 [By compare and contrast the rest api on github](https://developer.github.com/v4/guides/migrating-from-rest/)
-
 [Query](https://graphql.org/learn/queries)
 [Pagination](https://graphql.org/learn/pagination/)
 [Automatic Aggregation](https://stackoverflow.com/questions/34321688/can-graphql-return-aggregate-counts)

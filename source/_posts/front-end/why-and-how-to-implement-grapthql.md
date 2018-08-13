@@ -5,11 +5,11 @@ date: 2018-05-23 10:20:15
 category: Web Development
 ---
 
-{% asset_img cover.jpg %}
+{% asset_img cover.jpeg %}
 
 Critical problem **Over-fetching & Too many round trip of api network layer**
 
-- [Why GraphQL is the future – Apollo GraphQL](https://dev-blog.apollodata.com/why-graphql-is-the-future-3bec28193807
+- [Why GraphQL is the future – Apollo GraphQL](https://dev-blog.apollodata.com/why-graphql-is-the-future-3bec28193807)
 
 # Relation
 

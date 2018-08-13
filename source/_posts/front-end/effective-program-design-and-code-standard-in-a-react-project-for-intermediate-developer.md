@@ -1,16 +1,16 @@
 ---
 title: Program design guidance and code standard in a React project for intermediate developer for effective development
 date: 2018-08-09 10:20:15
-tags:
+? tags
 category: Web Development
 ---
 
-{% asset_img cover.jpg %}
+{% asset_img cover.jpeg %}
 
 # Design Principle
 
 - [KISS](https://en.wikipedia.org/wiki/KISS_principle)
-- [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) 
+- [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
   - single source of truth
   - no repeat code
 - [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)

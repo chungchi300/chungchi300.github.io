@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SVG基础知识和React上的应用 - 20分钟发挥svg的全部潜力
-category: Web depevelopment
+category: Web Development
 keywords: SVG,React
 date: 2018-04-28 16:09:02
 ---

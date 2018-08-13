@@ -1,10 +1,11 @@
 ---
 title: Why develop grapthql,and the plan to implement in your web application when your application is supporting REST
-date: 2018-08-09 10:20:15
-category: Web depevelopment
+date: 2018-05-23 10:20:15
+
+category: Web Development
 ---
 
-# What is the problem we are facing and what
+{% asset_img cover.jpg %}
 
 Critical problem **Over-fetching & Too many round trip of api network layer**
 

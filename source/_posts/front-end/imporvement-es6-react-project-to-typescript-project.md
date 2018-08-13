@@ -2,7 +2,7 @@
 title: Improvement es6 react project to typescript project
 date: 2018-06-04 10:20:15
 tags:
-category: Web depevelopment
+category: Web Development
 ---
 
 # Total Effort evaluation for progress

@@ -2,7 +2,7 @@
 title: Typescript & Flow in React&Redux SPA Development
 date: 2018-05-02 10:20:15
 tags:
-category: Web depevelopment
+category: Web Development
 ---
 
 # Purpose

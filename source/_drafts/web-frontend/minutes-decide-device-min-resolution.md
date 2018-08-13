@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 响应式(Responsive)网页设计-1分钟决定最小分辨率
-category: Web depevelopment
+category: Web Development
 keywords: Responsive Design,响应式网页设计
 date: 2018-04-28 16:09:02
 ---

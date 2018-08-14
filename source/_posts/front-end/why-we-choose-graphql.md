@@ -1,5 +1,5 @@
 ---
-title: Why we choose grapthql
+title: Why we choose graphql
 date: 2018-08-14 10:20:15
 
 category: Web Development
@@ -9,7 +9,7 @@ category: Web Development
 
 # Question
 
-## Why we choose **grapthql** api to solve our problem?
+## Why we choose **graphql** api to solve our problem?
 
 - [Why GraphQL is the future – Apollo GraphQL](https://dev-blog.apollodata.com/why-graphql-is-the-future-3bec28193807)
 

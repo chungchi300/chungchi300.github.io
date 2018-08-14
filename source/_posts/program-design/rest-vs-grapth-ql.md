@@ -30,10 +30,10 @@ Adv:
 
 DisAdv:
 
-- Naive implement of grapthql may take many server resource
+- Naive implement of graphql may take many server resource
 - Learning curve for both backend and frontend
 
 **Summary**
-In a facebook use case(Solve over-fetching & round tripping for **countless api and client application that use them**),grapthql is a good place for them to solve their problem.And the discoverability & typing increase the development speed of api consumer.
+In a facebook use case(Solve over-fetching & round tripping for **countless api and client application that use them**),graphql is a good place for them to solve their problem.And the discoverability & typing increase the development speed of api consumer.
 
 If you organization only support **specific api and client application**,develop **special API - by backend developer** is still a good solution.

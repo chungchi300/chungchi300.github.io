@@ -1,5 +1,5 @@
 ---
-title: Rest VS GRAPTHQL
+title: Rest VS GRAPHQL
 date: 2018-06-27 10:28:44
 category: Program design
 ---

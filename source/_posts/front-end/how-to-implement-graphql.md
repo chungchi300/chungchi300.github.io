@@ -11,7 +11,7 @@ category: Web Development
 
 - What is the graphQL api model?
 - How to describe the api and it's query ?
-- How to implement a grapthQL API server and how to implement the query?
+- How to implement a graphQL API server and how to implement the query?
 - What is the common implementation of specific api problem?
 
 # Relation

@@ -1,7 +1,7 @@
 ---
 title: 前端团队的技术成长
 date: 2018-07-30 10:20:15
-tags:
+? tags
 category: 管理和协作
 ---
 
@@ -120,7 +120,7 @@ category: 管理和协作
 
 ### 知识
 
-- GrapthQL & Rest
+- GraphQL & Rest
 - Pagination
 - Filtering
 

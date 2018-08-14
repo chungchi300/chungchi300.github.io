@@ -21,7 +21,11 @@ category: Web Development
 Rest: Entities based api  
 GraphQL: Tree based api
 
-GraphQL is still **server-client** model and using **http protocol**
+GraphQL is still
+
+- **server-client** model
+- **http protocol**
+- **request body&response body** is **json**
 
 ## Description of API and it's query in graphQL
 

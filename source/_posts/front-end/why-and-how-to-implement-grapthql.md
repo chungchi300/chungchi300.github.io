@@ -115,3 +115,10 @@ P.S
 
 - For grapthql api,define unit test for grapthql api
 - End to End test for front end application that utilize grapthql api
+
+## Misc Tool
+
+[GraphQL API to Static Pages](https://github.com/2fd/graphdoc)
+[Swagger to GrapthQL](https://github.com/yarax/swagger-to-graphql),easy migrating from Rest
+[Public GrapthQL API](https://github.com/APIs-guru/graphql-apis),very strong community(facebook,github)
+[Online Schema and query playground](https://launchpad.graphql.com/zr173pnqx7),just like grapthql api

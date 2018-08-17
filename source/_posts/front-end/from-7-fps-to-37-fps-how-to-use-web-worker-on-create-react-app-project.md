@@ -26,6 +26,12 @@ How to **implement compute intensive task** in **Create React App** without caus
 
 ## Web worker restriction
 
+### Browser restriction
+
+[Can I use ](https://caniuse.com/#feat=webworkers)
+
+### Restriction by design
+
 Not allow to use
 
 - DOM

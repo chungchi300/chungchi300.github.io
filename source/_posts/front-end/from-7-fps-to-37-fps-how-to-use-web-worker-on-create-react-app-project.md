@@ -21,20 +21,31 @@ How to **implement compute intensive task** in **Create React App** without caus
 
 ## Relation
 
-## Web worker property
+### Web worker property
 
 {% asset_img parallelism-vs-concurrency.png %}
 
 - Provide **running script** in **background thread**
 - Not only **concurrency** but also **parallelism**
 
-## Web worker restriction
+### Concurrent model of compute intensive task in web
 
-### Browser restriction
+Want to avoid
+{% asset_img avoid.jpg %}
+
+Traditional(setTimeout) give us
+{% asset_img concurrent.jpg %}
+
+Web Worker give us
+{% asset_img parallel.jpg %}
+
+### Web worker restriction
+
+#### Browser restriction
 
 [Can I use ](https://caniuse.com/#feat=webworkers)
 
-### Restriction by design
+#### Restriction by design
 
 Not allow to use
 

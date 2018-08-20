@@ -7,7 +7,7 @@ category: Web Development
 
 {% asset_img cover.jpeg %}
 
-# What is the problem?
+# Understand the problem
 
 ## Surface problem
 
@@ -17,12 +17,16 @@ In our medical project,when importing segmentation(it was a **compute intensive 
 
 How to **implement compute intensive task** in **Create React App** without causing the freezing of main(UI) thread.
 
-# Relation
+# Devise a plan
+
+## Relation
 
 ## Web worker property
 
+{% asset_img parallelism-vs-concurrency.png %}
+
 - Provide **running script** in **background thread**
-- Not only concurrency but also parallelism
+- Not only **concurrency** but also **parallelism**
 
 ## Web worker restriction
 
@@ -38,7 +42,14 @@ Not allow to use
 - Local Storage
 - Only allow to communicate with main thread via message api(we will use worker to simply following process)
 
-# Implementation
+## Plan
+
+1. Push compute intensive job to web worker in main thread
+2. Web worker will notify main thread once compute intensive job done.
+
+The notification interface better be **promise** instead of callback for code readability
+
+# Carry out the plan
 
 ## Tool
 
@@ -90,6 +101,16 @@ await segmentationInst.read(s1);
 - Intensive CPU usage only existed in **dedicated worker thread**
 - fps **increase** to 37 fps
 
-# Reference
+# Misc
+
+## Reference
 
 - http://javascript.ruanyifeng.com/htmlapi/webworker.html
+
+## What if I need to support IE9 which don't have web worker
+
+I suggest you to use `setTimeout` **break down your task** to achieve concurrency to avoid freezing the main(UI) thread
+
+## Writing Methodology
+
+This is written according to [How to solve it](https://en.wikipedia.org/wiki/How_to_Solve_It)

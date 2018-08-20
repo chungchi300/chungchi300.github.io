@@ -146,7 +146,7 @@ P.S
 
 # Misc Tool
 
-[GraphQL API to Static Pages](https://github.com/2fd/graphdoc)
+[GraphQL API to Static Pages](https://github.com/2fd/graphdoc),Generate API Doc
 [Swagger to GraphQL](https://github.com/yarax/swagger-to-graphql),easy migrating from Rest
 [Public GraphQL API](https://github.com/APIs-guru/graphql-apis),very strong community(facebook,github)
 [Rest to graphql migration api on github](https://developer.github.com/v4/guides/migrating-from-rest/)

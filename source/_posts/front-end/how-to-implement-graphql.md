@@ -7,16 +7,25 @@ category: Web Development
 
 {% asset_img cover.jpeg %}
 
-# Question
+# Understand the problem
+
+## Surface problem
+
+- How to make a call to GraphQL Server
+- How to provide an api in GraphQL
+
+## Actual problem
 
 - What is the graphQL api model?
 - How to describe the api and it's query ?
 - How to implement a graphQL API server and how to implement the query?
 - What is the common implementation of specific api problem?
 
-# Relation
+# Devise a plan
 
-## Graphql API Model
+## Relation
+
+### Graphql API Model
 
 Rest: Entities based api  
 GraphQL: Tree based api
@@ -27,14 +36,14 @@ GraphQL is still
 - **http protocol**
 - **request body&response body** is **json**
 
-## Description of API and it's query in graphQL
+### Description of API and it's query in graphQL
 
-### Server
+#### Server
 
 - API is a **tree(Graph)**.
 - Each node correspond to a **field and it's argument**.
 
-### Server api description language - Schema
+#### Server api description language - Schema
 
 The syntax is TypeScript like but looser
 
@@ -58,11 +67,11 @@ The syntax is TypeScript like but looser
   }
 ```
 
-### Client
+#### Client
 
 - Our query is a tree-like query language which describe the data it's want based on server GraphQL API
 
-### Client api query language - Query
+#### Client api query language - Query
 
 Define fields and field parameter
 
@@ -75,11 +84,20 @@ query {
 }
 ```
 
-## GraphQL Documentation about common api problem
+### GraphQL Documentation about common api problem
 
 [Query](https://graphql.org/learn/queries)
 [Pagination](https://graphql.org/learn/pagination/)
 [Automatic Aggregation](https://stackoverflow.com/questions/34321688/can-graphql-return-aggregate-counts)
+
+## Plan
+
+- Write the **Schema** for application
+- **Implement** the graphql api in server side
+- Write the **Query** for client to query
+- Front end application **implement** the **query of graphql**
+
+# Carry out the plan
 
 ## GraphQL server and client implementation.
 
@@ -132,21 +150,27 @@ P.S
 
 - Apollo Client & Relay are mostly sacrificing the predictable state change for simply api usage,(for complex front end application,**predictable state change** is very important). I prefer using **redux-api-middleware** && Graphql-request to call the **graphql api**
 
-# Execution
+## Final Step
 
-- Develop the **Schema** for application
-- **Implement** the graphql api in server side
-- Develop the **Query** for client to query
-- Front end application **implement** the **query of graphql**
+1. Use [Online Schema and query playground](https://launchpad.graphql.com/zr173pnqx7) to write schema
+2. Use [Graphql + PostgreSQL](https://github.com/graphile/postgraphile) to implement backend
+3. Use [Online Schema and query playground](https://launchpad.graphql.com/zr173pnqx7) to write query
+4. Use [Graphql-request](https://github.com/prismagraphql/graphql-request) to implement query
 
-# Verify improvement
+# Verification
 
 - For graphql api,define unit test for graphql api
 - End to End test for front end application that utilize graphql api
 
-# Misc Tool
+# Misc
+
+## Tool
 
 [GraphQL API to Static Pages](https://github.com/2fd/graphdoc),Generate API Doc
 [Swagger to GraphQL](https://github.com/yarax/swagger-to-graphql),easy migrating from Rest
 [Public GraphQL API](https://github.com/APIs-guru/graphql-apis),very strong community(facebook,github)
 [Rest to graphql migration api on github](https://developer.github.com/v4/guides/migrating-from-rest/)
+
+## Writing Methodology
+
+This is written according to [How to solve it](https://en.wikipedia.org/wiki/How_to_Solve_It)

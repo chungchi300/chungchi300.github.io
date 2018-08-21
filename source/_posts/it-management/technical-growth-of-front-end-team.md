@@ -76,6 +76,7 @@ category: 管理和协作
 - 深入理解(React) 渲染模型和哲学
 - 深入理解浏览器事件模型& 事件委派
 - 深入理解 HTTP 协议
+- [深入理解 Web Worker](/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html)
 
 ## 领域知识
 

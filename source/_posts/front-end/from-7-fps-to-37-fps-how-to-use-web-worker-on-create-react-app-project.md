@@ -21,13 +21,6 @@ How to **implement compute intensive task** in **Create React App** without caus
 
 ## Relation
 
-### Web worker property
-
-{% asset_img parallelism-vs-concurrency.png %}
-
-- Provide **running script** in **background thread**
-- Not only **concurrency** but also **parallelism**
-
 ### Concurrent model of compute intensive task in web
 
 Want to avoid
@@ -38,6 +31,13 @@ Traditional(setTimeout) give us
 
 Web Worker give us
 {% asset_img parallel.jpg %}
+
+### Web worker property
+
+{% asset_img parallelism-vs-concurrency.png %}
+
+- Provide **running script** in **background thread**
+- Not only **concurrency** but also **parallelism**
 
 ### Web worker restriction
 

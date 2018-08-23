@@ -11,6 +11,8 @@ category: Investment
 
 at least 60% in first loan
 
+[Real Estate](https://topick.hket.com/article/1393467/%E8%B2%B7%E6%A8%93%E5%85%B6%E5%AF%A6%E5%94%94%E9%9B%A3%20%20%20%20%20%E6%88%91%E5%80%91%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F%E4%BE%8B%E5%AD%90)
+
 # Future,prediction
 
 个人感觉 m2 没跌破 8 之前，房价还不会急跌，阴跌概率大，造成房价没跌的假象，继续高位接盘。照现在的速度，临界点估计在明年春节前，叠加年底流动性不足的惯性，这个年有些人看来是过不好了。

@@ -7,11 +7,12 @@ category: Investment
 
 # How much can I borrow
 
+## Hong Kong
+
 at least 60% in first loan
 
-# Future
+# Future,prediction
 
-CCL
 个人感觉 m2 没跌破 8 之前，房价还不会急跌，阴跌概率大，造成房价没跌的假象，继续高位接盘。照现在的速度，临界点估计在明年春节前，叠加年底流动性不足的惯性，这个年有些人看来是过不好了。
 
 到底是空调还是真调，你看看有没有缩减房产信贷总量即可，他对房价影响所占据的权重非常大，同时房价崩盘有千万种可能，但是唯独没有政府主动出手砸崩这种可能性。
@@ -26,6 +27,20 @@ CCL
 就算全国跌了，高手买的房子在 2018 年依然会涨。
 
 m2,加息
+
+# Measurement
+
+## HK
+
+CCL
+
+# Type
+
+## 居屋
+
+懶人包
+
+## Private market
 
 # interested in HK
 
@@ -48,3 +63,7 @@ http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=d8c59bbc-3114-40e0-b4d
 云峰花园
 
 [Good Location searcher](http://www.creprice.cn/haprice/cisz-gp114%2A11603093147279%7C22%2A539503020650557-ds1000.html?haname=%E6%AD%A4%E4%BD%8D%E7%BD%AE%E9%99%84%E8%BF%911000%E7%B1%B3)
+
+# Reference
+
+{% asset_link millionaire_real_estate_investor_notes.pdf The Millionaire Real Estate Investor Notes %}

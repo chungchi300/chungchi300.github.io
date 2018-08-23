@@ -1,6 +1,6 @@
 ---
-title: Awesome front end library
-date: 2018-05-23 10:20:15
+title: My stack
+date: 2018-08-23 10:20:15
 ? tags
 category: Web Development
 ---

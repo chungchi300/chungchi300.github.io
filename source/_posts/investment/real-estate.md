@@ -40,7 +40,7 @@ CCL
 
 ## 居屋
 
-懶人包
+[上車懶人包](https://www.google.com.hk/search?q=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&oq=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&aqs=chrome..69i57.3815j0j4&sourceid=chrome&ie=UTF-8)
 
 ## Private market
 

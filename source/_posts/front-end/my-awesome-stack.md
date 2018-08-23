@@ -1,5 +1,5 @@
 ---
-title: My stack
+title: My Awesome stack
 date: 2018-08-23 10:20:15
 ? tags
 category: Web Development

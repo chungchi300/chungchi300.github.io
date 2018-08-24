@@ -68,4 +68,4 @@ http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=d8c59bbc-3114-40e0-b4d
 
 # Reference
 
-{% asset_link millionaire_real_estate_investor_notes.pdf The Millionaire Real Estate Investor Notes %}
+[Millionaire Real Estate](/2018/08/24/investment/real-estate-resource.html)

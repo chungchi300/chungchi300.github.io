@@ -34,7 +34,7 @@ m2,加息
 
 ## HK
 
-CCL
+[CCL](http://www1.centadata.com/cci/cci.htm)
 
 # Type
 
@@ -42,29 +42,22 @@ CCL
 
 [上車懶人包](https://www.google.com.hk/search?q=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&oq=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&aqs=chrome..69i57.3815j0j4&sourceid=chrome&ie=UTF-8)
 
-## Private market
+# CTN
 
-# interested in HK
+## Criteria
 
-http://hk.centanet.com/findproperty/zh-HK/Home/SearchResult/?mtrline=6&mtrno=12&maxwalk=600&indextopic=entry
+- 30-56 meters.
+- 1-2 room
 
-http://www.creprice.cn/haprice/cisz-ha0001871957-ye10.html
+## Term
 
-http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=d8c59bbc-3114-40e0-b4d5-e13f9c70db88&src=S
+- Down payment
+- Interest rate
 
-# Interested location in SZ
+## Network
 
-佳宁娜友谊广场
-
-庐山花园
-
-[怡都大厦](http://www.creprice.cn/user/login.html?fromurl=aHR0cDovL3d3dy5jcmVwcmljZS5jbi8=)
-
-广东省银行大厦
-
-云峰花园
-
-[Good Location searcher](http://www.creprice.cn/haprice/cisz-gp114%2A11603093147279%7C22%2A539503020650557-ds1000.html?haname=%E6%AD%A4%E4%BD%8D%E7%BD%AE%E9%99%84%E8%BF%911000%E7%B1%B3)
+Brother  
+Classmate
 
 # Reference
 

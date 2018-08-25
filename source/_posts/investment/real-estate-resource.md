@@ -18,6 +18,30 @@ A good investor should always ask what is the deal(I am going to mark this as ha
 
 - {% asset_link millionaire_real_estate_investor_notes.pdf The Millionaire Real Estate Investor Notes %}
 
+## Private market
+
+### interested in HK
+
+http://hk.centanet.com/findproperty/zh-HK/Home/SearchResult/?mtrline=6&mtrno=12&maxwalk=600&indextopic=entry
+
+http://www.creprice.cn/haprice/cisz-ha0001871957-ye10.html
+
+http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=d8c59bbc-3114-40e0-b4d5-e13f9c70db88&src=S
+
+### Interested location in SZ
+
+佳宁娜友谊广场
+
+庐山花园
+
+[怡都大厦](http://www.creprice.cn/user/login.html?fromurl=aHR0cDovL3d3dy5jcmVwcmljZS5jbi8=)
+
+广东省银行大厦
+
+云峰花园
+
+[Good Location searcher](http://www.creprice.cn/haprice/cisz-gp114%2A11603093147279%7C22%2A539503020650557-ds1000.html?haname=%E6%AD%A4%E4%BD%8D%E7%BD%AE%E9%99%84%E8%BF%911000%E7%B1%B3)
+
 # Possible deal history
 
 ## 匯璽

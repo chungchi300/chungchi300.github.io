@@ -16,7 +16,7 @@ First impression,very important task
 Must ask what form they accept
 
 1. Smart signature program
-2. Hard signed and scanned
+2. Hard signed and scanned(if this is the only case,you should wait and ask for confirmation when you are standing next to scanning machine)
 
 ## Entity
 

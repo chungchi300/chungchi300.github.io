@@ -9,7 +9,9 @@ category: Investment
 
 ## Hong Kong
 
-at least 60% in first loan
+at least 60% in first loan for second house
+
+85 % for first house
 
 [Real Estate](https://topick.hket.com/article/1393467/%E8%B2%B7%E6%A8%93%E5%85%B6%E5%AF%A6%E5%94%94%E9%9B%A3%20%20%20%20%20%E6%88%91%E5%80%91%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F%E4%BE%8B%E5%AD%90)
 

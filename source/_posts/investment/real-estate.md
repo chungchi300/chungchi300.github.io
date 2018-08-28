@@ -32,15 +32,57 @@ m2,加息
 
 # Measurement
 
+![](https://upload.wikimedia.org/wikipedia/commons/f/f4/FutureMTRNetworkAfterMerger.png)
+
 ## HK
 
 [CCL](http://www1.centadata.com/cci/cci.htm)
 
 # Type
 
+[Ownership,you can always be the owner when you have the name and all people signed](https://finance.discuss.com.hk/viewthread.php?tid=26787554)
+
+https://cecimak1995.blogspot.com/2016/09/blog-post_27.html
+
 ## 居屋
 
-[上車懶人包](https://www.google.com.hk/search?q=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&oq=%E4%B8%8A%E8%BB%8A%E6%87%B6%E4%BA%BA%E5%8C%85&aqs=chrome..69i57.3815j0j4&sourceid=chrome&ie=UTF-8)
+Plan:
+
+1. View all second hand house(especially that close to 凱樂苑,啟天苑.Don't consider those oversea )
+2. Draw 凱樂苑
+3. If not draw successfully,immediately buy second hand
+
+### Possibility
+
+綠白表比例和今年一樣是 5：5，即各 1,060 個。最終綠表申請人數為 1.25 萬，白表為 9.21 萬，雖然同為超額認購，但綠表平均約 11.8 人爭一個單位，白表卻是 86.9 人，比例有明顯分別。
+
+### 一手:
+
+[懶人包](http://www.d18hk.com/hos2018/)
+
+[Newest](https://www.moneyhero.com.hk/blog/zh/%E5%95%9F%E5%BE%B7%E5%95%9F%E5%A4%A9%E8%8B%91%E9%95%B7%E6%B2%99%E7%81%A3%E5%87%B1%E6%A8%82%E8%8B%91-2018-2022%E5%B9%B414%E5%B1%85%E5%B1%8B%E9%A0%85%E7%9B%AE%E7%B8%BD%E8%A6%BD)
+
+[綠表抽新居屋](https://www.moneyhero.com.hk/blog/zh/%E7%B6%A0%E8%A1%A8-%E8%B2%B7%E5%B1%85%E5%B1%8B-%E7%BD%AE%E6%A5%AD%E4%B8%8D%E6%98%AF%E5%A4%A2-%E7%B6%A0%E8%A1%A8%E4%BA%BA%E5%A3%AB%E8%B3%BC%E8%B2%B7%E5%B1%85%E5%B1%8B%E9%9C%80%E7%9F%A5)
+
+[After selection](https://topick.hket.com/article/2035212/%E6%96%B0%E5%B1%85%E5%B1%8B%E5%87%B1%E6%A8%82%E8%8B%91%E8%A3%95%E6%B3%B0%E8%8B%91%E9%9B%99%E5%BB%81%E9%9C%B2%E5%8F%B0%E9%96%93%E9%9A%94%E9%A6%96%E6%9B%9D%E5%85%89%E3%80%80%E6%B8%AC%E9%87%8F%E5%B8%AB%EF%BC%9A%E9%83%A8%E5%88%86%E5%96%AE%E4%BD%8D%E8%A8%AD%E8%A8%88%E4%B8%8D%E5%AF%A6%E7%94%A8)
+
+![Price](https://topick.hket.com/res/v3/image/content/2035000/2035212/hos_1024_1024.jpg)
+
+![New Price](https://cdn.hk01.com/di/media/images/1642119/org/f38a15fb863e1b8ae2c3cb2607f4198a.png/_V8luGyeBSF4xvklm8QNfgqEcPk6meOz11TmytdU5so?v=w1440)
+
+### 二手:
+
+[上車懶人包](http://hk.centanet.com/hos/)
+
+[Steps](https://www.transunion.hk/zh/blog/mortgage/6-things-you-need-to-know-about)
+
+## 首置上車盤
+
+[馬頭圍道](https://www.moneyhero.com.hk/blog/zh/%E9%A6%96%E7%BD%AE%E4%B8%8A%E8%BB%8A%E7%9B%A4-%E5%B8%82%E5%BB%BA%E5%B1%80-%E9%A6%AC%E9%A0%AD%E5%9C%8D%E9%81%93-%E6%98%A5%E7%94%B0%E8%A1%97-%E9%A6%96%E7%BD%AE%E7%9B%A4%E7%94%B3%E8%AB%8B%E6%94%BB)
+
+## 煥然壹居
+
+[煥然壹居](https://www.google.com.hk/search?q=%E7%85%A5%E7%84%B6%E5%A3%B9%E5%B1%85&oq=%E7%85%A5%E7%84%B6%E5%A3%B9%E5%B1%85&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8)
 
 # CTN
 

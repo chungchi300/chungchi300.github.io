@@ -58,6 +58,7 @@ Plan:
 
 ### 一手:
 
+[買居屋全手冊](http://www.etnet.com.hk/www/tc/news/topic_news_detail.php?newsid=8568&page=1&category=special&part=2)
 [懶人包](http://www.d18hk.com/hos2018/)
 
 [Newest](https://www.moneyhero.com.hk/blog/zh/%E5%95%9F%E5%BE%B7%E5%95%9F%E5%A4%A9%E8%8B%91%E9%95%B7%E6%B2%99%E7%81%A3%E5%87%B1%E6%A8%82%E8%8B%91-2018-2022%E5%B9%B414%E5%B1%85%E5%B1%8B%E9%A0%85%E7%9B%AE%E7%B8%BD%E8%A6%BD)

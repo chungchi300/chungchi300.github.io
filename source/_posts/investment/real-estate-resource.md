@@ -24,6 +24,7 @@ A good investor should always ask what is the deal(I am going to mark this as ha
 
 [富嘉花園](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=c3ab6653-a2b1-40aa-b9c5-1cd2de930354&src=S)
 [寶雅苑](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=9c51cb49-7aa4-4bed-b7e7-3f4f80c09673&src=S)
+[荔欣苑 荔林閣 (C 座) 低層](http://hk.centanet.com/findproperty/Home/Detail/?ID=b80c000a-eb19-4c9e-8b3f-637d75ebcf6a&src=S)
 
 http://hk.centanet.com/findproperty/zh-HK/Home/SearchResult/?mtrline=6&mtrno=12&maxwalk=600&indextopic=entry
 

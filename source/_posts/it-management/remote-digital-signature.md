@@ -27,6 +27,10 @@ Must ask what form they accept
 
 1. You need to **send and sign** with the **NDA**
 
+# Price
+
+Printing for 3 dollar and scanning around 10 dollar is acceptable.
+
 # Tool
 
 https://smallpdf.com/cn/sign-pdf

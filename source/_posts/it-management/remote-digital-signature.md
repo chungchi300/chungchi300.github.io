@@ -20,8 +20,7 @@ Must ask what form they accept
 
 ## Entity
 
-1. Send back the whole
-2. Only send back the partial of the document
+1. Send back the whole(e.g they give your the contract and NDA pdf file,you need to send back 2 pdf file)
 
 # Remember in most case
 

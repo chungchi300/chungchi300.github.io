@@ -42,6 +42,8 @@ m2,加息
 
 # Type
 
+![Ladder](http://orientaldaily.on.cc/cnt/news/20180630/photo/0630-00176-006b3.jpg)
+
 [Ownership,you can always be the owner when you have the name and all people signed](https://finance.discuss.com.hk/viewthread.php?tid=26787554)
 
 https://cecimak1995.blogspot.com/2016/09/blog-post_27.html

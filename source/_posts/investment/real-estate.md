@@ -67,6 +67,8 @@ always look for 綠置居(未有期)) plan
 
 ![Ladder](http://orientaldaily.on.cc/cnt/news/20180630/photo/0630-00176-006b3.jpg)
 
+[公屋住戶今次發達了](https://topick.hket.com/article/1922310/%E6%B8%AF%E4%BA%BA%E9%A6%96%E7%BD%AE%E4%B8%8A%E8%BB%8A%E7%9B%A4%E6%9A%AB%E6%8E%A8%E5%8D%83%E5%96%AE%E4%BD%8D%20%20%20%20%E5%94%90%E6%A6%AE%EF%BC%9A%E5%85%AC%E5%B1%8B%E4%BD%8F%E6%88%B6%E4%BB%8A%E6%AC%A1%E7%99%BC%E9%81%94%E4%BA%86)
+
 ### Ownership
 
 [Ownership,you can always be the owner when you have the name and all people signed](https://finance.discuss.com.hk/viewthread.php?tid=26787554)

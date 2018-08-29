@@ -5,16 +5,6 @@ date: 2018-08-23 10:28:21
 category: Investment
 ---
 
-# How much can I borrow
-
-## Hong Kong
-
-at least 60% in first loan for second house
-
-85 % for first house
-
-[Real Estate](https://topick.hket.com/article/1393467/%E8%B2%B7%E6%A8%93%E5%85%B6%E5%AF%A6%E5%94%94%E9%9B%A3%20%20%20%20%20%E6%88%91%E5%80%91%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F%E4%BE%8B%E5%AD%90)
-
 # Future,prediction
 
 个人感觉 m2 没跌破 8 之前，房价还不会急跌，阴跌概率大，造成房价没跌的假象，继续高位接盘。照现在的速度，临界点估计在明年春节前，叠加年底流动性不足的惯性，这个年有些人看来是过不好了。
@@ -32,33 +22,66 @@ at least 60% in first loan for second house
 
 m2,加息
 
-# Measurement
+# Hong Kong
 
-![](https://upload.wikimedia.org/wikipedia/commons/f/f4/FutureMTRNetworkAfterMerger.png)
+## How much can I borrow
 
-## HK
+at least 60% in first loan for second house
 
-[CCL](http://www1.centadata.com/cci/cci.htm)
+85 % for first house
 
-# Type
+95% + 58% off from Hong Kong government 綠置居
 
-![Ladder](http://orientaldaily.on.cc/cnt/news/20180630/photo/0630-00176-006b3.jpg)
+95% + 48% off from Hong Kong government 一手居屋
 
-[Ownership,you can always be the owner when you have the name and all people signed](https://finance.discuss.com.hk/viewthread.php?tid=26787554)
+95% + 48%(according to renting date) off from Hong Kong government 二手居屋
 
-https://cecimak1995.blogspot.com/2016/09/blog-post_27.html
+## Purchase flow
 
-## 居屋
+### Possibility
 
-Plan:
+綠白表比例和今年一樣是 5：5，即各 1,060 個。最終綠表申請人數為 1.25 萬，白表為 9.21 萬，雖然同為超額認購，但綠表平均約 11.8 人爭一個單位，白表卻是 86.9 人，比例有明顯分別。
+
+### Execution:
 
 1. View all second hand house(especially that close to 凱樂苑,啟天苑.Don't consider those oversea )
 2. Draw 凱樂苑
 3. If not draw successfully,immediately buy second hand
 
-### Possibility
+always look for 白居二(next year 2-3 月) plan  
+always look for 綠置居(未有期)) plan
 
-綠白表比例和今年一樣是 5：5，即各 1,060 個。最終綠表申請人數為 1.25 萬，白表為 9.21 萬，雖然同為超額認購，但綠表平均約 11.8 人爭一個單位，白表卻是 86.9 人，比例有明顯分別。
+首置上車盤(2018 年底 申請 未有期)
+
+## Location
+
+![Hong Kong MTR](https://upload.wikimedia.org/wikipedia/commons/f/f4/FutureMTRNetworkAfterMerger.png)
+
+## 資助置業計劃
+
+[資助置業計劃](https://www.housingauthority.gov.hk/tc/index.html)
+
+## Property
+
+### Ladder
+
+![Ladder](http://orientaldaily.on.cc/cnt/news/20180630/photo/0630-00176-006b3.jpg)
+
+### Ownership
+
+[Ownership,you can always be the owner when you have the name and all people signed](https://finance.discuss.com.hk/viewthread.php?tid=26787554)
+
+https://cecimak1995.blogspot.com/2016/09/blog-post_27.html
+
+## Measurement
+
+[CCL](http://www1.centadata.com/cci/cci.htm)
+
+## 綠置居
+
+[【「 綠置居 」恒常化】公屋戶買樓 4 大須知](https://www.moneyhero.com.hk/blog/zh/%E7%B6%A0%E7%BD%AE%E5%B1%85-%E6%81%92%E5%B8%B8%E5%8C%96-%E5%85%AC%E5%B1%8B%E6%88%B6%E8%B2%B7%E6%A8%93%E9%A0%88%E7%9F%A5)
+
+## 居屋
 
 ### 一手:
 
@@ -80,6 +103,8 @@ Plan:
 [上車懶人包](http://hk.centanet.com/hos/)
 
 [Steps](https://www.transunion.hk/zh/blog/mortgage/6-things-you-need-to-know-about)
+
+[白表居屋第二市場計劃 2018 ](https://www.housingauthority.gov.hk/mini-site/sms-white-form-2018/tc/index.html)
 
 ## 首置上車盤
 

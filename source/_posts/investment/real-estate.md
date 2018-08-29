@@ -30,11 +30,11 @@ at least 60% in first loan for second house
 
 85 % for first house
 
-95% + 58% off from Hong Kong government 綠置居
+95% + 58% off from Hong Kong government 綠置居(don't need to give up your old house)
 
 95% + 48% off from Hong Kong government 一手居屋
 
-95% + 48%(according to renting date) off from Hong Kong government 二手居屋
+95% + 48%(according to renting date) off from Hong Kong government 二手居屋(don't need to give up your old house if 白居二)
 
 ## Purchase flow
 

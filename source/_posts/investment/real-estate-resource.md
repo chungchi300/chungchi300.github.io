@@ -10,7 +10,7 @@ password: jeffchung
 
 - {% asset_link millionaire_real_estate_investor.pdf The Millionaire Real Estate Investor %}
 
-Read to 135 pages.
+Read to 147 pages.
 
 Knowing the writer miss his opportunity in his first too.
 

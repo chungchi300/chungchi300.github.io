@@ -36,6 +36,9 @@ at least 60% in first loan for second house
 
 95% + 48%(according to renting date) off from Hong Kong government 二手居屋(don't need to give up your old house if 白居二)
 
+Calculator:
+http://www.centamortgage.com/v2/Calculator/Index
+
 ## Purchase flow
 
 ### Possibility

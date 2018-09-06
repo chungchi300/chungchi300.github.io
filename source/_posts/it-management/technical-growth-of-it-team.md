@@ -34,12 +34,13 @@ Good manager focus on **potential value** and **space to grow**
 
 # I can do + I want to do + it needs me = Core value
 
-## Ability to design high efficient user interface
+## Ability to design high efficient user interface and smooth flow
 
 ### Knowledge
 
 - UX design
 - Learning model(flow,deliberate training,study intensity,Feiman method)
+- Communication
 
 ## Ability to manage and implement complex front end interface
 

@@ -94,6 +94,16 @@ Good manager focus on **potential value** and **space to grow**
 - Pagination
 - Filtering
 
+## Ability to ensure stable&quick feedback
+
+### Tool
+
+Redmine issue tracker
+
+### Knowledge
+
+Clean cut responsibility model(developer,tester,reviewer),deployment version
+
 ## Domain value
 
 ### Wine

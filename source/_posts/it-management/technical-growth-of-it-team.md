@@ -102,7 +102,9 @@ Redmine issue tracker
 
 ### Knowledge
 
-Clean cut responsibility model(developer,tester,reviewer),deployment version
+- Clean cut responsibility model(developer,tester,reviewer,deployer)
+- Prioritizing
+- Cost analysis
 
 ## Domain value
 
@@ -127,7 +129,12 @@ Data structure of wine
 
 - rework(great book,concept like co-working time)
 
-## Ability to internal business communication
+## Ability to formal business communication
+
+### Knowledge
+
+- [Remote digital signature](/2018/08/27/it-management/remote-digital-signature.html)
+- Communication have both content and relational directional
 
 ## Continue feedback for UX improvement
 

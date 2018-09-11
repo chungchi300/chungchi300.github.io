@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'How UI designer and front end programmer cooperate together in order to implement the design perfectly(at least 95%) in the program with 50% workload remotely.'
-category: 管理和协作
+category: management and cooperation
 keywords: null
 date: 2018-04-28 16:09:02
 ---

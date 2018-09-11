@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to negotiate with your boss to get a nice computer for your work
-category: 管理和协作
+category: management and cooperation
 keywords: /blog_accessary/blog_images/negotiation/negotiation1.png
 
 date: 2018-04-28 16:09:02

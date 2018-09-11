@@ -2,7 +2,7 @@
 title: internal wine it positioning
 date: 2018-09-04 10:20:15
 ? tags
-category: 管理和协作
+category: management and cooperation
 ---
 
 # Why we need to positioning my IT

@@ -2,7 +2,7 @@
 title: Remote digital signature of contract
 date: 2018-8-27 10:20:15
 ? tags
-category: 管理和协作
+category: management and cooperation
 ---
 
 # Important of remote digital signature of contract

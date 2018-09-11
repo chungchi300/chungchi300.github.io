@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Different methodology and practice to achieve goal of different software we write
-category: 管理和协作
+category: management and cooperation
 keywords: null
 date: 2018-04-28 16:09:02
 toc: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How it manager fulfill the need of kiosk service of their company
-category: 管理和协作
+category: management and cooperation
 keywords: '/blog_accessary/blog_images/kiosk/kiosk.png'
 date: 2018-04-28 16:09:02
 ---

@@ -2,7 +2,7 @@
 title: How to explain Version control(git,svn) for non-IT guy
 date: 2018-08-28 10:20:15
 ? tags
-category: 管理和协作
+category: management and cooperation
 ---
 
 # Metaphor

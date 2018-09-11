@@ -2,7 +2,7 @@
 title: How to explain you need aws(or cloud server) to non-IT guy
 date: 2018-09-10 10:20:15
 ? tags
-category: 管理和协作
+category: management and cooperation
 ---
 
 # Metaphor

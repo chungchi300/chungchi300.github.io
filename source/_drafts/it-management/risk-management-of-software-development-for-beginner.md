@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 15 minutes Risk management of software development for beginner
-category: 管理和协作
+category: management and cooperation
 keywords: '/blog_accessary/blog_images/risk-management/1.jpg'
 date: 2018-04-28 16:09:02
 ---

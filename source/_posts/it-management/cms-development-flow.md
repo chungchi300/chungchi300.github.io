@@ -2,7 +2,7 @@
 title: >-
   CMS development flow
 date: 2018-05-20 10:28:21
-category: 管理和协作
+category: management and cooperation
 ---
 
 {% plantuml %}

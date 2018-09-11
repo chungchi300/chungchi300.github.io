@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to manage offshore development successfully.
-category: 管理和协作
+category: management and cooperation
 keywords: /blog_accessary/blog_images/off-shore-development/4.jpg
 date: 2018-04-28 16:09:02
 ---

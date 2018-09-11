@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More than requirement-Discover the real question(Lession learn from develop the digital pathology program for largest third-party medical laboratory group in china)
-category: 管理和协作
+category: management and cooperation
 keywords: 'Real Question'
 date: 2018-04-28 16:09:02
 ---

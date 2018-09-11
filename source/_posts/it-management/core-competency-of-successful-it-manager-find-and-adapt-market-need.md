@@ -2,7 +2,7 @@
 title: >-
   Find market/company need and transform IT team and IT development cycle(Core competency of real successful IT manager in Hong Kong)
 date: 2018-08-25 10:28:21
-category: 管理和协作
+category: management and cooperation
 ---
 
 # What is find market/company need in real life?

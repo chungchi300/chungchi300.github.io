@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Presentation of working product of a sprint
-category: 管理和协作
+category: management and cooperation
 keywords: /blog_accessary/blog_images/presentation/presentation_of_scrum.png
 date: 2018-04-28 16:09:02
 ---

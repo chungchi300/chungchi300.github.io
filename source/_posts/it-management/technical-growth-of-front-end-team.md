@@ -2,7 +2,7 @@
 title: 前端团队的技术成长
 date: 2018-07-30 10:20:15
 ? tags
-category: 管理和协作
+category: management and cooperation
 ---
 
 # 為什麼要有定位和反思

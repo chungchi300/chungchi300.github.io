@@ -5,7 +5,7 @@ date: 2018-08-28 10:20:15
 category: 管理和协作
 ---
 
-# Analogy
+# Metaphor
 
 {% asset_img cover.jpg %}
 

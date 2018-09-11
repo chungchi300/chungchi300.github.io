@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Important React and Redux Concept in one graph by analogy
+title: Important React and Redux Concept in one graph by metaphor
 category: Web前端
 keywords: Redux
 date: 2018-04-28 16:09:02
@@ -10,9 +10,9 @@ date: 2018-04-28 16:09:02
 
 1.  What you can learn after reading this article?
 
-* Redux&React
-* Smart vs Dummy
-* Stateful vs stateless
+- Redux&React
+- Smart vs Dummy
+- Stateful vs stateless
 
 2.  How much time you will use for reading this article?
     25 minutes

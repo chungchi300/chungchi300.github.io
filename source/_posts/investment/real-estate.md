@@ -139,3 +139,18 @@ Classmate
 # Reference
 
 [Millionaire Real Estate](/2018/08/24/investment/real-estate-resource.html)
+
+# Shenzhen
+
+280 至 320 萬
+一房，二房都可以
+15 分鍾步行到火車站
+不要向西
+中高楼层对吧
+還有最好比銀行估值盡量低(20%)
+小學，中學對我來說不重要，幼兒園反到好點
+Rent contract Ratio(25 years)
+
+224
+
+30.1

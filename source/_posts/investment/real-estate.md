@@ -149,5 +149,5 @@ Classmate
 中高楼层对吧
 還有最好比銀行估值盡量低(20%)
 小學，中學對我來說不重要，幼兒園反到好點
-Rent contract Ratio(25 years)
+Rent contract Ratio(25 years),租價比(5%)
 15 年楼龄

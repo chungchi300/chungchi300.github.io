@@ -85,3 +85,37 @@ this:23,000/Inch
 ### payment detail
 
 100 to purchase 700
+
+## 日出康城 6
+
+### Location:
+
+https://www.google.com.hk/maps/place/LP6+LOHAS+Park+Phase+6/@22.2918839,114.2671533,17.21z/data=!4m8!1m2!2m1!1sLP6!3m4!1s0x340403bde56acfcf:0xc32ef89a5c9e60dd!8m2!3d22.2923078!4d114.2695284
+
+**Sea View**
+**Garbage filled area**
+**学之园幼稚园**
+
+### Traffic:
+
+港铁康城 station to LP 6 - 21mins,flatten road
+
+### Material:
+
+- Age:0
+- Constructor:港铁公司及南豐集團
+
+### Price:
+
+- 1 房： 481 萬起
+
+### safety zone model model:
+
+Other Cost:14,373/Inch  
+this:13,880/Inch
+
+14373-13880/13880 \* 100% = 3.5%(relative low)
+
+### payment detail
+
+20% down payment

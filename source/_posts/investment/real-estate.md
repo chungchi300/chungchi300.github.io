@@ -153,3 +153,5 @@ Classmate
 小學，中學對我來說不重要，幼兒園反到好點
 Rent contract Ratio(25 years),租價比(5%)
 15 年楼龄
+
+[精明揀樓](https://tokuhon.blog/?p=17240)

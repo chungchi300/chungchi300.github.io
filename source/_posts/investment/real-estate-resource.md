@@ -138,3 +138,46 @@ this:13,880/Inch
 ### payment detail
 
 20% down payment
+
+## 凱樂苑
+
+### Location:
+
+https://www.google.com.hk/maps/place/%E5%87%AF%E4%B9%90%E8%8B%91/@22.3270043,114.1486604,15.79z/data=!4m5!3m4!1s0x340400a94f074d53:0xecbe4a189bd529!8m2!3d22.3280509!4d114.1493
+
+**Sea View**
+**Fishman center**
+**幼稚园,elementary school and high school**
+
+### Traffic:
+
+南昌站-7 minutes walking distance
+
+Current
+
+- 西鐵綫(Futian station)
+- 東涌綫(High speed train)(quick go to central)(airpoint)
+
+Future
+
+- 東西線(line across every area of good hong kong,and close to HK island)
+
+### Material:
+
+- Age:0
+- Constructor:HK government
+
+### Price:
+
+- 1 房： 481 萬起
+
+### safety zone model model:
+
+Other Cost:12,373/Inch  
+this:32,000/Inch
+
+### payment detail
+
+5% down payment
+
+strategy:Buy as big as possible

@@ -154,4 +154,8 @@ Classmate
 Rent contract Ratio(25 years),租價比(5%)
 15 年楼龄
 
+廳細房大
+不用大廚房
+不需要放洗衣機及晒衣服的位置
+
 [精明揀樓](https://tokuhon.blog/?p=17240)

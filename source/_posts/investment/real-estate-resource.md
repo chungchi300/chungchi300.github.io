@@ -20,6 +20,25 @@ A good investor should always ask what is the deal(I am going to mark this as ha
 
 ## Private market
 
+### interested in Shenzhen
+
+[Time improvement plan - 十三五规划](https://sz.centanet.com/news/detail/103.html)
+
+[十三五规划](https://zh.wikipedia.org/wiki/%E5%8D%81%E4%B8%89%E4%BA%94%E8%A7%84%E5%88%92)
+口岸经济带沿线有 8 块过境土地，其中有 5 块落在了罗湖范围内。下一步罗湖将按照上级的统一部署，在条件成熟时，**对 5 块土地进行高集约、高水平的开发**
+
+“金三角”国际消费核心，重点推进蔡屋围、湖贝、东门、火车站片区更新改造
+口岸片区
+
+旧改 potential
+
+- {% asset_link 13-5-of-lowu.pdf Lowu13-5 %}
+- {% asset_link 13-5-of-shenzhen.pdf Shenzhen13-5 %}
+
+The 一核
+
+## Private market
+
 ### interested in HK
 
 [富嘉花園](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=c3ab6653-a2b1-40aa-b9c5-1cd2de930354&src=S)

@@ -148,6 +148,7 @@ https://www.google.com.hk/maps/place/%E5%87%AF%E4%B9%90%E8%8B%91/@22.3270043,114
 **Sea View**
 **Fishman center**
 **幼稚园,elementary school and high school**
+**car 廠及新渡輪維修船廠**
 
 ### Traffic:
 
@@ -160,7 +161,8 @@ Current
 
 Future
 
-- 東西線(line across every area of good hong kong,and close to HK island)
+- 西鐵綫=>東西線(line across every area of good hong kong,and close to HK island)
+- 東涌綫=>High speed train
 
 ### Material:
 
@@ -175,6 +177,8 @@ Future
 
 Other Cost:12,373/Inch  
 this:32,000/Inch
+
+230%
 
 ### payment detail
 

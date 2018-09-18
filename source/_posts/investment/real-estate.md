@@ -142,6 +142,59 @@ Classmate
 
 [Millionaire Real Estate](/2018/08/24/investment/real-estate-resource.html)
 
+# Hong Kong
+
+400 至 550 萬
+一房，二房都可以
+15 分鍾步行到火車站
+不要向西
+中高楼层对吧
+10-20% discount
+還有最好比銀行估值盡量低(20%)
+小學，中學對我來說不重要，幼兒園反到好點
+Rent contract Ratio(25 years),租價比(5%)
+15 年楼龄
+ocean view is not necessary
+Good traffic to Shenzhen
+
+廳細房大
+不用大廚房
+不需要放洗衣機及晒衣服的位置
+
+奧運站
+
+傳統商業區如中上環、灣仔、銅鑼灣、側魚涌、尖沙咀等，擴散到佐敦、旺角、觀塘、九龍灣等，以至被譽為「新中環」的九龍站，結果帶動了附近的地價以至樓價。
+
+九龍邊緣：深水埗區+黃大仙區+觀塘區
+
+大圍 vs 長沙灣
+
+沙田區（不包括馬鞍山）
+
+https://tokuhon.blog/?p=5595
+[精明揀樓](https://tokuhon.blog/?p=17240)
+
+居住價值、投資價值。購買長遠有價值提升的物業，才是致勝之道。
+
+實用：空間能否盡用、設備是否方便、沒有危險位
+
+實際：間格能否靈活變化、面積有沒有被浪費在間格牆、走廊等
+https://tokuhon.blog/?p=5419
+
+https://tokuhon.blog/?p=12778
+
+不貴，又不旺，又不**便**
+
+https://tokuhon.blog/?p=5320
+
+- 南昌站(旺,便)
+- 大圍站(便)
+- 朗屏站(future 旺)
+
+http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=50561389-05ea-472e-acf9-47b112cac368&src=S
+
+all new house need 2 year
+
 # Shenzhen
 
 280 至 320 萬

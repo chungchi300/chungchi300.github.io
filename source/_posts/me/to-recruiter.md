@@ -102,4 +102,4 @@ date: 2018-04-28 16:09:02
 
 ## 当前工资和期望薪金
 
-[点击](/currentSalary.html)
+[点击](/2018/04/28/me/currentSalary.html)

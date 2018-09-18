@@ -5,6 +5,8 @@ date: 2018-09-04 10:20:15
 category: management and cooperation
 ---
 
+[Ability cycle](https://www.jianshu.com/p/2fcdcca36bf1)
+
 # Why we need to positioning my IT
 
 What kind of IT team have the **power to speech**.Simple,the team that being **highly dependent**.To become **highly dependent**,we need to define our **position well**.

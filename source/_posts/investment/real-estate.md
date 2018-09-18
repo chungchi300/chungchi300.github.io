@@ -180,7 +180,7 @@ https://tokuhon.blog/?p=5595
 
 實際：間格能否靈活變化、面積有沒有被浪費在間格牆、走廊等
 https://tokuhon.blog/?p=5419
-
+https://tokuhon.blog/?p=12787
 https://tokuhon.blog/?p=12778
 
 不貴，又不旺，又不**便**

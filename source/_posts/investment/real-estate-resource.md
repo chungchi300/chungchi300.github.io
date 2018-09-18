@@ -171,8 +171,6 @@ Future
 
 ### Price:
 
-- 1 房： 481 萬起
-
 ### safety zone model model:
 
 Other Cost:12,373/Inch  

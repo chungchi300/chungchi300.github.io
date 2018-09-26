@@ -144,7 +144,9 @@ Classmate
 
 # Hong Kong
 
-400 至 550 萬
+## Criteria
+
+400 至 500 萬
 一房，二房都可以
 15 分鍾步行到火車站
 不要向西
@@ -152,7 +154,7 @@ Classmate
 10-20% discount
 還有最好比銀行估值盡量低(20%)
 小學，中學對我來說不重要，幼兒園反到好點
-Rent contract Ratio(25 years),租價比(5%)
+Rent contract Ratio(25 years),租價比(4-5%)
 15 年楼龄
 ocean view is not necessary
 Good traffic to Shenzhen
@@ -160,6 +162,8 @@ Good traffic to Shenzhen
 廳細房大
 不用大廚房
 不需要放洗衣機及晒衣服的位置
+
+## Location
 
 奧運站
 
@@ -171,29 +175,22 @@ Good traffic to Shenzhen
 
 沙田區（不包括馬鞍山）
 
-https://tokuhon.blog/?p=5595
-[精明揀樓](https://tokuhon.blog/?p=17240)
-
-居住價值、投資價值。購買長遠有價值提升的物業，才是致勝之道。
-
-實用：空間能否盡用、設備是否方便、沒有危險位
-
-實際：間格能否靈活變化、面積有沒有被浪費在間格牆、走廊等
-https://tokuhon.blog/?p=5419
-
-https://tokuhon.blog/?p=12778
-
-不貴，又不旺，又不**便**
-
-https://tokuhon.blog/?p=5320
-
 - 南昌站(旺,便)
 - 大圍站(便)
-- 朗屏站(future 旺)
+- 朗屏站(future 旺,便)
 
-http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=50561389-05ea-472e-acf9-47b112cac368&src=S
+## Potential
 
-all new house need 2 year
+### First hand:
+
+- 朗城滙
+
+### Second hand:
+
+- [好發洋樓](http://hk.centadata.com/ptest.aspx?type=1&code=BWEGPPAXPS)
+- 宏發大廈
+- 安寧大廈
+- 郎平 8 號
 
 # Shenzhen
 
@@ -212,3 +209,23 @@ Rent contract Ratio(25 years),租價比(5%)
 不需要放洗衣機及晒衣服的位置
 
 [精明揀樓](https://tokuhon.blog/?p=17240)
+
+# Skill
+
+https://tokuhon.blog/?p=5595
+[精明揀樓](https://tokuhon.blog/?p=17240)
+
+居住價值、投資價值。購買長遠有價值提升的物業，才是致勝之道。
+
+實用：空間能否盡用、設備是否方便、沒有危險位
+
+實際：間格能否靈活變化、面積有沒有被浪費在間格牆、走廊等
+https://tokuhon.blog/?p=5419
+
+https://tokuhon.blog/?p=12778
+
+https://tokuhon.blog/?p=5320
+
+http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=50561389-05ea-472e-acf9-47b112cac368&src=S
+
+all new house need 2 year

@@ -26,6 +26,7 @@ Duration:3 months
 
 - Fast
 - Feasible
+- Speedy development cycle
 
 Global Search Number of React Element
 

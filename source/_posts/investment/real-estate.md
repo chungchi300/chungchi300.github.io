@@ -175,9 +175,23 @@ Good traffic to Shenzhen
 
 沙田區（不包括馬鞍山）
 
+<<<<<<< HEAD
 - 南昌站(旺,便)
 - 大圍站(便)
 - 朗屏站(future 旺,便)
+=======
+https://tokuhon.blog/?p=5595
+[精明揀樓](https://tokuhon.blog/?p=17240)
+
+居住價值、投資價值。購買長遠有價值提升的物業，才是致勝之道。
+
+實用：空間能否盡用、設備是否方便、沒有危險位
+
+實際：間格能否靈活變化、面積有沒有被浪費在間格牆、走廊等
+https://tokuhon.blog/?p=5419
+https://tokuhon.blog/?p=12787
+https://tokuhon.blog/?p=12778
+>>>>>>> aadea6e2f8c27017fdecf420e968d420adb860dc
 
 ## Potential
 

@@ -1,6 +1,6 @@
 ---
 title: First Week in madison auction ltd
-date: 2018-09-04 10:20:15
+date: 2018-10-06 10:20:15
 ? tags
 category: management and cooperation
 ---

@@ -1,5 +1,5 @@
 ---
-title: internal wine it positioning
+title: Wine IT position
 date: 2018-09-04 10:20:15
 ? tags
 category: management and cooperation
@@ -35,6 +35,32 @@ What kind of IT team have the **power to speech**.Simple,the team that being **h
 Good manager focus on **potential value** and **space to grow**
 
 # I can do + I want to do + it needs me = Core value
+
+## Ability to use IT to significantly increase existing operation efficiency
+
+### Knowledge
+
+- Communicate and study with current colleague to understand the current operation
+- Design how to use IT to increase existing operation efficiency
+- Resource evaluation and planing to show to manager how the **operation efficiency will increase** with **IT help**
+
+
+## Ability to implement proper software development flow
+
+### Knowledge
+
+- Know what **problem(communication,development...)** need to be solved in software development in existing project
+- Know different existing software development methodology and tools
+
+## Ability to design and implement proper algorithm
+
+### Knowledge
+
+- Set the goals of algorithm
+- Related message(e.g if you want to create price estimator of specific item,statistic is a must)
+- **Present** and **communicate** about the algorithm goal,design and implementation 
+- Design verification of algorithm
+- Ability to **gather data** for algorithm
 
 ## Ability to design high efficient user interface and smooth flow
 

@@ -1,11 +1,11 @@
 ---
-title: First Week in my new company
+title: First Week in my new company as IT Specialist
 date: 2018-10-06 10:20:15
 ? tags
 category: management and cooperation
 ---
 
-This week is my first week in my new company. I feel the new job make me growth as follow
+This week is my first week in my new company as IT Specialist. I feel the new job make me growth as follow
 
 # I can do + I want to do + it needs me = Core value
 

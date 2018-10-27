@@ -146,7 +146,7 @@ Classmate
 
 ## Criteria
 
-400 至 500 萬
+400 至 450 萬
 一房，二房都可以
 15 分鍾步行到火車站
 不要向西
@@ -175,9 +175,42 @@ Good traffic to Shenzhen
 
 沙田區（不包括馬鞍山）
 
-- 南昌站(旺,便)
-- 大圍站(便)
-- 朗屏站(future 旺,便)
+## 新界西 - new high way and hong kong bay zone
+
+### 朗屏站(future 旺,便)
+
+[朗庭園](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=f1a0d108-99c8-42ff-a996-cbe89153c73a&src=S)
+
+### yuan long
+
+- YOHO Town
+- YOHO midtown
+
+### 南昌站(旺,便)
+
+## 沙中綫
+
+大圍站(便)
+
+- [金獅花園](https://yahoo.real-estate.hk/properties/detail.php?ref=WP65258111&utm_source=yahoo&utm_medium=editorial&utm_content=2ndhand)
+
+## East way
+
+紅磡至金鐘段
+
+### Fanling
+
+[粉嶺名都](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=e8c117bc-42fa-467b-a198-24e53a583dd3&src=S)
+
+### Shatin
+
+[好運中心 楓林閣](http://hk.centanet.com/findproperty/Home/Detail/?ID=1ea5877e-6109-460c-b2e9-0357a40183cd&src=S)
+[偉華中心](http://hk.centanet.com/findproperty/Home/Detail/?ID=f5dea71b-d4b9-4cbb-ad80-aae83ea2eb42&src=S)
+[佳寧大廈](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=dd20c8de-ea61-4e7b-ad19-00d76d6f2ece&src=S)
+
+### Tai Po
+
+- 逸雅苑
 
 ## Potential
 

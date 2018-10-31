@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Backup&Restore centos or other linux
+date: 2018-08-25 10:28:21
 category: management and cooperation
-keywords: null
-date: 2018-04-28 16:09:02
 ---
 
 # Bootable Usb that contains clonezilla

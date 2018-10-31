@@ -180,6 +180,7 @@ Good traffic to Shenzhen
 ### 朗屏站(future 旺,便)
 
 [朗庭園](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=f1a0d108-99c8-42ff-a996-cbe89153c73a&src=S)
+新元朗中心
 
 ### yuan long
 
@@ -193,6 +194,7 @@ Good traffic to Shenzhen
 大圍站(便)
 
 - [金獅花園](https://yahoo.real-estate.hk/properties/detail.php?ref=WP65258111&utm_source=yahoo&utm_medium=editorial&utm_content=2ndhand)
+  名城
 
 ## East way
 
@@ -204,6 +206,7 @@ Good traffic to Shenzhen
 
 ### Shatin
 
+沙田中心
 [好運中心 楓林閣](http://hk.centanet.com/findproperty/Home/Detail/?ID=1ea5877e-6109-460c-b2e9-0357a40183cd&src=S)
 [偉華中心](http://hk.centanet.com/findproperty/Home/Detail/?ID=f5dea71b-d4b9-4cbb-ad80-aae83ea2eb42&src=S)
 [佳寧大廈](http://hk.centanet.com/findproperty/zh-HK/Home/Detail/?ID=dd20c8de-ea61-4e7b-ad19-00d76d6f2ece&src=S)

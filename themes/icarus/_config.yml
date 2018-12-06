@@ -18,7 +18,7 @@ customize:
     avatar: css/images/avatar.png
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
     author: Jeff Chung
-    author_title: 有影响力的软件工程师,Not a fast learner but a deep learner.,Not a solution provider but a problem solver.
+    author_title: Auction and E-commerce IT Specialist / Amateur Calisthenics / Data and Food Lover,Not a fast learner but a deep learner.,Not a solution provider but a problem solver.
     location: 深圳，香港
 
   highlight: monokai
@@ -59,8 +59,8 @@ comment:
   facebook: # enter true to enable
   isso: # enter the domain name of your own comment isso server eg. comments.example.com
   changyan: # please fill in `appid` and `conf` to enable
-    ? appid
-    ? conf
+    appid:
+    conf:
   gitment:
     owner: #your github ID
     repo: #the repo to store comments
@@ -91,10 +91,10 @@ plugins:
 # Miscellaneous
 miscellaneous:
   open_graph: # see http://ogp.me
-    ? fb_app_id
-    ? fb_admins
-    ? twitter_id
-    ? google_plus
+    fb_app_id:
+    fb_admins:
+    twitter_id:
+    google_plus:
   links:
     www.vy.com.hk - 全香港最大的P2P葡萄酒网上销售平台: /2018/05/10/product/vy.html
     www.okibook.com - 全香港最优惠的自助餐预订平台: /2018/04/28/product/okibook.html

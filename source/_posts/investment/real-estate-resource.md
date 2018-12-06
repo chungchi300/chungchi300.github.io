@@ -6,6 +6,11 @@ category: Investment
 password: jeffchung
 ---
 
+1. Notify them we cannot login to their website
+2. App Submission Approval expedia
+
+Both device should be align in same angle and in front of(or a little bit aside) the auctioneer.
+
 # Reference
 
 - {% asset_link millionaire_real_estate_investor.pdf The Millionaire Real Estate Investor %}
@@ -41,9 +46,12 @@ The 一核
 
 ### interested in HK
 
-沙田中心
-希爾頓中心
-好運中心
+金富樓
+[沙田中心](https://www.midland.com.hk/estate/%E6%B2%99%E7%94%B0%E4%B8%AD%E5%BF%83-%E6%B2%99%E7%94%B0-E00316)
+[希爾頓中心](https://www.midland.com.hk/estate/%E5%B8%8C%E7%88%BE%E9%A0%93%E4%B8%AD%E5%BF%83-%E6%B2%99%E7%94%B0-E0046)
+[好運中心](https://www.midland.com.hk/estate/%E5%A5%BD%E9%81%8B%E4%B8%AD%E5%BF%83-%E6%B2%99%E7%94%B0-E00276)
+
+https://www.midland.com.hk/estate/%E6%B2%99%E7%94%B0%E4%B8%AD%E5%BF%83-%E6%B2%99%E7%94%B0-E00316
 
 富威花園
 

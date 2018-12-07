@@ -48,7 +48,7 @@ Wechat, Alipay and banking.
 
 ## Resale based on auction data
 
-We measure all auction detail which will be used for our resale purpose.
+We record all auction detail which will be used for our resale purpose.
 
 # Admin
 

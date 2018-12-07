@@ -8,8 +8,8 @@ category: management and cooperation
 
 # Pre-auction
 
-1. Help customer evaluate their wine and consigned to proper auction house(consignment source and Marketing)
-2. Help customer participate auction from anytime accurately(allow predation report of auction)
+1. Help customer evaluate their wine and consigned to proper auction house(consignment source and Marketing,wine estimator, charge to auction house)
+2. Help customer participate auction from anytime accurately(allow predation report of auction,charge to auction house)
 
 3. Increase online marketing source(Google Analytic better from URL)
 4. Ability to setting proper spending union for specific customer(co-operation with TransUnion) that give us ability to can trust system for new customer

@@ -13,6 +13,7 @@ category: management and cooperation
 
 3. Increase online marketing source(Google Analytic better from URL)
 4. Ability to setting proper spending union for specific customer(co-operation with TransUnion) that give us ability to can trust system for new customer
+5. Implement proper seo strategy
 
 # Auction
 

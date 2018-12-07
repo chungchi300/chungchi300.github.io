@@ -1,7 +1,7 @@
 ---
 title: Wine IT position
 date: 2018-09-04 10:20:15
-? tags
+tags:
 category: management and cooperation
 ---
 
@@ -44,7 +44,6 @@ Good manager focus on **potential value** and **space to grow**
 - Design how to use IT to increase existing operation efficiency
 - Resource evaluation and planing to show to manager how the **operation efficiency will increase** with **IT help**
 
-
 ## Ability to implement proper software development flow
 
 ### Knowledge
@@ -58,7 +57,7 @@ Good manager focus on **potential value** and **space to grow**
 
 - Set the goals of algorithm
 - Related message(e.g if you want to create price estimator of specific item,statistic is a must)
-- **Present** and **communicate** about the algorithm goal,design and implementation 
+- **Present** and **communicate** about the algorithm goal,design and implementation
 - Design verification of algorithm
 - Ability to **gather data** for algorithm
 

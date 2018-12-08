@@ -1,6 +1,6 @@
 ---
 title: >-
-  新世界四季御园
+  新世界四季御园2棟505
 date: 2018-08-24 10:28:21
 category: Investment
 password: jeffchung

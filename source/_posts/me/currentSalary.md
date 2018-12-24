@@ -34,3 +34,30 @@ https://www.rong360.com/calculator/wuxianyijin.html
 - {% asset_link robert-half.pdf robert half 2018 %}
 - {% asset_link robert-walters.pdf robert walters 2018 %}
 - [Canopy 2018](https://www.canopycareers.com/resources/salary-benchmark/software-development-salaries-hongkong-2018)
+
+## Robert Half
+
+70% has 15% budget increase
+
+3-4 month process
+
+New job
+Tech Skill
+Open source Code
+Algorithm Coding
+Java
+Agile
+
+Soft Skill
+
+Trilingual skill(USA,Hong Kong,China)
+Proactivity(3 project Proposal)(Important/Emergency)(Budgeting,Measurement)
+Presentation Skill(3 project Proposal)(Budgeting,Measurement)
+Adaptability(Chinese rule)
+
+IT security
+business tranformation
+Digitsation
+IT Management
+
+15-20%

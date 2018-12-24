@@ -31,6 +31,6 @@ https://www.rong360.com/calculator/wuxianyijin.html
 
 # Salary Reference
 
-[robert half 2018]({% asset_link robert-half.pdf robertHalf %})
-[robert walters 2018]({% asset_link robert-walters.pdf robertWalter %})
-[Canopy 2018](https://www.canopycareers.com/resources/salary-benchmark/software-development-salaries-hongkong-2018)
+- {% asset_link robert-half.pdf robert half 2018 %}
+- {% asset_link robert-walters.pdf robert walters 2018 %}
+- [Canopy 2018](https://www.canopycareers.com/resources/salary-benchmark/software-development-salaries-hongkong-2018)

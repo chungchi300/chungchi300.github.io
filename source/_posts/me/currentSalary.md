@@ -1,35 +1,36 @@
 ---
 layout: post
-title: 当前工资和期望薪金
+title: Current salary and expected salary
 category: 关于我
-? keywords
+keywords:
 date: 2018-04-28 16:09:02
 password: hihr
 ---
 
-# 当前工资
+# Current Salary
 
-24000(HKD) x 12 + 至少１個月奖金(去年我得到 30000HKD)
+30000(HKD) x 12 + at least one month bonus
 
-# 期望薪金
+# Expected Salary
 
-30000(HKD) x 13
+39000(HKD) x 13
 
-# 感兴趣的领域
+# Interested Domain
 
-医疗.电子商务.金融
+Medical.Business.Financial Service Company
 
-## HK TAX(Offer from e-commerce from HK):
+## HK TAX:
 
 https://www.ird.gov.hk/chi/ese/st_comp_2018_19/cstcfrm.htm
 
 30000 x 13 x 0.934 = 364140(HKD)
 
-## SZ TAX(Offer from government related company from SZ):
+## SZ TAX
 
 https://www.rong360.com/calculator/wuxianyijin.html
 
-(19000x5x0.81 + 19000x12x0.74)/0.87 = 282379(HKD)
+# Salary Reference
 
-Difference:
-(364140 - 282379)/364140 = 22.45%
+[robert half 2018]({% asset_link robert-half.pdf robertHalf %})
+[robert walters 2018]({% asset_link robert-walters.pdf robertWalter %})
+[Canopy 2018](https://www.canopycareers.com/resources/salary-benchmark/software-development-salaries-hongkong-2018)

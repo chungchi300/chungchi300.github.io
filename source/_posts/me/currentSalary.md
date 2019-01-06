@@ -38,26 +38,3 @@ https://www.rong360.com/calculator/wuxianyijin.html
 ## Robert Half
 
 70% has 15% budget increase
-
-3-4 month process
-
-New job
-Tech Skill
-Open source Code
-Algorithm Coding
-Java
-Agile
-
-Soft Skill
-
-Trilingual skill(USA,Hong Kong,China)
-Proactivity(3 project Proposal)(Important/Emergency)(Budgeting,Measurement)
-Presentation Skill(3 project Proposal)(Budgeting,Measurement)
-Adaptability(Chinese rule)
-
-IT security
-business tranformation
-Digitsation
-IT Management
-
-15-20%

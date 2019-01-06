@@ -32,3 +32,5 @@ Entire 500
 # Time Usage
 
 4 hour
+
+外滙掛鈎保本投資存款,更特息投資存款

@@ -20,14 +20,18 @@ No ICP registration need!
 
 ## Result
 
-| Hosting Provider | Bare metal | Web Hosting | Cloud | Direct China Route | Website                                                                        | Price  | Reliability | Developer Orientated |
-| ---------------- | ---------- | ----------- | ----- | ------------------ | ------------------------------------------------------------------------------ | ------ | ----------- | -------------------- |
-| Dataplus         | Yes        | Yes         | No    | Yes                | https://www.dataplugs.com/en/                                                  | Medium | High        | Medium               |
-| gigsgigscloud    | Yes        | Yes         | Yes   | Yes                | https://www.gigsgigscloud.com/hongkong-cloud-vps-kvm/                          | Low    | High        | High                 |
-| Layer Stack      | Yes        | Yes         | Yes   | Yes                | https://www.layerstack.com                                                     | Medium | Medium      | High                 |
-| Simcentric       | Yes        | No          | No    | Yes                | https://www.simcentric.com/tc/                                                 | Medium | Medium      | Low                  |
-| koddos           | Yes        | Yes         | No    | Yes                | http://tool.chinaz.com/speedtest/https://koddos.net/web-hosting-hong-kong.html | Medium | Medium      | Low                  |
-| udomain          | Yes        | Yes         | Yes   | Yes                | https://www.udomain.hk/tc/service/cloud-hosting/china                          | High   | Medium      | Low                  |
+| Hosting Provider | Bare metal | Web Hosting | Cloud | Direct China Route when host in HK | Website                                                                        | Price  | Reliability | Developer Orientated |
+| ---------------- | ---------- | ----------- | ----- | ---------------------------------- | ------------------------------------------------------------------------------ | ------ | ----------- | -------------------- |
+| Dataplus         | Yes        | Yes         | No    | Yes                                | https://www.dataplugs.com/en/                                                  | Medium | High        | Medium               |
+| gigsgigscloud    | Yes        | Yes         | Yes   | Yes                                | https://www.gigsgigscloud.com/hongkong-cloud-vps-kvm/                          | Low    | High        | High                 |
+| Layer Stack      | Yes        | Yes         | Yes   | Yes                                | https://www.layerstack.com                                                     | Medium | Medium      | High                 |
+| Simcentric       | Yes        | No          | No    | Yes                                | https://www.simcentric.com/tc/                                                 | Medium | Medium      | Low                  |
+| koddos           | Yes        | Yes         | No    | Yes                                | http://tool.chinaz.com/speedtest/https://koddos.net/web-hosting-hong-kong.html | Medium | Medium      | Low                  |
+| udomain          | Yes        | Yes         | Yes   | Yes                                | https://www.udomain.hk/tc/service/cloud-hosting/china                          | High   | Medium      | Low                  |
+| Tencent Cloud    | Yes        | Yes         | Yes   | ?                                  | https://intl.cloud.tencent.com/global-infrastructure                           | Medium | High        | High                 |
+| Ali Cloud        | Yes        | Yes         | Yes   | No                                 | https://www.alibabacloud.com/help/doc-detail/40654.htm                         | Medium | High        | High                 |
+| Azure            | Yes        | Yes         | Yes   | Partial,Only China Telecom         | https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations     | Medium | High        | High                 |
+| Amazon           | Yes        | Yes         | Yes   | Partial,Only China Telecom         | https://aws.amazon.com/                                                        | Medium | High        | High                 |
 
 ## Testing Tool
 

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>前端团队的技术成长 | Jeff Chung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="為什麼要有定位和反思什么样的团队能有 话语权？很简单，被依赖的团队。我目前带的团队服务公司许多业务，在大部分业务上前端比较有话语权，并不在于说那个业务或者整个公司有多么重视前端，而是通过长久顺畅的合作，让业务方了解和认知到这个前端的团队是不可替代的。 Astri 数字病理诊断前端的定位我们创造什么样的产品? 新一代病理诊断 Web 应用 对病人 新一代病理诊断 Web 应用意昧令病人随时随地知道自">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端团队的技术成长">
+<meta property="og:url" content="http://jeff-chung.com/2018/07/30/it-management/technical-growth-of-front-end-team.html">
+<meta property="og:site_name" content="Jeff Chung">
+<meta property="og:description" content="為什麼要有定位和反思什么样的团队能有 话语权？很简单，被依赖的团队。我目前带的团队服务公司许多业务，在大部分业务上前端比较有话语权，并不在于说那个业务或者整个公司有多么重视前端，而是通过长久顺畅的合作，让业务方了解和认知到这个前端的团队是不可替代的。 Astri 数字病理诊断前端的定位我们创造什么样的产品? 新一代病理诊断 Web 应用 对病人 新一代病理诊断 Web 应用意昧令病人随时随地知道自">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-06T04:24:36.302Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端团队的技术成长">
+<meta name="twitter:description" content="為什麼要有定位和反思什么样的团队能有 话语权？很简单，被依赖的团队。我目前带的团队服务公司许多业务，在大部分业务上前端比较有话语权，并不在于说那个业务或者整个公司有多么重视前端，而是通过长久顺畅的合作，让业务方了解和认知到这个前端的团队是不可替代的。 Astri 数字病理诊断前端的定位我们创造什么样的产品? 新一代病理诊断 Web 应用 对病人 新一代病理诊断 Web 应用意昧令病人随时随地知道自">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-69191655-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Jeff Chung</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">主页</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png">
+            <h2 id="name">Jeff Chung</h2>
+
+            <h3 id="title" style="    text-align: center;margin:22px 0px;">
+                    
+                
+                        Auction and E-commerce IT Specialist / Amateur Calisthenics / Data and Food Lover <br>
+                    
+                
+                        Not a fast learner but a deep learner. <br>
+                    
+                
+                        Not a solution provider but a problem solver. <br>
+                    
+                </h3>
+            <span id="location"><i class="fa fa-map-marker"></i>深圳，香港</span>
+            <!-- <a id="follow" target="_blank" href="">关注我</a> -->
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                49
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                9
+                <span>分类</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/chungchi300/" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="mailto:master-craftsman@jeff-chung.com" target="_blank" title="send" class="tooltip">
+                            <i class="fa fa-send"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.linkedin.com/in/jeff-chung-52a89956/" target="_blank" title="linkedin" class="tooltip">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-it-management/technical-growth-of-front-end-team" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 class="article-title" itemprop="name">
+            前端团队的技术成长
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/07/30/it-management/technical-growth-of-front-end-team.html">
+            <time datetime="2018-07-30T02:20:15.000Z" itemprop="datePublished">2018-07-30</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                <div id="toc" class="toc-article">
+                                                    <strong class="toc-title">
+                                                        文章目录
+                                                    </strong>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#為什麼要有定位和反思"><span class="toc-number">1.</span> <span class="toc-text">為什麼要有定位和反思</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Astri-数字病理诊断前端的定位"><span class="toc-number">2.</span> <span class="toc-text">Astri 数字病理诊断前端的定位</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对病人"><span class="toc-number">2.1.</span> <span class="toc-text">对病人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对诊断人員"><span class="toc-number">2.2.</span> <span class="toc-text">对诊断人員</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对企业主和-IT-部門"><span class="toc-number">2.3.</span> <span class="toc-text">对企业主和 IT 部門</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Astri-数字病理诊断前端的反思"><span class="toc-number">3.</span> <span class="toc-text">Astri 数字病理诊断前端的反思</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我能做-我想做-需要我-核心价值"><span class="toc-number">4.</span> <span class="toc-text">我能做 + 我想做 + 需要我 = 核心价值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#设计人机高效交互能力"><span class="toc-number">4.1.</span> <span class="toc-text">设计人机高效交互能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识"><span class="toc-number">4.1.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#管理和实现复杂前端逻辑的能力"><span class="toc-number">4.2.</span> <span class="toc-text">管理和实现复杂前端逻辑的能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-1"><span class="toc-number">4.2.1.</span> <span class="toc-text">知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工具"><span class="toc-number">4.2.2.</span> <span class="toc-text">工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快速、可重复和可靠的部署"><span class="toc-number">4.3.</span> <span class="toc-text">快速、可重复和可靠的部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-2"><span class="toc-number">4.3.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发高性能-Web-应用程序的能力"><span class="toc-number">4.4.</span> <span class="toc-text">开发高性能 Web 应用程序的能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-3"><span class="toc-number">4.4.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#领域知识"><span class="toc-number">4.5.</span> <span class="toc-text">领域知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#医疗"><span class="toc-number">4.5.1.</span> <span class="toc-text">医疗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件格式"><span class="toc-number">4.5.2.</span> <span class="toc-text">文件格式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我能做-我想做-不需要我-潜在价值"><span class="toc-number">5.</span> <span class="toc-text">我能做 + 我想做 + 不需要我 = 潜在价值</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我能做-我不想做-需要我-例行工作"><span class="toc-number">6.</span> <span class="toc-text">我能做 + 我不想做 + 需要我 = 例行工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我能做-我不想做-不需要我-backup"><span class="toc-number">7.</span> <span class="toc-text">我能做 + 我不想做 + 不需要我 = backup</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我不能做-我想做-需要我-成长空间"><span class="toc-number">8.</span> <span class="toc-text">我不能做 + 我想做 + 需要我 = 成长空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#人机交互操作反馈改进方法"><span class="toc-number">8.1.</span> <span class="toc-text">人机交互操作反馈改进方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-4"><span class="toc-number">8.1.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对于人机高效交互操作有循序渐进的学习曲线"><span class="toc-number">8.2.</span> <span class="toc-text">对于人机高效交互操作有循序渐进的学习曲线,</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-5"><span class="toc-number">8.2.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具有高网络效率和低时延的网络模型设计与实现能力"><span class="toc-number">8.3.</span> <span class="toc-text">具有高网络效率和低时延的网络模型设计与实现能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#問題"><span class="toc-number">8.3.1.</span> <span class="toc-text">問題</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-6"><span class="toc-number">8.3.2.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快速、可重复和可靠的部署-1"><span class="toc-number">8.4.</span> <span class="toc-text">快速、可重复和可靠的部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-7"><span class="toc-number">8.4.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高协作性的-Web-应用程序"><span class="toc-number">8.5.</span> <span class="toc-text">高协作性的 Web 应用程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-8"><span class="toc-number">8.5.1.</span> <span class="toc-text">知识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开发高性能-Web-应用程序的能力-1"><span class="toc-number">8.6.</span> <span class="toc-text">开发高性能 Web 应用程序的能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#知识-9"><span class="toc-number">8.6.1.</span> <span class="toc-text">知识</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我不能做-我想做-不需要我-自我追求"><span class="toc-number">9.</span> <span class="toc-text">我不能做 + 我想做 + 不需要我 = 自我追求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我不能做-我不想做-需要我-无法胜任"><span class="toc-number">10.</span> <span class="toc-text">我不能做 + 我不想做 + 需要我 = 无法胜任</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#我不能做-我不想做-不需要我-无需关注"><span class="toc-number">11.</span> <span class="toc-text">我不能做 + 我不想做 + 不需要我 = 无需关注</span></a></li></ol>
+                                                </div>
+                                                
+                                                    <h1 id="為什麼要有定位和反思"><a href="#為什麼要有定位和反思" class="headerlink" title="為什麼要有定位和反思"></a>為什麼要有定位和反思</h1><p>什么样的团队能有 <strong>话语权</strong>？很简单，<strong>被依赖的团队</strong>。我目前带的团队服务公司许多业务，在大部分业务上前端比较有话语权，并不在于说那个业务或者整个公司有多么重视前端，而是通过长久顺畅的合作，让业务方了解和认知到这个前端的团队是不可替代的。</p>
+<h1 id="Astri-数字病理诊断前端的定位"><a href="#Astri-数字病理诊断前端的定位" class="headerlink" title="Astri 数字病理诊断前端的定位"></a>Astri 数字病理诊断前端的定位</h1><p>我们创造什么样的产品?</p>
+<p><strong>新一代病理诊断 Web 应用</strong></p>
+<h2 id="对病人"><a href="#对病人" class="headerlink" title="对病人"></a>对病人</h2><ul>
+<li><strong>新一代病理诊断 Web 应用</strong>意昧令病人随时随地知道自己的病情</li>
+</ul>
+<h2 id="对诊断人員"><a href="#对诊断人員" class="headerlink" title="对诊断人員"></a>对诊断人員</h2><ul>
+<li><strong>高性能</strong> 和 <strong>人机高效交互</strong> 的病理诊断 <strong>Web 和移动 Web 应用</strong>,這令诊断人員 <strong>随时随地高效工作</strong>.</li>
+</ul>
+<h2 id="对企业主和-IT-部門"><a href="#对企业主和-IT-部門" class="headerlink" title="对企业主和 IT 部門"></a>对企业主和 IT 部門</h2><ul>
+<li>高 <strong>維護性(maintainability)</strong> = 低成本維護</li>
+<li>容器化(dockerize)部署 = <strong>快速、可重复和可靠的部署</strong> = 快速赶上市场变化</li>
+<li><strong>Web 和移动 Web 应用</strong> = <strong>高覆盖面</strong> + <strong>無安装成本</strong>　+　<strong>快速更新</strong></li>
+</ul>
+<h1 id="Astri-数字病理诊断前端的反思"><a href="#Astri-数字病理诊断前端的反思" class="headerlink" title="Astri 数字病理诊断前端的反思"></a>Astri 数字病理诊断前端的反思</h1><p>好的管理者会特别注意成员的 <strong>潜在价值</strong>和 <strong>成长空间</strong></p>
+<h1 id="我能做-我想做-需要我-核心价值"><a href="#我能做-我想做-需要我-核心价值" class="headerlink" title="我能做 + 我想做 + 需要我 = 核心价值"></a>我能做 + 我想做 + 需要我 = 核心价值</h1><h2 id="设计人机高效交互能力"><a href="#设计人机高效交互能力" class="headerlink" title="设计人机高效交互能力"></a>设计人机高效交互能力</h2><h3 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>人机界面设计</li>
+<li>学习模型(心流,刻意训练,学习密度,快学习记忆和回忆,费曼方法)</li>
+</ul>
+<h2 id="管理和实现复杂前端逻辑的能力"><a href="#管理和实现复杂前端逻辑的能力" class="headerlink" title="管理和实现复杂前端逻辑的能力"></a>管理和实现复杂前端逻辑的能力</h2><h3 id="知识-1"><a href="#知识-1" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>定义问题和解决问题的能力</li>
+<li>深入理解程序设计（原理、复杂性模型、数据结构和算法）</li>
+<li>严格编码约定(airbnb)</li>
+<li>测试驱动开发 TDD</li>
+<li>开发人员之间共享知识的文化</li>
+<li>愿意选择社区良好解决方案</li>
+</ul>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul>
+<li>Jest</li>
+<li>React</li>
+<li>Redux</li>
+<li>Prettier</li>
+<li>Swagger</li>
+</ul>
+<h2 id="快速、可重复和可靠的部署"><a href="#快速、可重复和可靠的部署" class="headerlink" title="快速、可重复和可靠的部署"></a>快速、可重复和可靠的部署</h2><h3 id="知识-2"><a href="#知识-2" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>容器化(dockerize)部署</li>
+<li>AWS</li>
+</ul>
+<h2 id="开发高性能-Web-应用程序的能力"><a href="#开发高性能-Web-应用程序的能力" class="headerlink" title="开发高性能 Web 应用程序的能力"></a>开发高性能 Web 应用程序的能力</h2><h3 id="知识-3"><a href="#知识-3" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>深入理解 Web 渲染模型</li>
+<li>深入理解(React) 渲染模型和哲学</li>
+<li>深入理解浏览器事件模型&amp; 事件委派</li>
+<li>深入理解 HTTP 协议</li>
+<li><a href="/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html">深入理解 Web Worker</a></li>
+</ul>
+<h2 id="领域知识"><a href="#领域知识" class="headerlink" title="领域知识"></a>领域知识</h2><h3 id="医疗"><a href="#医疗" class="headerlink" title="医疗"></a>医疗</h3><ul>
+<li>病理学</li>
+<li>MRI</li>
+</ul>
+<h3 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h3><ul>
+<li>DZM</li>
+<li>DICOM</li>
+<li>NII</li>
+</ul>
+<h1 id="我能做-我想做-不需要我-潜在价值"><a href="#我能做-我想做-不需要我-潜在价值" class="headerlink" title="我能做 + 我想做 + 不需要我 = 潜在价值"></a>我能做 + 我想做 + 不需要我 = 潜在价值</h1><h1 id="我能做-我不想做-需要我-例行工作"><a href="#我能做-我不想做-需要我-例行工作" class="headerlink" title="我能做 + 我不想做 + 需要我 = 例行工作"></a>我能做 + 我不想做 + 需要我 = 例行工作</h1><h1 id="我能做-我不想做-不需要我-backup"><a href="#我能做-我不想做-不需要我-backup" class="headerlink" title="我能做 + 我不想做 + 不需要我 = backup"></a>我能做 + 我不想做 + 不需要我 = backup</h1><h1 id="我不能做-我想做-需要我-成长空间"><a href="#我不能做-我想做-需要我-成长空间" class="headerlink" title="我不能做 + 我想做 + 需要我 = 成长空间"></a>我不能做 + 我想做 + 需要我 = 成长空间</h1><h2 id="人机交互操作反馈改进方法"><a href="#人机交互操作反馈改进方法" class="headerlink" title="人机交互操作反馈改进方法"></a>人机交互操作反馈改进方法</h2><h3 id="知识-4"><a href="#知识-4" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>A/B Test</li>
+<li>Analytic</li>
+</ul>
+<h2 id="对于人机高效交互操作有循序渐进的学习曲线"><a href="#对于人机高效交互操作有循序渐进的学习曲线" class="headerlink" title="对于人机高效交互操作有循序渐进的学习曲线,"></a>对于人机高效交互操作有循序渐进的学习曲线,</h2><h3 id="知识-5"><a href="#知识-5" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>学习曲线</li>
+</ul>
+<h2 id="具有高网络效率和低时延的网络模型设计与实现能力"><a href="#具有高网络效率和低时延的网络模型设计与实现能力" class="headerlink" title="具有高网络效率和低时延的网络模型设计与实现能力"></a>具有高网络效率和低时延的网络模型设计与实现能力</h2><h3 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h3><ul>
+<li>Over-fetching (Overall entity)</li>
+<li>Too many Round-trip (Different end point)</li>
+</ul>
+<h3 id="知识-6"><a href="#知识-6" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>GraphQL &amp; Rest</li>
+<li>Pagination</li>
+<li>Filtering</li>
+</ul>
+<h2 id="快速、可重复和可靠的部署-1"><a href="#快速、可重复和可靠的部署-1" class="headerlink" title="快速、可重复和可靠的部署"></a>快速、可重复和可靠的部署</h2><h3 id="知识-7"><a href="#知识-7" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>CICD</li>
+</ul>
+<h2 id="高协作性的-Web-应用程序"><a href="#高协作性的-Web-应用程序" class="headerlink" title="高协作性的 Web 应用程序"></a>高协作性的 Web 应用程序</h2><h3 id="知识-8"><a href="#知识-8" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>Web socket</li>
+</ul>
+<h2 id="开发高性能-Web-应用程序的能力-1"><a href="#开发高性能-Web-应用程序的能力-1" class="headerlink" title="开发高性能 Web 应用程序的能力"></a>开发高性能 Web 应用程序的能力</h2><h3 id="知识-9"><a href="#知识-9" class="headerlink" title="知识"></a>知识</h3><ul>
+<li>Service worker</li>
+</ul>
+<h1 id="我不能做-我想做-不需要我-自我追求"><a href="#我不能做-我想做-不需要我-自我追求" class="headerlink" title="我不能做 + 我想做 + 不需要我 = 自我追求"></a>我不能做 + 我想做 + 不需要我 = 自我追求</h1><h1 id="我不能做-我不想做-需要我-无法胜任"><a href="#我不能做-我不想做-需要我-无法胜任" class="headerlink" title="我不能做 + 我不想做 + 需要我 = 无法胜任"></a>我不能做 + 我不想做 + 需要我 = 无法胜任</h1><h1 id="我不能做-我不想做-不需要我-无需关注"><a href="#我不能做-我不想做-不需要我-无需关注" class="headerlink" title="我不能做 + 我不想做 + 不需要我 = 无需关注"></a>我不能做 + 我不想做 + 不需要我 = 无需关注</h1>
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/07/30/it-management/technical-growth-of-front-end-team.html" data-id="cjvbvth0k0059ofs4ayt0e4qe" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/07/30/it-management/technical-growth-of-front-end-team.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/07/30/it-management/technical-growth-of-front-end-team.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Program design guidance and code standard in a React project for intermediate developer for effective development
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2018/06/27/program-design/efficiency-and-high-readability-transfer-protocol.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Efficient and high readability transfer protocol</div>
+        </a>
+    
+</nav>
+
+
+            
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+        </section>
+            
+                
+    <aside id="sidebar">
+        
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">作品墙</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="/2018/05/10/product/vy.html">www.vy.com.hk - 全香港最大的P2P葡萄酒网上销售平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/04/28/product/okibook.html">www.okibook.com - 全香港最优惠的自助餐预订平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/09/product/adshare.html">www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/08/product/kingmed.html">Kingmed - 中国龙头第三方医学检验数字化病理诊断工具</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+                
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">
+            开源工具
+        </h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://github.com/chungchi300/eaglet">
+                            Eaglet - 最简單直接的 Koa2 的脚手架
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/min-doc">
+                            Min-doc - hackable文档生成工具
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-file-upload">
+                            Simple File Upload - 文件上传控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-help-modal">
+                            Simple Help Modal - Modal控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/life-hack">
+                            Life Hack - Nodejs 個人脚本
+                        </a>
+                    </li>
+                    
+            </ul>
+        </div>
+    </div>
+    
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+        </div>
+    </div>
+
+                
+                    <div id="toTop" class="fa fa-angle-up"></div>
+    </aside>
+    
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy;
+            2019
+                Jeff Chung
+
+                    <br>
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup {
+
+                            clear: left;
+                            font: 14px Helvetica, Arial, sans-serif;
+                        }
+
+                        #mce-EMAIL {
+                            /* width: 17%; */
+                            /* display: none !important; */
+                        }
+
+                        #mc_embed_signup {
+                            width: 20%;
+                        }
+
+                        #mc_embed_signup div.mce_inline_error {
+                            display: none !important;
+                        }
+
+                        #mc_embed_signup .button {
+                            background-color: #38b7ea
+                        }
+
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form action="https://jeffchung.us15.list-manage.com/subscribe/post?u=518de96558d94eaa0a8b2e4a1&amp;id=5b2a0833f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h2>每月电子通讯 </h2>
+                                <div class="indicates-required">
+                                    <span class="asterisk">*</span> 必要的
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">您的电邮地址
+                                        <span class="asterisk">*</span>
+                                    </label>
+                                    <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_518de96558d94eaa0a8b2e4a1_5b2a0833f9" tabindex="-1" value>
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                    <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                    <!--End mc_embed_signup-->
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://jeff-chung.com/2018/07/30/it-management/technical-growth-of-front-end-team.html';
+        
+        this.page.identifier = 'it-management/technical-growth-of-front-end-team';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'jeffchung' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

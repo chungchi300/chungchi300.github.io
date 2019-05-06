@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>Typescript &amp; Flow in React&amp;Redux SPA Development | Jeff Chung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="PurposeIntroduce type system to our application and library project.  discover and remove type error in compile time Increase the ease of refactoring help developers to use function easily as the proj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typescript &amp; Flow in React&amp;Redux SPA Development">
+<meta property="og:url" content="http://jeff-chung.com/2018/05/02/front-end/type-system-javascript.html">
+<meta property="og:site_name" content="Jeff Chung">
+<meta property="og:description" content="PurposeIntroduce type system to our application and library project.  discover and remove type error in compile time Increase the ease of refactoring help developers to use function easily as the proj">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-06T04:24:35.488Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Typescript &amp; Flow in React&amp;Redux SPA Development">
+<meta name="twitter:description" content="PurposeIntroduce type system to our application and library project.  discover and remove type error in compile time Increase the ease of refactoring help developers to use function easily as the proj">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-69191655-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Jeff Chung</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">主页</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png">
+            <h2 id="name">Jeff Chung</h2>
+
+            <h3 id="title" style="    text-align: center;margin:22px 0px;">
+                    
+                
+                        Auction and E-commerce IT Specialist / Amateur Calisthenics / Data and Food Lover <br>
+                    
+                
+                        Not a fast learner but a deep learner. <br>
+                    
+                
+                        Not a solution provider but a problem solver. <br>
+                    
+                </h3>
+            <span id="location"><i class="fa fa-map-marker"></i>深圳，香港</span>
+            <!-- <a id="follow" target="_blank" href="">关注我</a> -->
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                49
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                9
+                <span>分类</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/chungchi300/" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="mailto:master-craftsman@jeff-chung.com" target="_blank" title="send" class="tooltip">
+                            <i class="fa fa-send"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.linkedin.com/in/jeff-chung-52a89956/" target="_blank" title="linkedin" class="tooltip">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-front-end/type-system-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 class="article-title" itemprop="name">
+            Typescript &amp; Flow in React&amp;Redux SPA Development
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/05/02/front-end/type-system-javascript.html">
+            <time datetime="2018-05-02T02:20:15.000Z" itemprop="datePublished">2018-05-02</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                <div id="toc" class="toc-article">
+                                                    <strong class="toc-title">
+                                                        文章目录
+                                                    </strong>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Purpose"><span class="toc-number">1.</span> <span class="toc-text">Purpose</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rapidly"><span class="toc-number">2.</span> <span class="toc-text">Rapidly</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Explore"><span class="toc-number">3.</span> <span class="toc-text">Explore</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Compare"><span class="toc-number">3.1.</span> <span class="toc-text">Compare</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Knowledge-about-type-system"><span class="toc-number">3.2.</span> <span class="toc-text">Knowledge about type system</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Typescript-Compiler"><span class="toc-number">3.3.</span> <span class="toc-text">Typescript Compiler</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Option"><span class="toc-number">3.3.1.</span> <span class="toc-text">Option</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Path-mapping-when-you-use-absolute-path"><span class="toc-number">3.3.2.</span> <span class="toc-text">Path mapping when you use absolute path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug-skill"><span class="toc-number">3.3.3.</span> <span class="toc-text">Debug skill</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Absolute-path-problem-when-export-library"><span class="toc-number">3.4.</span> <span class="toc-text">Absolute path problem when export library</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fact"><span class="toc-number">3.4.1.</span> <span class="toc-text">Fact</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Compile-source-code-solution"><span class="toc-number">3.4.2.</span> <span class="toc-text">Compile source code solution</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webpack-solution-for-absolute-gt-relative-when-exporting"><span class="toc-number">3.4.3.</span> <span class="toc-text">Webpack solution for absolute=&gt;relative when exporting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Babel-solution-for-absolute-gt-relative-when-exporting"><span class="toc-number">3.4.4.</span> <span class="toc-text">Babel solution for absolute=&gt;relative when exporting</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#React-Redux-Typescript-Coding-Guide"><span class="toc-number">3.5.</span> <span class="toc-text">React Redux Typescript Coding Guide</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Use-library-with-babel-RegeneratorRuntime-when-your-build-tool-is-typescript"><span class="toc-number">3.6.</span> <span class="toc-text">Use library with babel RegeneratorRuntime when your build tool is typescript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Use-create-react-app-ts-to-create-library-amp-application"><span class="toc-number">3.7.</span> <span class="toc-text">Use create-react-app-ts to create library&amp;application</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-Library-Reference"><span class="toc-number">3.8.</span> <span class="toc-text">Create Library Reference</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Existing-Famous-library-using-typescript"><span class="toc-number">3.9.</span> <span class="toc-text">Existing Famous library using typescript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jest"><span class="toc-number">3.10.</span> <span class="toc-text">Jest</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Feedback"><span class="toc-number">4.</span> <span class="toc-text">Feedback</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Typescript"><span class="toc-number">4.1.</span> <span class="toc-text">Typescript</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution-for-different-issue"><span class="toc-number">4.2.</span> <span class="toc-text">Solution for different issue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Absolute-path-problem-when-export-library-1"><span class="toc-number">4.2.1.</span> <span class="toc-text">Absolute path problem when export library</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Coding-Guide"><span class="toc-number">4.2.2.</span> <span class="toc-text">Coding Guide</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Test"><span class="toc-number">4.2.3.</span> <span class="toc-text">Test</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Eliminate"><span class="toc-number">5.</span> <span class="toc-text">Eliminate</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Record"><span class="toc-number">6.</span> <span class="toc-text">Record</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-Advantage"><span class="toc-number">6.1.</span> <span class="toc-text">Main-Advantage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extra-Benefit"><span class="toc-number">6.2.</span> <span class="toc-text">Extra Benefit</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#General"><span class="toc-number">6.2.1.</span> <span class="toc-text">General</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Specific"><span class="toc-number">6.2.2.</span> <span class="toc-text">Specific</span></a></li></ol></li></ol></li></ol>
+                                                </div>
+                                                
+                                                    <h1 id="Purpose"><a href="#Purpose" class="headerlink" title="Purpose"></a>Purpose</h1><p>Introduce type system to our <strong>application</strong> and <strong>library</strong> project.</p>
+<ul>
+<li>discover and remove type error in <strong>compile time</strong></li>
+<li>Increase the <strong>ease of refactoring</strong></li>
+<li>help developers to <strong>use function easily</strong> as the <strong>project size/complexity increase</strong></li>
+</ul>
+<h1 id="Rapidly"><a href="#Rapidly" class="headerlink" title="Rapidly"></a>Rapidly</h1><p><strong>Develop new empty project as explorer tool</strong></p>
+<ul>
+<li>One application that have type system</li>
+<li>One library that have type system and can be used by application we develop before</li>
+</ul>
+<p>Both of them need to support type in</p>
+<ul>
+<li>Helper</li>
+<li>React</li>
+<li>Redux</li>
+<li>Styled-Component</li>
+<li>Works Well With Jest</li>
+<li>Absolute Path</li>
+</ul>
+<h1 id="Explore"><a href="#Explore" class="headerlink" title="Explore"></a>Explore</h1><p>Candidates:</p>
+<ol>
+<li>Typescript</li>
+<li>Flow</li>
+</ol>
+<h2 id="Compare"><a href="#Compare" class="headerlink" title="Compare"></a>Compare</h2><ul>
+<li><a href="https://github.com/niieani/typescript-vs-flowtype" target="_blank" rel="noopener">Typscript-vs-flow</a> is a good <strong>general compare</strong></li>
+<li><a href="https://medium.com/@thejameskyle/type-systems-structural-vs-nominal-typing-explained-56511dd969f4" target="_blank" rel="noopener">Type Systems: Structural vs. Nominal typing explained</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flow</th>
+<th>Typescript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Author</td>
+<td>Facebook</td>
+<td>Typescript</td>
+</tr>
+<tr>
+<td>IDE &amp; Language server</td>
+<td>Atom(Slow&amp;High Memory consumption)</td>
+<td>VS studio code(Fast)</td>
+</tr>
+<tr>
+<td>Build tool</td>
+<td>Babel</td>
+<td>Typescript</td>
+</tr>
+<tr>
+<td>Start tool</td>
+<td>natively built in at <strong>Create React App</strong></td>
+<td>Need to use <strong>Create React App Typescript</strong></td>
+</tr>
+<tr>
+<td>Ecosystem</td>
+<td><a href="https://github.com/flowtype/flow-typed" target="_blank" rel="noopener">Flow Type</a> - Medium Size</td>
+<td><a href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types" target="_blank" rel="noopener">Typescript</a> - Large Size</td>
+</tr>
+<tr>
+<td>Application Example</td>
+<td><a href="https://github.com/flowtype/flow-typed" target="_blank" rel="noopener">Create </a></td>
+<td></td>
+</tr>
+<tr>
+<td>Good Library Example</td>
+<td><a href="https://github.com/flowtype/flow-typed" target="_blank" rel="noopener">Flow Type</a> - Medium</td>
+<td></td>
+</tr>
+<tr>
+<td>Basic Syntax</td>
+<td>equal</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>High Level Concept</td>
+<td><a href="https://flow.org/en/docs/lang/nominal-structural/" target="_blank" rel="noopener">structural typing for objects and functions, nominal typing for classes</a></td>
+<td><a href="https://basarat.gitbooks.io/typescript/docs/tips/nominalTyping.html" target="_blank" rel="noopener">Mostly Structural</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Knowledge-about-type-system"><a href="#Knowledge-about-type-system" class="headerlink" title="Knowledge about type system"></a>Knowledge about type system</h2><p><a href="https://en.wikipedia.org/wiki/Nominal_type_system" target="_blank" rel="noopener">Nominal Type</a><br><a href="https://en.wikipedia.org/wiki/Structural_type_system" target="_blank" rel="noopener">Structural Type</a></p>
+<h2 id="Typescript-Compiler"><a href="#Typescript-Compiler" class="headerlink" title="Typescript Compiler"></a>Typescript Compiler</h2><h3 id="Option"><a href="#Option" class="headerlink" title="Option"></a>Option</h3><p><a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html" target="_blank" rel="noopener">https://www.typescriptlang.org/docs/handbook/compiler-options.html</a></p>
+<h3 id="Path-mapping-when-you-use-absolute-path"><a href="#Path-mapping-when-you-use-absolute-path" class="headerlink" title="Path mapping when you use absolute path"></a>Path mapping when you use absolute path</h3><p><a href="https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping" target="_blank" rel="noopener">https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping</a></p>
+<h3 id="Debug-skill"><a href="#Debug-skill" class="headerlink" title="Debug skill"></a>Debug skill</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx tsc --traceResolution | code -</span><br></pre></td></tr></table></figure>
+<h2 id="Absolute-path-problem-when-export-library"><a href="#Absolute-path-problem-when-export-library" class="headerlink" title="Absolute path problem when export library"></a>Absolute path problem when export library</h2><h3 id="Fact"><a href="#Fact" class="headerlink" title="Fact"></a>Fact</h3><p>typescript module resolution don’t rewrite path when export</p>
+<h3 id="Compile-source-code-solution"><a href="#Compile-source-code-solution" class="headerlink" title="Compile source code solution"></a>Compile source code solution</h3><ul>
+<li><a href="https://www.npmjs.com/package/@coldmind/tspath" target="_blank" rel="noopener">https://www.npmjs.com/package/@coldmind/tspath</a></li>
+<li><a href="https://www.npmjs.com/package/convert-root-import" target="_blank" rel="noopener">https://www.npmjs.com/package/convert-root-import</a></li>
+</ul>
+<h3 id="Webpack-solution-for-absolute-gt-relative-when-exporting"><a href="#Webpack-solution-for-absolute-gt-relative-when-exporting" class="headerlink" title="Webpack solution for absolute=&gt;relative when exporting"></a>Webpack solution for absolute=&gt;relative when exporting</h3><p><a href="https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/" target="_blank" rel="noopener">https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/</a></p>
+<h3 id="Babel-solution-for-absolute-gt-relative-when-exporting"><a href="#Babel-solution-for-absolute-gt-relative-when-exporting" class="headerlink" title="Babel solution for absolute=&gt;relative when exporting"></a>Babel solution for absolute=&gt;relative when exporting</h3><p><a href="https://github.com/entwicklerstube/babel-plugin-root-import" target="_blank" rel="noopener">https://github.com/entwicklerstube/babel-plugin-root-import</a></p>
+<h2 id="React-Redux-Typescript-Coding-Guide"><a href="#React-Redux-Typescript-Coding-Guide" class="headerlink" title="React Redux Typescript Coding Guide"></a>React Redux Typescript Coding Guide</h2><p><a href="https://github.com/piotrwitek/react-redux-typescript-guide" target="_blank" rel="noopener">https://github.com/piotrwitek/react-redux-typescript-guide</a></p>
+<h2 id="Use-library-with-babel-RegeneratorRuntime-when-your-build-tool-is-typescript"><a href="#Use-library-with-babel-RegeneratorRuntime-when-your-build-tool-is-typescript" class="headerlink" title="Use library with babel RegeneratorRuntime when your build tool is typescript"></a>Use library with babel RegeneratorRuntime when your build tool is typescript</h2><p>Project like <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:agraboso/redux-api-middleware.git regeneratorRuntime as babel async,we need to rebuild by typescript version</p>
+<p><a href="https://github.com/wmonk/create-react-app-typescript/issues/88" target="_blank" rel="noopener">https://github.com/wmonk/create-react-app-typescript/issues/88</a></p>
+<h2 id="Use-create-react-app-ts-to-create-library-amp-application"><a href="#Use-create-react-app-ts-to-create-library-amp-application" class="headerlink" title="Use create-react-app-ts to create library&amp;application"></a>Use create-react-app-ts to create library&amp;application</h2><p><a href="https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87" target="_blank" rel="noopener">https://medium.com/@stokedbits/adventures-in-creating-a-react-component-library-with-create-react-app-and-typescript-26d1116a7d87</a></p>
+<h2 id="Create-Library-Reference"><a href="#Create-Library-Reference" class="headerlink" title="Create Library Reference"></a>Create Library Reference</h2><p><a href="https://github.com/DimiMikadze/create-react-library" target="_blank" rel="noopener">https://github.com/DimiMikadze/create-react-library</a></p>
+<p><a href="https://github.com/alexjoverm/typescript-library-starter" target="_blank" rel="noopener">https://github.com/alexjoverm/typescript-library-starter</a></p>
+<h2 id="Existing-Famous-library-using-typescript"><a href="#Existing-Famous-library-using-typescript" class="headerlink" title="Existing Famous library using typescript"></a>Existing Famous library using typescript</h2><p><a href="https://github.com/ant-design/ant-design" target="_blank" rel="noopener">https://github.com/ant-design/ant-design</a></p>
+<h2 id="Jest"><a href="#Jest" class="headerlink" title="Jest"></a>Jest</h2><ul>
+<li>Install ts-jest to compile .ts file</li>
+<li>Tell Jest for module resolution like this in package.json</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&quot;jest&quot;: &#123;</span><br><span class="line">   &quot;transform&quot;: &#123;</span><br><span class="line">     &quot;^.+\\.tsx?$&quot;: &quot;ts-jest&quot;</span><br><span class="line">   &#125;,</span><br><span class="line">   &quot;testRegex&quot;: &quot;(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$&quot;,</span><br><span class="line">   &quot;moduleDirectories&quot;: [</span><br><span class="line">     &quot;src&quot;,</span><br><span class="line">     &quot;node_modules&quot;</span><br><span class="line">   ],</span><br><span class="line">   &quot;moduleFileExtensions&quot;: [</span><br><span class="line">     &quot;ts&quot;,</span><br><span class="line">     &quot;tsx&quot;,</span><br><span class="line">     &quot;js&quot;,</span><br><span class="line">     &quot;jsx&quot;,</span><br><span class="line">     &quot;json&quot;,</span><br><span class="line">     &quot;node&quot;</span><br><span class="line">   ]</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h1><h2 id="Typescript"><a href="#Typescript" class="headerlink" title="Typescript"></a>Typescript</h2><p>Build application using typescript - Done<br>Build library using typescript - Done<br>resolve absolute path issue with typescript lib - Done</p>
+<h2 id="Solution-for-different-issue"><a href="#Solution-for-different-issue" class="headerlink" title="Solution for different issue"></a>Solution for different issue</h2><h3 id="Absolute-path-problem-when-export-library-1"><a href="#Absolute-path-problem-when-export-library-1" class="headerlink" title="Absolute path problem when export library"></a>Absolute path problem when export library</h3><p><strong>Compile source code solution</strong> is adopted for no configuration for the library user.</p>
+<h3 id="Coding-Guide"><a href="#Coding-Guide" class="headerlink" title="Coding Guide"></a>Coding Guide</h3><p><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">Airbnb</a><br><a href="https://github.com/piotrwitek/react-redux-typescript-guide" target="_blank" rel="noopener">React Redux Typescript guide</a></p>
+<p>is adopted</p>
+<h3 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h3><p>ts-jest is adopted for running .test.ts file</p>
+<h1 id="Eliminate"><a href="#Eliminate" class="headerlink" title="Eliminate"></a>Eliminate</h1><p>Flow</p>
+<ul>
+<li>very slow ide performance when using atom</li>
+<li>very slow/buggy language server resolution</li>
+</ul>
+<h1 id="Record"><a href="#Record" class="headerlink" title="Record"></a>Record</h1><p>Successfully substitute our stack to <strong>typescript</strong> for project that have <strong>large scale</strong></p>
+<h2 id="Main-Advantage"><a href="#Main-Advantage" class="headerlink" title="Main-Advantage"></a>Main-Advantage</h2><ul>
+<li>Simplified build tool chain for lib &amp; app</li>
+</ul>
+<h2 id="Extra-Benefit"><a href="#Extra-Benefit" class="headerlink" title="Extra Benefit"></a>Extra Benefit</h2><h3 id="General"><a href="#General" class="headerlink" title="General"></a>General</h3><ul>
+<li>VSCode support make <strong>Unit Test &amp;&amp; Refactor</strong> Faster</li>
+<li>API generation</li>
+<li>styleguide make <strong>Dummy Component Development</strong> Faster</li>
+<li>Function(<strong>jsx nested called</strong>) calling <strong>faster due to auto complete</strong></li>
+<li>Discover type error in <strong>compile type</strong></li>
+</ul>
+<h3 id="Specific"><a href="#Specific" class="headerlink" title="Specific"></a>Specific</h3><ul>
+<li>Library generated in Common Js format instead of <strong>big umd file</strong> so significantly increase <strong>Readability of library</strong></li>
+<li>Able to generate test coverage</li>
+<li>Able to generate style guide</li>
+<li>Remove export file that reduce code redundancy(because the user is directly utilize the code)</li>
+</ul>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/05/02/front-end/type-system-javascript.html" data-id="cjvbvth0t005tofs41rez2hw0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/05/02/front-end/type-system-javascript.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/05/02/front-end/type-system-javascript.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Highly complex network,media,calculation front end architecture
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2018/04/30/code-review/general-review.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Code Review 做法和好处</div>
+        </a>
+    
+</nav>
+
+
+            
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+        </section>
+            
+                
+    <aside id="sidebar">
+        
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">作品墙</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="/2018/05/10/product/vy.html">www.vy.com.hk - 全香港最大的P2P葡萄酒网上销售平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/04/28/product/okibook.html">www.okibook.com - 全香港最优惠的自助餐预订平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/09/product/adshare.html">www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/08/product/kingmed.html">Kingmed - 中国龙头第三方医学检验数字化病理诊断工具</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+                
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">
+            开源工具
+        </h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://github.com/chungchi300/eaglet">
+                            Eaglet - 最简單直接的 Koa2 的脚手架
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/min-doc">
+                            Min-doc - hackable文档生成工具
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-file-upload">
+                            Simple File Upload - 文件上传控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-help-modal">
+                            Simple Help Modal - Modal控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/life-hack">
+                            Life Hack - Nodejs 個人脚本
+                        </a>
+                    </li>
+                    
+            </ul>
+        </div>
+    </div>
+    
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+        </div>
+    </div>
+
+                
+                    <div id="toTop" class="fa fa-angle-up"></div>
+    </aside>
+    
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy;
+            2019
+                Jeff Chung
+
+                    <br>
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup {
+
+                            clear: left;
+                            font: 14px Helvetica, Arial, sans-serif;
+                        }
+
+                        #mce-EMAIL {
+                            /* width: 17%; */
+                            /* display: none !important; */
+                        }
+
+                        #mc_embed_signup {
+                            width: 20%;
+                        }
+
+                        #mc_embed_signup div.mce_inline_error {
+                            display: none !important;
+                        }
+
+                        #mc_embed_signup .button {
+                            background-color: #38b7ea
+                        }
+
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form action="https://jeffchung.us15.list-manage.com/subscribe/post?u=518de96558d94eaa0a8b2e4a1&amp;id=5b2a0833f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h2>每月电子通讯 </h2>
+                                <div class="indicates-required">
+                                    <span class="asterisk">*</span> 必要的
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">您的电邮地址
+                                        <span class="asterisk">*</span>
+                                    </label>
+                                    <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_518de96558d94eaa0a8b2e4a1_5b2a0833f9" tabindex="-1" value>
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                    <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                    <!--End mc_embed_signup-->
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://jeff-chung.com/2018/05/02/front-end/type-system-javascript.html';
+        
+        this.page.identifier = 'front-end/type-system-javascript';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'jeffchung' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

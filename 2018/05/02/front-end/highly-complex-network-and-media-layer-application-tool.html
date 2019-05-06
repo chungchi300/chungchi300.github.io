@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>Highly complex network,media,calculation front end architecture | Jeff Chung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Purpose:Find architecture that have NecessaryStorage  Unlimited storage  Network  Custom Connection pool Socket Connection  Media&amp;amp;Graphical Control  Ability to control each pixel(custom render eng">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Highly complex network,media,calculation front end architecture">
+<meta property="og:url" content="http://jeff-chung.com/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html">
+<meta property="og:site_name" content="Jeff Chung">
+<meta property="og:description" content="Purpose:Find architecture that have NecessaryStorage  Unlimited storage  Network  Custom Connection pool Socket Connection  Media&amp;amp;Graphical Control  Ability to control each pixel(custom render eng">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-06T04:24:35.476Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Highly complex network,media,calculation front end architecture">
+<meta name="twitter:description" content="Purpose:Find architecture that have NecessaryStorage  Unlimited storage  Network  Custom Connection pool Socket Connection  Media&amp;amp;Graphical Control  Ability to control each pixel(custom render eng">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-69191655-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Jeff Chung</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">主页</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/2018/04/28/me/to-recruiter.html">你好，招聘人员!</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png">
+            <h2 id="name">Jeff Chung</h2>
+
+            <h3 id="title" style="    text-align: center;margin:22px 0px;">
+                    
+                
+                        Auction and E-commerce IT Specialist / Amateur Calisthenics / Data and Food Lover <br>
+                    
+                
+                        Not a fast learner but a deep learner. <br>
+                    
+                
+                        Not a solution provider but a problem solver. <br>
+                    
+                </h3>
+            <span id="location"><i class="fa fa-map-marker"></i>深圳，香港</span>
+            <!-- <a id="follow" target="_blank" href="">关注我</a> -->
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                49
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                9
+                <span>分类</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/chungchi300/" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="mailto:master-craftsman@jeff-chung.com" target="_blank" title="send" class="tooltip">
+                            <i class="fa fa-send"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.linkedin.com/in/jeff-chung-52a89956/" target="_blank" title="linkedin" class="tooltip">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-front-end/highly-complex-network-and-media-layer-application-tool" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 class="article-title" itemprop="name">
+            Highly complex network,media,calculation front end architecture
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html">
+            <time datetime="2018-05-02T02:20:15.000Z" itemprop="datePublished">2018-05-02</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                <div id="toc" class="toc-article">
+                                                    <strong class="toc-title">
+                                                        文章目录
+                                                    </strong>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Purpose"><span class="toc-number">1.</span> <span class="toc-text">Purpose:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Necessary"><span class="toc-number">1.1.</span> <span class="toc-text">Necessary</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Bonus"><span class="toc-number">1.2.</span> <span class="toc-text">Bonus</span></a></li></ol></li></ol>
+                                                </div>
+                                                
+                                                    <h1 id="Purpose"><a href="#Purpose" class="headerlink" title="Purpose:"></a>Purpose:</h1><p>Find architecture that have</p>
+<h2 id="Necessary"><a href="#Necessary" class="headerlink" title="Necessary"></a>Necessary</h2><p>Storage</p>
+<ul>
+<li>Unlimited storage</li>
+</ul>
+<p>Network</p>
+<ul>
+<li>Custom Connection pool</li>
+<li>Socket Connection</li>
+</ul>
+<p>Media&amp;Graphical Control</p>
+<ul>
+<li>Ability to control each pixel(custom render engine)</li>
+</ul>
+<p>Calculation</p>
+<ul>
+<li>Good parallelism support</li>
+</ul>
+<h2 id="Bonus"><a href="#Bonus" class="headerlink" title="Bonus"></a>Bonus</h2><ul>
+<li>Cross platform (Ability to run in different OS)</li>
+</ul>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html" data-id="cjvbvth010048ofs4mdeojaiw" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/05/04/implementation/Double-your-coding-and-refactoring-speed-must-know-function-and-keymap-you-should-look-for-Editor-IDE-visual-studio-code-example.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Double your development speed in visual studio for Javascript
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2018/05/02/front-end/type-system-javascript.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Typescript &amp; Flow in React&amp;Redux SPA Development</div>
+        </a>
+    
+</nav>
+
+
+            
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+        </section>
+            
+                
+    <aside id="sidebar">
+        
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">作品墙</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="/2018/05/10/product/vy.html">www.vy.com.hk - 全香港最大的P2P葡萄酒网上销售平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/04/28/product/okibook.html">www.okibook.com - 全香港最优惠的自助餐预订平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/09/product/adshare.html">www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台</a>
+                    </li>
+                
+                    <li>
+                        <a href="/2018/05/08/product/kingmed.html">Kingmed - 中国龙头第三方医学检验数字化病理诊断工具</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+                
+            
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">
+            开源工具
+        </h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://github.com/chungchi300/eaglet">
+                            Eaglet - 最简單直接的 Koa2 的脚手架
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/min-doc">
+                            Min-doc - hackable文档生成工具
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-file-upload">
+                            Simple File Upload - 文件上传控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/simple-help-modal">
+                            Simple Help Modal - Modal控件
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/chungchi300/life-hack">
+                            Life Hack - Nodejs 個人脚本
+                        </a>
+                    </li>
+                    
+            </ul>
+        </div>
+    </div>
+    
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+                
+            
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+        </div>
+    </div>
+
+                
+                    <div id="toTop" class="fa fa-angle-up"></div>
+    </aside>
+    
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy;
+            2019
+                Jeff Chung
+
+                    <br>
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup {
+
+                            clear: left;
+                            font: 14px Helvetica, Arial, sans-serif;
+                        }
+
+                        #mce-EMAIL {
+                            /* width: 17%; */
+                            /* display: none !important; */
+                        }
+
+                        #mc_embed_signup {
+                            width: 20%;
+                        }
+
+                        #mc_embed_signup div.mce_inline_error {
+                            display: none !important;
+                        }
+
+                        #mc_embed_signup .button {
+                            background-color: #38b7ea
+                        }
+
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form action="https://jeffchung.us15.list-manage.com/subscribe/post?u=518de96558d94eaa0a8b2e4a1&amp;id=5b2a0833f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h2>每月电子通讯 </h2>
+                                <div class="indicates-required">
+                                    <span class="asterisk">*</span> 必要的
+                                </div>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">您的电邮地址
+                                        <span class="asterisk">*</span>
+                                    </label>
+                                    <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_518de96558d94eaa0a8b2e4a1_5b2a0833f9" tabindex="-1" value>
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                    <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                    <!--End mc_embed_signup-->
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://jeff-chung.com/2018/05/02/front-end/highly-complex-network-and-media-layer-application-tool.html';
+        
+        this.page.identifier = 'front-end/highly-complex-network-and-media-layer-application-tool';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'jeffchung' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

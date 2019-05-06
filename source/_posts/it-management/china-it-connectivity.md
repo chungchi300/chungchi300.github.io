@@ -20,13 +20,14 @@ No ICP registration need!
 
 ## Result
 
-| Hosting Provider | Bare metal | Web Hosting | Cloud | Direct China Route | Website                                                                        | Price | Reliability | Developer Friendly |
-| ---------------- | ---------- | ----------- | ----- | ------------------ | ------------------------------------------------------------------------------ | ----- | ----------- | ------------------ |
-| Simcentric       | Yes        | No          | No    | Yes                | https://www.simcentric.com/tc/                                                 |       |             |                    |
-| Dataplus         | Yes        | Yes         | No    | Yes                | https://www.dataplugs.com/en/                                                  |       |             |                    |
-| Layer Stack      | Yes        | Yes         | Yes   | Yes                | https://www.layerstack.com                                                     |       |             |                    |
-| koddos           | Yes        | Yes         | No    | Yes                | http://tool.chinaz.com/speedtest/https://koddos.net/web-hosting-hong-kong.html |       |             |                    |
-| udomain          | Yes        | Yes         | Yes   | Yes                | https://www.udomain.hk/tc/service/cloud-hosting/china                          |       |             |                    |
+| Hosting Provider | Bare metal | Web Hosting | Cloud | Direct China Route | Website                                                                        | Price  | Reliability | Developer Orientated |
+| ---------------- | ---------- | ----------- | ----- | ------------------ | ------------------------------------------------------------------------------ | ------ | ----------- | -------------------- |
+| Dataplus         | Yes        | Yes         | No    | Yes                | https://www.dataplugs.com/en/                                                  | Medium | High        | Medium               |
+| gigsgigscloud    | Yes        | Yes         | Yes   | Yes                | https://www.gigsgigscloud.com/hongkong-cloud-vps-kvm/                          | Low    | High        | High                 |
+| Layer Stack      | Yes        | Yes         | Yes   | Yes                | https://www.layerstack.com                                                     | Medium | Medium      | High                 |
+| Simcentric       | Yes        | No          | No    | Yes                | https://www.simcentric.com/tc/                                                 | Medium | Medium      | Low                  |
+| koddos           | Yes        | Yes         | No    | Yes                | http://tool.chinaz.com/speedtest/https://koddos.net/web-hosting-hong-kong.html | Medium | Medium      | Low                  |
+| udomain          | Yes        | Yes         | Yes   | Yes                | https://www.udomain.hk/tc/service/cloud-hosting/china                          | High   | Medium      | Low                  |
 
 ## Testing Tool
 

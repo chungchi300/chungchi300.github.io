@@ -41,3 +41,20 @@ No ICP registration need!
 * https://viewdns.info
 * https://check-host.net
 * http://ping.chinaz.com/
+
+
+## Website
+
+| domain name     | Hosting Info       | Reverse IP Lookup | Domain provider      | ICP Registration |
+| --------------- | ------------------ | ----------------- | -------------------- | ---------------- |
+| mfwauction      | Amazon Web Service | 12                | domain.com           | No               |
+| hdhwine         | AT&T Services      | 1                 | godaddy.com          | No               |
+| auctionmobility | Amazon Web Service | 1                 | godaddy.com          | No               |
+| sothebys        | Amazon Web Service | 1                 | networksolutions.com | Yes              |
+
+
+## Potential Issue for mfwauction.com
+
+1. Too many neighbor
+2. Neighbor do shitty thing before
+3. Domain provider is not good(try godaddy)

@@ -4,21 +4,37 @@ date: 2019-05-06 10:28:21
 category:
 ---
 
-## Why Hong Kong Hosting
+# Why Hong Kong Hosting
 
 No ICP registration need!
 
-## Searching
+# Searching
 
-1. Finding following terms by 'china direct connect','optimized china network','china route' in Google
+1. Finding following terms by '三网直连','CN2','china direct connect','optimized china network','china route' in Google
 2. https://www.whtop.com
 
-## Knowledge
+
+# Pricing
 
 1. China Connect route is most expensive
-2. Big Three China ISP (China Telecom, China Unicom and China Mobile)
+   
+# Server Routing 
+## Big Four Network Company
 
-## Result
+* 中国电信(good but expensive)
+* 中国电信CN2(good but expensive)
+* 中国联通(cheap but bad)
+* 中国移动(cheap but bad)
+
+
+## Routing Method
+* NTT直连(Bad)
+* 绕美(Medium)
+* 直连(Good)
+* KDDI直连(Low-Medium)
+
+
+# Result
 
 | Hosting Provider | Bare metal | Web Hosting | Cloud | Direct China Route when host in HK | Website                                                                        | Price  | Reliability | Developer Orientated |
 | ---------------- | ---------- | ----------- | ----- | ---------------------------------- | ------------------------------------------------------------------------------ | ------ | ----------- | -------------------- |
@@ -33,6 +49,9 @@ No ICP registration need!
 | Azure            | Yes        | Yes         | Yes   | Partial,Only China Telecom         | https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations     | Medium | High        | High                 |
 | Amazon           | Yes        | Yes         | Yes   | Partial,Only China Telecom         | https://aws.amazon.com/                                                        | Medium | High        | High                 |
 
+
+[AWS Reachability test](http://ec2-reachability.amazonaws.com/)
+
 ## Testing Tool
 
 * http://tool.chinaz.com/speedtest/
@@ -42,3 +61,7 @@ No ICP registration need!
 * https://check-host.net
 * http://ping.chinaz.com/
 
+### Tracing Tool
+* https://traceroute-online.com/mtr/
+* http://www.monitis.com/traceroute/
+* https://tools.ipip.net/traceroute.php

@@ -65,3 +65,14 @@ No ICP registration need!
 * https://traceroute-online.com/mtr/
 * http://www.monitis.com/traceroute/
 * https://tools.ipip.net/traceroute.php
+
+
+# Suggestion
+
+ 
+* [Tencent Cloud - 96.5/HKD per month](https://buy.cloud.tencent.com/cvm?tab=lite&bandwidth=1&loginSet=SET_PASSWORD)
+* [Ali Cloud - 39/USD per month](https://www.alibabacloud.com/tc/product/ecs?spm=a2798.12277262.1259289.dzproducta1.e7826506d3sD0o
+)
+* [GigsGigsCloud - 39/USD per month](https://www.gigsgigscloud.com/hongkong-virtual-dedicated-server/)
+* [KVMLA - 80/RMB per month](https://www.kvmla.com/kvm.html#HongKong-TKO)
+If you don’t mind China Hosting Company, we can use Tencent cloud. If you do mind China Hosting, we can choose GigsGigsCloud.

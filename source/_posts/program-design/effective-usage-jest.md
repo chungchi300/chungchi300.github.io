@@ -1,7 +1,7 @@
 ---
-title: Why I choice jest as test tool, what I think a good testing tool should have 
+title: Why I choice jest as test tool, what I think a good testing tool should have
 date: 2019-05-10 10:28:21
-category:
+category: Program design
 ---
 
 # Fast

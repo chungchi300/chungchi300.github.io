@@ -137,4 +137,14 @@ expect(compileAndroidCode).toThrow(ConfigError);
 
 # Ref
 
+## Improve Jest
+
 https://itnext.io/how-to-make-your-sluggish-jest-v23-tests-go-faster-1d4f3388bcdd
+
+## Good Unit Test
+
+100% unit test coverage on component of **reducer**&**helper**
+
+http://learntesting123.blogspot.hk/2015/03/21-practical-guide-to-software-unit.html
+
+https://github.com/ghsukumar/SFDC_Best_Practices/wiki/F.I.R.S.T-Principles-of-Unit-Testing

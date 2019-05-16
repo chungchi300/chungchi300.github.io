@@ -11,6 +11,9 @@ category: Web Development
 2. https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape
 3. https://zhuanlan.zhihu.com/p/27093191
 
+p.s
+[The domain state also honour Single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth)
+
 # Http API library
 
 I think your need to your own logic by referencing this because your communication is webrtc](https://github.com/cantierecreativo/redux-bees)

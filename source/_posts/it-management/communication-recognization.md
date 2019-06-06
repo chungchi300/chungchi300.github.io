@@ -1,5 +1,5 @@
 ---
-title: Recognization
+title: Recognition of good communication ability
 date: 2019-06-20 10:28:21
 category: management and cooperation
 ---

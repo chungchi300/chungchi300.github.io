@@ -18,6 +18,7 @@ category: management and cooperation
 4. Good China network because deployed to China
 5. Good live reporting - show total sale and sale per table to create better service for big clients(e.g if some table has very high sale, we serve them more wine)
 6. Good reporting and analysis tool to let us who is the good client and consignor and how to cooperate with them to reach maximum sale.
+7. Generate paper bidding records in case of system failure
 
 # Business side
 

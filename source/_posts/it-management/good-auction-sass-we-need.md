@@ -12,7 +12,7 @@ category: management and cooperation
 
 # Business Domain side
 
-1. Good combination of prebid(absentee bid) & live bid(floor bid & internet bid)(achieved by good datastructure) to achieve efficient and safe selling process.
+1. Good combination of prebid(absentee bid) & live bid(floor bid & internet bid)(achieved by good data-structure) to achieve efficient and safe selling process.
 2. Sass - scalable with the number of client, add one more client will only cost little human resource(achieved by single backend + multiple client)
 3. Good Notification&flexible payments procedure
 4. Good China network because deployed to China

@@ -1,18 +1,37 @@
 ---
-title: Optimization of creating svg
-date: 2018-05-23 10:20:15
+title: Typescript Function Overloading
+date: 2019-06-7 10:20:15
 tags:
 category: Web Development
 ---
 
-## Performance record
+# What is overloading
 
-Loading ~450 annotations
+Overloading is executing of different function based on different parameter
 
-| Count | avg requestAnimationFrame time usage(ms) | Total Time(s) |
-| ----- | ---------------------------------------- | ------------- |
-| 1     | 50                                       | 13.462        |
-| 3     | 65                                       | 11.802        |
-| 5     | 73                                       | 11.917        |
-| 10    | 114                                      | 10.881        |
-| 20    | 230                                      | 10.959        |
+# Typescript overloading
+
+Typescript don't have real overloading. They are executing same function and it has multiple signature to achieve something that looks like overloading.
+
+```js
+//Example
+
+hasPermission(role:string);
+hasPermission(user:User);
+hasPermission(roleOrUser){
+    let role;
+    if(typeof  roleOrUser  == 'string' ){
+        role = roleOrUser;
+    }else if(roleOrUser instanceof User){
+        role = roleOrUser.role;
+    }else{
+
+    }
+    if(role=='admin'){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+```

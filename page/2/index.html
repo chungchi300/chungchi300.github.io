@@ -169,7 +169,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                52
+                54
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -210,6 +210,147 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-it-management/remote-digital-signature" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/27/it-management/remote-digital-signature.html">Remote digital signature of contract</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/08/27/it-management/remote-digital-signature.html">
+            <time datetime="2018-08-27T02:20:15.000Z" itemprop="datePublished">2018-08-27</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Important-of-remote-digital-signature-of-contract"><a href="#Important-of-remote-digital-signature-of-contract" class="headerlink" title="Important of remote digital signature of contract"></a>Important of remote digital signature of contract</h1><p>First impression,very important task</p>
+<h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><h2 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h2><p>Must ask what form they accept</p>
+<ol>
+<li>Smart signature program</li>
+<li>Hard signed and scanned(if this is the only case,you should wait and ask for confirmation when you are standing next to scanning machine)</li>
+</ol>
+<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><ol>
+<li>Send back the whole(e.g they give your the contract and NDA pdf file,you need to send back 2 pdf file)</li>
+</ol>
+<h1 id="Remember-in-most-case"><a href="#Remember-in-most-case" class="headerlink" title="Remember in most case"></a>Remember in most case</h1><ol>
+<li>You need to <strong>send and sign</strong> with the <strong>NDA</strong></li>
+</ol>
+<h1 id="Price"><a href="#Price" class="headerlink" title="Price"></a>Price</h1><p>Printing for 3 dollar and scanning around 10 dollar is acceptable.</p>
+<h1 id="Tool"><a href="#Tool" class="headerlink" title="Tool"></a>Tool</h1><p><a href="https://smallpdf.com/cn/sign-pdf" target="_blank" rel="noopener">https://smallpdf.com/cn/sign-pdf</a></p>
+<p><a href="https://www.makeuseof.com/tag/how-to-sign-pdf/" target="_blank" rel="noopener">https://www.makeuseof.com/tag/how-to-sign-pdf/</a></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html" data-id="cjwljd3eu005qfms4nzacq4oi" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -261,7 +402,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjvhus5fn004veqs42s04fapy" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjwljd3eo0056fms4d6rpcgwe" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -339,7 +480,7 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-investment/real-estate-resource" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-it-management/backup-centos" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -347,7 +488,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/24/investment/real-estate-resource.html">Real estate investment reference material</a>
+            <a class="article-title" href="/2018/08/25/it-management/backup-centos.html">Backup&amp;Restore centos or other linux</a>
         </h1>
     
 
@@ -356,8 +497,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/08/24/investment/real-estate-resource.html">
-            <time datetime="2018-08-24T02:28:21.000Z" itemprop="datePublished">2018-08-24</time>
+        <a href="/2018/08/25/it-management/backup-centos.html">
+            <time datetime="2018-08-25T02:28:21.000Z" itemprop="datePublished">2018-08-25</time>
         </a>
     </div>
 
@@ -365,7 +506,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Investment/">Investment</a>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
     </div>
 
                                                 
@@ -376,15 +517,17 @@ ga('send', 'pageview');
                             
                                 <div class="article-entry" itemprop="articleBody">
                                     
-                                        <p>
-                                            The article has been encrypted, please enter your password to view.<br>
-                                        </p>
-                                        <p class="article-more-link">
-                                            <a href="/2018/08/24/investment/real-estate-resource.html#more">
-                                                查看更多
-                                            </a>
-                                        </p>
-                                        
+                                            
+                                                    <h1 id="Bootable-Usb-that-contains-clonezilla"><a href="#Bootable-Usb-that-contains-clonezilla" class="headerlink" title="Bootable Usb that contains clonezilla"></a>Bootable Usb that contains clonezilla</h1><ol>
+<li>Download Clonezilla iso <a href="https://clonezilla.org/downloads.php" target="_blank" rel="noopener">https://clonezilla.org/downloads.php</a></li>
+<li>Use <a href="http://iso2usb.sourceforge.net/" target="_blank" rel="noopener">ISO2USB</a> - linux, or <a href="http://sourceforge.net/projects/win32diskimager/" target="_blank" rel="noopener">win32diskimager</a> - windows to create the bootable usb.</li>
+</ol>
+<h1 id="Storage-Medium"><a href="#Storage-Medium" class="headerlink" title="Storage Medium"></a>Storage Medium</h1><p>1024GB</p>
+<h1 id="Backup"><a href="#Backup" class="headerlink" title="Backup"></a>Backup</h1><p>Clonezilla Back up the Disk Image, Select Disk Back up(Mount)<br>clonezilla live boot usb + storage medium(1000GB)</p>
+<h1 id="Restore"><a href="#Restore" class="headerlink" title="Restore"></a>Restore</h1><p>clonezilla live boot usb + storage medium(1000GB)(with image)<br>select local disk as target device,start cloning</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="http://storysky.blog.51cto.com/628458/291587/" target="_blank" rel="noopener">http://storysky.blog.51cto.com/628458/291587/</a></p>
+
+                                                        
                                 </div>
                                 <footer class="article-footer">
                                     <div class="share-container">
@@ -393,7 +536,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html" data-id="cjvhus5fg004leqs42cb4yz27" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html" data-id="cjwljd3el004ufms4i2dlgfw0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -461,7 +604,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html">评论</a>
+        <a href="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html">评论</a>
     
 
                                 </footer>
@@ -525,7 +668,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html" data-id="cjvhus5fh004oeqs4jix9cyu6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html" data-id="cjwljd3el004wfms4mryndku0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -594,6 +737,138 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-investment/real-estate-resource" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/24/investment/real-estate-resource.html">Real estate investment reference material</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/08/24/investment/real-estate-resource.html">
+            <time datetime="2018-08-24T02:28:21.000Z" itemprop="datePublished">2018-08-24</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Investment/">Investment</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                        <p>
+                                            The article has been encrypted, please enter your password to view.<br>
+                                        </p>
+                                        <p class="article-more-link">
+                                            <a href="/2018/08/24/investment/real-estate-resource.html#more">
+                                                查看更多
+                                            </a>
+                                        </p>
+                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html" data-id="cjwljd3ek004rfms4g6srx1n6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html">评论</a>
     
 
                                 </footer>
@@ -744,7 +1019,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/23/investment/real-estate.html" data-id="cjvhus5gp0081eqs426bavnsz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/23/investment/real-estate.html" data-id="cjwljd3g80089fms4atzx6b0p" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -813,159 +1088,6 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2018/08/23/investment/real-estate.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/23/investment/real-estate.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-program-design/why-we-need-to-study-data-structure" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">Why we need to study data structure and algorithm,the answer is definitely not only Performance!</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">
-            <time datetime="2018-08-23T02:20:15.000Z" itemprop="datePublished">2018-08-23</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <img src="/2018/08/23/program-design/why-we-need-to-study-data-structure/dsa.jpg">
-<h1 id="Reason-that-we-need-to-study-data-structure-and-algorithm"><a href="#Reason-that-we-need-to-study-data-structure-and-algorithm" class="headerlink" title="Reason that we need to study data structure and algorithm"></a>Reason that we need to study data structure and algorithm</h1><p>Because we want <strong>Good data structure(more important then algorithm) and algorithm</strong> improve the program</p>
-<ol>
-<li>Readability</li>
-<li>Maintainability</li>
-<li>Performance</li>
-</ol>
-<p>which can <strong>significant reduce the development and maintenance cost</strong>.In fact,if a program have <strong>good data-structure</strong>,normally people can understand the <strong>70% of the program by just seeing the data structure</strong></p>
-<h1 id="Prove"><a href="#Prove" class="headerlink" title="Prove"></a>Prove</h1><img src="/2018/08/23/program-design/why-we-need-to-study-data-structure/cover.jpg">
-<h2 id="Funny-analogies"><a href="#Funny-analogies" class="headerlink" title="Funny analogies"></a>Funny analogies</h2><p>Writing program is about <strong>writing good story</strong>.A <strong>good data structure(Character design)</strong> is determining <strong>70% of the actual story</strong></p>
-<h2 id="Bridget-Jones’s-Diary"><a href="#Bridget-Jones’s-Diary" class="headerlink" title="Bridget Jones’s Diary"></a>Bridget Jones’s Diary</h2><p>For example,let me give javascript object in 2 program to demonstrate what is <strong>good data structure</strong> of <strong>good guy and bad guy(classical character from)</strong> to make it more fun to read and write:).</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Good guy,Colin Firth</span></span><br><span class="line">&#123;</span><br><span class="line">  age: <span class="number">30</span>,</span><br><span class="line">  name: <span class="string">"Colin Firth"</span>,</span><br><span class="line">  hobby: <span class="string">"Reading"</span>,</span><br><span class="line">  girlfriend: &#123;</span><br><span class="line">    name: <span class="string">"BJ"</span>,</span><br><span class="line">    hobby:<span class="string">"wine and movie"</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//bad guy,Hugh Grant</span></span><br><span class="line">&#123;</span><br><span class="line">  age: <span class="number">30</span>,</span><br><span class="line">  name:<span class="string">"Hugh Grant"</span>,</span><br><span class="line">  hobby: <span class="function">(<span class="params">lady</span>)=&gt;</span>lady.hobby,</span><br><span class="line">  girlfriendsByName: &#123;</span><br><span class="line">    BJ:&#123;</span><br><span class="line">        name:<span class="string">"BJ"</span>,</span><br><span class="line">        hobby:<span class="string">"wine and movie"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    lucy:&#123;</span><br><span class="line">        name:<span class="string">"lucy"</span>,</span><br><span class="line">        hobby:<span class="string">"photography"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    angela:&#123;</span><br><span class="line">        name:<span class="string">"angela"</span>,</span><br><span class="line">        hobby:<span class="string">"dancing"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>In a good guy data-structure,it is definitely to see their is not possibility for cheating(multiple girlfriend) in his program.</p>
-<p>In a bad guy data-structure,it is definitely to see their is possible for cheating(multiple girlfriend),and his program always need to find proper girlfriend by her name and he don’t have actual hobby,his actual hobby change according to his girlfriend.</p>
-<p>You see,I can guess <strong>70%</strong> of his <strong>program(love story)</strong> by just reading his <strong>data structure!</strong></p>
-<h1 id="What-mean-good-data-structure"><a href="#What-mean-good-data-structure" class="headerlink" title="What mean good data structure?"></a>What mean good data structure?</h1><ol>
-<li>Informative</li>
-<li>Easy manipulation</li>
-<li>High Readability</li>
-</ol>
-<h1 id="How-to-create-good-data-structure"><a href="#How-to-create-good-data-structure" class="headerlink" title="How to create good data structure?"></a>How to create good data structure?</h1><ul>
-<li>Now the definition of good data structure</li>
-<li><a href="https://www.amazon.com/Solve-Computer-Prentice-Hall-International-Science/dp/0134340019" target="_blank" rel="noopener">Study common data structure</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank" rel="noopener">Always prefer complexer data to represent knowledge of program: Rule of representation</a>,because human always remember and understand data structure then procedure,like you always remember Colin firth is a gentleman but easily forget the actual story of Bridget Jones’s Diary</li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="https://www.amazon.com/UNIX-Programming-Addison-Wesley-Professional-Computing-ebook/dp/B003U2T5BA" target="_blank" rel="noopener">The Art of Unix Programming</a><br><a href="https://en.wikipedia.org/wiki/Bridget_Jones%27s_Diary_(film" target="_blank" rel="noopener">Bridget Jones’s Diary (film)</a>&gt;)</p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html" data-id="cjvhus5g70069eqs42sbsup3t" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html">评论</a>
     
 
                                 </footer>
@@ -1126,7 +1248,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/23/front-end/my-awesome-stack.html" data-id="cjvhus5fc004beqs4eoeikr9i" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/23/front-end/my-awesome-stack.html" data-id="cjwljd3eb004bfms4wo5gr1mk" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1195,6 +1317,159 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2018/08/23/front-end/my-awesome-stack.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/23/front-end/my-awesome-stack.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-program-design/why-we-need-to-study-data-structure" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">Why we need to study data structure and algorithm,the answer is definitely not only Performance!</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">
+            <time datetime="2018-08-23T02:20:15.000Z" itemprop="datePublished">2018-08-23</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <img src="/2018/08/23/program-design/why-we-need-to-study-data-structure/dsa.jpg">
+<h1 id="Reason-that-we-need-to-study-data-structure-and-algorithm"><a href="#Reason-that-we-need-to-study-data-structure-and-algorithm" class="headerlink" title="Reason that we need to study data structure and algorithm"></a>Reason that we need to study data structure and algorithm</h1><p>Because we want <strong>Good data structure(more important then algorithm) and algorithm</strong> improve the program</p>
+<ol>
+<li>Readability</li>
+<li>Maintainability</li>
+<li>Performance</li>
+</ol>
+<p>which can <strong>significant reduce the development and maintenance cost</strong>.In fact,if a program have <strong>good data-structure</strong>,normally people can understand the <strong>70% of the program by just seeing the data structure</strong></p>
+<h1 id="Prove"><a href="#Prove" class="headerlink" title="Prove"></a>Prove</h1><img src="/2018/08/23/program-design/why-we-need-to-study-data-structure/cover.jpg">
+<h2 id="Funny-analogies"><a href="#Funny-analogies" class="headerlink" title="Funny analogies"></a>Funny analogies</h2><p>Writing program is about <strong>writing good story</strong>.A <strong>good data structure(Character design)</strong> is determining <strong>70% of the actual story</strong></p>
+<h2 id="Bridget-Jones’s-Diary"><a href="#Bridget-Jones’s-Diary" class="headerlink" title="Bridget Jones’s Diary"></a>Bridget Jones’s Diary</h2><p>For example,let me give javascript object in 2 program to demonstrate what is <strong>good data structure</strong> of <strong>good guy and bad guy(classical character from)</strong> to make it more fun to read and write:).</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Good guy,Colin Firth</span></span><br><span class="line">&#123;</span><br><span class="line">  age: <span class="number">30</span>,</span><br><span class="line">  name: <span class="string">"Colin Firth"</span>,</span><br><span class="line">  hobby: <span class="string">"Reading"</span>,</span><br><span class="line">  girlfriend: &#123;</span><br><span class="line">    name: <span class="string">"BJ"</span>,</span><br><span class="line">    hobby:<span class="string">"wine and movie"</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//bad guy,Hugh Grant</span></span><br><span class="line">&#123;</span><br><span class="line">  age: <span class="number">30</span>,</span><br><span class="line">  name:<span class="string">"Hugh Grant"</span>,</span><br><span class="line">  hobby: <span class="function">(<span class="params">lady</span>)=&gt;</span>lady.hobby,</span><br><span class="line">  girlfriendsByName: &#123;</span><br><span class="line">    BJ:&#123;</span><br><span class="line">        name:<span class="string">"BJ"</span>,</span><br><span class="line">        hobby:<span class="string">"wine and movie"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    lucy:&#123;</span><br><span class="line">        name:<span class="string">"lucy"</span>,</span><br><span class="line">        hobby:<span class="string">"photography"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    angela:&#123;</span><br><span class="line">        name:<span class="string">"angela"</span>,</span><br><span class="line">        hobby:<span class="string">"dancing"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>In a good guy data-structure,it is definitely to see their is not possibility for cheating(multiple girlfriend) in his program.</p>
+<p>In a bad guy data-structure,it is definitely to see their is possible for cheating(multiple girlfriend),and his program always need to find proper girlfriend by her name and he don’t have actual hobby,his actual hobby change according to his girlfriend.</p>
+<p>You see,I can guess <strong>70%</strong> of his <strong>program(love story)</strong> by just reading his <strong>data structure!</strong></p>
+<h1 id="What-mean-good-data-structure"><a href="#What-mean-good-data-structure" class="headerlink" title="What mean good data structure?"></a>What mean good data structure?</h1><ol>
+<li>Informative</li>
+<li>Easy manipulation</li>
+<li>High Readability</li>
+</ol>
+<h1 id="How-to-create-good-data-structure"><a href="#How-to-create-good-data-structure" class="headerlink" title="How to create good data structure?"></a>How to create good data structure?</h1><ul>
+<li>Now the definition of good data structure</li>
+<li><a href="https://www.amazon.com/Solve-Computer-Prentice-Hall-International-Science/dp/0134340019" target="_blank" rel="noopener">Study common data structure</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank" rel="noopener">Always prefer complexer data to represent knowledge of program: Rule of representation</a>,because human always remember and understand data structure then procedure,like you always remember Colin firth is a gentleman but easily forget the actual story of Bridget Jones’s Diary</li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="https://www.amazon.com/UNIX-Programming-Addison-Wesley-Professional-Computing-ebook/dp/B003U2T5BA" target="_blank" rel="noopener">The Art of Unix Programming</a><br><a href="https://en.wikipedia.org/wiki/Bridget_Jones%27s_Diary_(film" target="_blank" rel="noopener">Bridget Jones’s Diary (film)</a>&gt;)</p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html" data-id="cjwljd3f8006kfms4y6rl4k4r" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/23/program-design/why-we-need-to-study-data-structure.html">评论</a>
     
 
                                 </footer>
@@ -1295,7 +1570,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html" data-id="cjvhus5f90043eqs49wdos7ng" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html" data-id="cjwljd3e80043fms4lx3ut7a6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1495,7 +1770,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html" data-id="cjvhus5fb0047eqs4d51f2dzl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html" data-id="cjwljd3e90046fms4h63ll9wp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1564,297 +1839,6 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-front-end/why-we-choose-graphql" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/14/front-end/why-we-choose-graphql.html">Why we choose graphql</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/14/front-end/why-we-choose-graphql.html">
-            <time datetime="2018-08-14T02:20:15.000Z" itemprop="datePublished">2018-08-14</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <img src="/2018/08/14/front-end/why-we-choose-graphql/cover.jpeg">
-<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><h2 id="Why-we-choose-graphql-api-to-solve-our-problem"><a href="#Why-we-choose-graphql-api-to-solve-our-problem" class="headerlink" title="Why we choose graphql api to solve our problem?"></a>Why we choose <strong>graphql</strong> api to solve our problem?</h2><ul>
-<li><a href="https://dev-blog.apollodata.com/why-graphql-is-the-future-3bec28193807" target="_blank" rel="noopener">Why GraphQL is the future – Apollo GraphQL</a></li>
-</ul>
-<p>In summary,we have <strong>critical</strong> problem</p>
-<ul>
-<li>Over-fetching</li>
-<li>Too many round trip</li>
-</ul>
-<p>on api network layer</p>
-<p>We also want to solve problems like</p>
-<ul>
-<li>Versioning</li>
-<li>API Transparency</li>
-</ul>
-<h1 id="Relation"><a href="#Relation" class="headerlink" title="Relation"></a>Relation</h1><p>GraphQL documentation have show the ability</p>
-<ul>
-<li>Ability to avoid over fetching of field</li>
-<li>Ability to describe nested api</li>
-<li>Ability of versioning</li>
-<li>API transparency is very high</li>
-</ul>
-<h1 id="Execution"><a href="#Execution" class="headerlink" title="Execution"></a>Execution</h1><p>Start to use graphql in a mini project that have our existing problem</p>
-<h1 id="Verification"><a href="#Verification" class="headerlink" title="Verification"></a>Verification</h1><p>Check whether the problem still exist when using graphQL as our <strong>api layer</strong></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html" data-id="cjvhus5fe004feqs4x56k8228" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">Program design guidance and code standard in a React project for intermediate developer for effective development</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">
-            <time datetime="2018-08-09T02:20:15.000Z" itemprop="datePublished">2018-08-09</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <img src="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer/cover.jpeg">
-<h1 id="Design-Principle"><a href="#Design-Principle" class="headerlink" title="Design Principle"></a>Design Principle</h1><ul>
-<li><a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank" rel="noopener">KISS</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener">DRY</a><ul>
-<li>single source of truth</li>
-<li>no repeat code</li>
-</ul>
-</li>
-<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank" rel="noopener">Single responsibility principle</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99" target="_blank" rel="noopener">Open close principle</a></li>
-</ul>
-<h1 id="Implementation-standard"><a href="#Implementation-standard" class="headerlink" title="Implementation standard"></a>Implementation standard</h1><h2 id="React-Smart-Component"><a href="#React-Smart-Component" class="headerlink" title="React Smart Component"></a>React Smart Component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class SeriesPage extends React.Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;&#123;this.props.hello&#125;&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function mapStateToProps()&#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">function mapDispatchToProps()&#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">export default withRouter(</span><br><span class="line">  connect(</span><br><span class="line">    mapStateToProps,</span><br><span class="line">    mapDispatchToProps</span><br><span class="line">  )(SeriesPage`)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p>For more,please reference <a href="http://jeff-chung.com/2018/04/28/it-management/different-methodology-and-coding-structure-to-get-good-result-in-different-software.html">blog</a></p>
-<h2 id="React-dummy-component"><a href="#React-dummy-component" class="headerlink" title="React dummy component"></a>React dummy component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line">class Listing extends React.Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;&#123;this.props.hello&#125;&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// bad (relying on function name inference is discouraged)</span><br><span class="line">const Listing = (&#123; hello &#125;) =&gt; (</span><br><span class="line">  &lt;div&gt;&#123;hello&#125;&lt;/div&gt;</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line">function Listing(&#123; hello &#125;) &#123;</span><br><span class="line">  return &lt;div&gt;&#123;hello&#125;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>For more,please reference <a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener">airbnb</a></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html" data-id="cjvhus5f80042eqs4bvshlqsb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">评论</a>
     
 
                                 </footer>
@@ -1947,7 +1931,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1956,7 +1940,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
         </div>
     </div>
 

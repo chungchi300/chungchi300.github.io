@@ -14,7 +14,8 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
 <meta property="og:image" content="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
-<meta property="og:updated_time" content="2019-06-20T09:22:16.283Z">
+<meta property="og:image" content="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
+<meta property="og:updated_time" content="2019-06-20T09:23:52.451Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Integration with stripe by nodejs">
 <meta name="twitter:description" content="Background knowledgeWhy stripe Variety payment method(all famous credit card,ali pay,wechat pay) Developer friendly(so far easier doc) Cheaper charge(3.4% + HK$2.35 for credit card,2.2% + HK$2 for ali">
@@ -270,7 +271,7 @@ ga('send', 'pageview');
 <p><a href="https://ordermetrics.com/profit-guide/reduce-payment-processing-fees/how-to-negotiate-payment-processing-fees-with-stripe/" target="_blank" rel="noopener">Potential negotiation plan</a><br>At around $1m per year - 2.5% + $0.30<br>At around $2m per year - 1.9% + $0.30<br>At around $3m per year - 1.8% + $0.30</p>
 <h2 id="General-Flow-for-adding-and-charging-a-credit-card"><a href="#General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="General Flow for adding and charging a credit card"></a>General Flow for adding and charging a credit card</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
 <img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
-<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2>
+<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
 <p>We create customer ,source and charge in a general flow for adding and charging a credit card</p>
 <h2 id="Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card"><a href="#Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="Why not direct store the credit card info?why use the General Flow for adding and charging a credit card"></a>Why not direct store the credit card info?why use the General Flow for adding and charging a credit card</h2><p>You <strong>should not</strong> store credit card detail(<strong>card numbers and cvc code</strong>) on your own database as integrator, you should only use the token to <strong>retrieve and store</strong> the <strong>card id and user id of stripe</strong> for charging the credit card in future. It is avoid credit card data leakage and meeting the industry standard<a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener">Payment Card Industry Data Security Standards</a></p>
 <h2 id="Entity-Relationship"><a href="#Entity-Relationship" class="headerlink" title="Entity Relationship"></a>Entity Relationship</h2><h1 id="Backend-development-knowledge"><a href="#Backend-development-knowledge" class="headerlink" title="Backend development knowledge"></a>Backend development knowledge</h1><p>Use <a href="https://github.com/stripe/stripe-node" target="_blank" rel="noopener">Stripe Node</a> which support <strong>promise</strong> and <strong>types(of typescript)</strong></p>

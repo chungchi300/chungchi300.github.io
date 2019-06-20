@@ -28,7 +28,7 @@ At around $3m per year - 1.8% + $0.30
 
 ## Entity
 
-{% asset_img entity.jpeg %}
+{% asset_img entity.jpg %}
 
 We create customer ,source and charge in a general flow for adding and charging a credit card
 

@@ -9,7 +9,7 @@ category: management and cooperation
 1. Don't need to think story
 2. Easy to understand
 
-# 5 Basic Elements
+# 5 Basic Elements of small story
 
 1. Character
 2. Conflict - Dream vs Reality
@@ -18,3 +18,19 @@ category: management and cooperation
 5. Topic(What the writer want to express)
 
 # Three Sector Method
+
+3 Picture as god angle 
+
+Order
+
+1. Time based order
+2. Structural base order
+
+## First picture
+Conflict
+
+## Second picture
+Actions
+
+## Third picture
+Ending

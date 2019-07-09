@@ -13,7 +13,7 @@ password: hihr
 
 # Expected Salary
 
-39000(HKD) x 13
+40000-45000(HKD) x 12 + at least one month bonus
 
 # Interested Domain
 

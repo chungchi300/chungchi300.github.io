@@ -19,6 +19,12 @@ password: hihr
 
 Medical.Business.Financial Service Company
 
+# My Previous test
+
+- {% asset_link aftership.pdf Aftership 2018 %}
+- {% asset_link ikm_node_js.pdf  IKM Node JS 2019 %}
+- {% asset_link ikm_react_js.pdf  IKM React JS 2019 %}
+
 ## HK TAX:
 
 https://www.ird.gov.hk/chi/ese/st_comp_2018_19/cstcfrm.htm

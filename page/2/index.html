@@ -210,6 +210,157 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-program-design/effective-usage-jest" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/05/10/program-design/effective-usage-jest.html">Why I choice jest as test tool, what I think a good testing tool should have</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/05/10/program-design/effective-usage-jest.html">
+            <time datetime="2019-05-10T02:28:21.000Z" itemprop="datePublished">2019-05-10</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Fast"><a href="#Fast" class="headerlink" title="Fast"></a>Fast</h1><p>Remember to use these version</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> "jest": "22.4.4",</span><br><span class="line">"ts-jest": "22.4.4",</span><br></pre></td></tr></table></figure>
+<h1 id="Allow-Watching"><a href="#Allow-Watching" class="headerlink" title="Allow Watching"></a>Allow Watching</h1><p>rerun test after modification of code</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run jest  --watch</span><br></pre></td></tr></table></figure>
+<h1 id="Allow-spying-and-mocking"><a href="#Allow-spying-and-mocking" class="headerlink" title="Allow spying and mocking"></a>Allow spying and mocking</h1><p>Which is necessary for unit test</p>
+<h2 id="Spying"><a href="#Spying" class="headerlink" title="Spying"></a>Spying</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jest.spyOn(catsService, &apos;findAll&apos;).mockImplementation(() =&gt; result);</span><br></pre></td></tr></table></figure>
+<h2 id="Mocking"><a href="#Mocking" class="headerlink" title="Mocking"></a>Mocking</h2><h1 id="Allow-run-test-on-specific-file"><a href="#Allow-run-test-on-specific-file" class="headerlink" title="Allow run test on specific file"></a>Allow run test on specific file</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> SoundPlayer <span class="keyword">from</span> <span class="string">"./sound-player"</span>;</span><br><span class="line"><span class="keyword">import</span> SoundPlayerConsumer <span class="keyword">from</span> <span class="string">"./sound-player-consumer"</span>;</span><br><span class="line">jest.mock(<span class="string">"./sound-player"</span>); <span class="comment">// SoundPlayer is now a mock constructor</span></span><br><span class="line"></span><br><span class="line">beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// Clear all instances and calls to constructor and all methods:</span></span><br><span class="line">  SoundPlayer.mockClear();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">it(<span class="string">"We can check if the consumer called the class constructor"</span>, () =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> soundPlayerConsumer = <span class="keyword">new</span> SoundPlayerConsumer();</span><br><span class="line">  expect(SoundPlayer).toHaveBeenCalledTimes(<span class="number">1</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">it(<span class="string">"We can check if the consumer called a method on the class instance"</span>, () =&gt; &#123;</span><br><span class="line">  <span class="comment">// Show that mockClear() is working:</span></span><br><span class="line">  expect(SoundPlayer).not.toHaveBeenCalled();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> soundPlayerConsumer = <span class="keyword">new</span> SoundPlayerConsumer();</span><br><span class="line">  <span class="comment">// Constructor should have been called again:</span></span><br><span class="line">  expect(SoundPlayer).toHaveBeenCalledTimes(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> coolSoundFileName = <span class="string">"song.mp3"</span>;</span><br><span class="line">  soundPlayerConsumer.playSomethingCool();</span><br><span class="line"></span><br><span class="line">  <span class="comment">// mock.instances is available with automatic mocks:</span></span><br><span class="line">  <span class="keyword">const</span> mockSoundPlayerInstance = SoundPlayer.mock.instances[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">const</span> mockPlaySoundFile = mockSoundPlayerInstance.playSoundFile;</span><br><span class="line">  expect(mockPlaySoundFile.mock.calls[<span class="number">0</span>][<span class="number">0</span>]).toEqual(coolSoundFileName);</span><br><span class="line">  <span class="comment">// Equivalent to above check:</span></span><br><span class="line">  expect(mockPlaySoundFile).toHaveBeenCalledWith(coolSoundFileName);</span><br><span class="line">  expect(mockPlaySoundFile).toHaveBeenCalledTimes(<span class="number">1</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="Allow-Run-in-parallel-sequential"><a href="#Allow-Run-in-parallel-sequential" class="headerlink" title="Allow Run in parallel/sequential"></a>Allow Run in parallel/sequential</h1><p>It it parallel by default</p>
+<p>sequential</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm test -- --runInBand</span><br></pre></td></tr></table></figure>
+<h1 id="Various-expressive-matcher"><a href="#Various-expressive-matcher" class="headerlink" title="Various expressive matcher"></a>Various expressive matcher</h1><h2 id="Exact-Equality"><a href="#Exact-Equality" class="headerlink" title="Exact Equality"></a>Exact Equality</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test(<span class="string">"two plus two is four"</span>, () =&gt; &#123;</span><br><span class="line">  expect(<span class="number">2</span> + <span class="number">2</span>).toBe(<span class="number">4</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//exact match</span></span><br><span class="line">expect(&#123; <span class="attr">age</span>: <span class="number">11</span>, <span class="attr">name</span>: <span class="string">"jeff chung"</span> &#125;).toEqual(&#123;</span><br><span class="line">  age: <span class="number">11</span>,</span><br><span class="line">  name: <span class="string">"jeff chung"</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//partial match</span></span><br><span class="line">expect(&#123; <span class="attr">age</span>: <span class="number">11</span>, <span class="attr">name</span>: <span class="string">"jeff chung"</span> &#125;).toMatchObject(&#123;</span><br><span class="line">  age: <span class="number">11</span>,</span><br><span class="line">  name: <span class="string">"jeff chung"</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expect(<span class="string">"Christoph"</span>).toMatch(<span class="regexp">/stop/</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="Array-and-iterables"><a href="#Array-and-iterables" class="headerlink" title="Array and iterables"></a>Array and iterables</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">expect(shoppingList).toContain(<span class="string">"beer"</span>);</span><br><span class="line">expect(<span class="keyword">new</span> <span class="built_in">Set</span>(shoppingList)).toContain(<span class="string">"beer"</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="Exception-Throwing"><a href="#Exception-Throwing" class="headerlink" title="Exception Throwing"></a>Exception Throwing</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">expect(compileAndroidCode).toThrow(ConfigError);</span><br></pre></td></tr></table></figure>
+<h1 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h1><ul>
+<li>Good Await/Async</li>
+<li>Setup and teardone</li>
+<li>Coverage</li>
+</ul>
+<h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><h2 id="Improve-Jest"><a href="#Improve-Jest" class="headerlink" title="Improve Jest"></a>Improve Jest</h2><p><a href="https://itnext.io/how-to-make-your-sluggish-jest-v23-tests-go-faster-1d4f3388bcdd" target="_blank" rel="noopener">https://itnext.io/how-to-make-your-sluggish-jest-v23-tests-go-faster-1d4f3388bcdd</a></p>
+<h2 id="Good-Unit-Test"><a href="#Good-Unit-Test" class="headerlink" title="Good Unit Test"></a>Good Unit Test</h2><p>100% unit test coverage on component of <strong>reducer</strong>&amp;<strong>helper</strong></p>
+<p><a href="http://learntesting123.blogspot.hk/2015/03/21-practical-guide-to-software-unit.html" target="_blank" rel="noopener">http://learntesting123.blogspot.hk/2015/03/21-practical-guide-to-software-unit.html</a></p>
+<p><a href="https://github.com/ghsukumar/SFDC_Best_Practices/wiki/F.I.R.S.T-Principles-of-Unit-Testing" target="_blank" rel="noopener">https://github.com/ghsukumar/SFDC_Best_Practices/wiki/F.I.R.S.T-Principles-of-Unit-Testing</a></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html" data-id="cjxvh8iat006hsjs4jbgx6rk0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-it-management/china-it-connectivity" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -420,7 +571,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="cjwljd3em004zfms4go8moa10" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="cjxvh8ia7004qsjs4tfqoxulj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -570,7 +721,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/10/06/it-management/first-week-in-new-company-as-it-specialist.html" data-id="cjwljd3er005gfms4rii7wsmx" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/10/06/it-management/first-week-in-new-company-as-it-specialist.html" data-id="cjxvh8iaf005fsjs4hwnr9leg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -714,7 +865,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/09/10/it-management/how-to-explain-you-need-aws(or cloud server)-to-non-IT-guy.html" data-id="cjwljd3et005ofms4tktegsku" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/09/10/it-management/how-to-explain-you-need-aws(or cloud server)-to-non-IT-guy.html" data-id="cjxvh8iag005ksjs4f6p7eg2w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -943,7 +1094,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/09/04/it-management/technical-growth-of-it-team.html" data-id="cjwljd3et005lfms4evunki8c" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/09/04/it-management/technical-growth-of-it-team.html" data-id="cjxvh8iai005ssjs4psz9ba13" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1087,7 +1238,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html" data-id="cjwljd3er005efms46lrts1ci" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html" data-id="cjxvh8iaf005isjs4dlnbnqth" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1228,7 +1379,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html" data-id="cjwljd3eu005qfms4nzacq4oi" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html" data-id="cjxvh8iaj005usjs4js01co5d" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1357,7 +1508,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjwljd3eo0056fms4d6rpcgwe" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjxvh8iac0058sjs4n63srzer" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1491,7 +1642,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html" data-id="cjwljd3el004ufms4i2dlgfw0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html" data-id="cjxvh8ia6004osjs4v21vyrwl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1569,138 +1720,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-investment/real-estate-shenzhen" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/24/investment/real-estate-shenzhen.html">新世界四季御园2棟505</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/24/investment/real-estate-shenzhen.html">
-            <time datetime="2018-08-24T02:28:21.000Z" itemprop="datePublished">2018-08-24</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Investment/">Investment</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                        <p>
-                                            The article has been encrypted, please enter your password to view.<br>
-                                        </p>
-                                        <p class="article-more-link">
-                                            <a href="/2018/08/24/investment/real-estate-shenzhen.html#more">
-                                                查看更多
-                                            </a>
-                                        </p>
-                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html" data-id="cjwljd3el004wfms4mryndku0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/24/investment/real-estate-shenzhen.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-investment/real-estate-resource" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1755,7 +1774,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html" data-id="cjwljd3ek004rfms4g6srx1n6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html" data-id="cjxvh8iay006wsjs4kzaqrlgh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1925,7 +1944,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
         </div>
     </div>
 

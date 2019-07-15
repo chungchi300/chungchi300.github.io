@@ -169,7 +169,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                60
+                61
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -210,6 +210,143 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-front-end/small-redux-problem-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/05/16/front-end/small-redux-problem-1.html">Small Redux Problem 1</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/05/16/front-end/small-redux-problem-1.html">
+            <time datetime="2019-05-16T02:20:15.000Z" itemprop="datePublished">2019-05-16</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Redux-state-design-domain-amp-ui"><a href="#Redux-state-design-domain-amp-ui" class="headerlink" title="Redux state design domain &amp; ui"></a>Redux state design domain &amp; ui</h1><ol>
+<li><a href="https://www.jsnoding.com/2017/11/22/redux-state-store/" target="_blank" rel="noopener">https://www.jsnoding.com/2017/11/22/redux-state-store/</a></li>
+<li><a href="https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape" target="_blank" rel="noopener">https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/27093191" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/27093191</a></li>
+</ol>
+<p>p.s<br><a href="https://en.wikipedia.org/wiki/Single_source_of_truth" target="_blank" rel="noopener">The domain state also honour Single source of truth</a></p>
+<h1 id="Http-API-library"><a href="#Http-API-library" class="headerlink" title="Http API library"></a>Http API library</h1><p>I think your need to your own logic by referencing this because your communication is webrtc](<a href="https://github.com/cantierecreativo/redux-bees" target="_blank" rel="noopener">https://github.com/cantierecreativo/redux-bees</a>)</p>
+<h1 id="React-Dialog"><a href="#React-Dialog" class="headerlink" title="React Dialog"></a>React Dialog</h1><ol>
+<li><a href="https://stackoverflow.com/questions/35623656/how-can-i-display-a-modal-dialog-in-redux-that-performs-asynchronous-actions/35641680" target="_blank" rel="noopener">React Dialog</a></li>
+</ol>
+<h1 id="Addon"><a href="#Addon" class="headerlink" title="Addon"></a>Addon</h1><p><a href="https://twitter.com/dan_abramov/status/741661275525132288" target="_blank" rel="noopener">State tree design</a></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html" data-id="cjy3v4r5c004sbes4t2fwk0o3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-program-design/effective-usage-jest" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -283,7 +420,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html" data-id="cjxvh8iat006hsjs4jbgx6rk0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html" data-id="cjy3v4r60006ubes4do24tlwn" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -571,7 +708,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="cjxvh8ia7004qsjs4tfqoxulj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="cjy3v4r5g0054bes4azh892br" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -721,7 +858,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/10/06/it-management/first-week-in-new-company-as-it-specialist.html" data-id="cjxvh8iaf005fsjs4hwnr9leg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/10/06/it-management/first-week-in-new-company-as-it-specialist.html" data-id="cjy3v4r5o005tbes46dkkmnhw" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -865,7 +1002,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/09/10/it-management/how-to-explain-you-need-aws(or cloud server)-to-non-IT-guy.html" data-id="cjxvh8iag005ksjs4f6p7eg2w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/09/10/it-management/how-to-explain-you-need-aws(or cloud server)-to-non-IT-guy.html" data-id="cjy3v4r5q0060bes47aiwk333" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1094,7 +1231,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/09/04/it-management/technical-growth-of-it-team.html" data-id="cjxvh8iai005ssjs4psz9ba13" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/09/04/it-management/technical-growth-of-it-team.html" data-id="cjy3v4r5r0063bes4k1s9zoxc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1238,7 +1375,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html" data-id="cjxvh8iaf005isjs4dlnbnqth" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html" data-id="cjy3v4r5m005obes4nk9h0o7f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1379,7 +1516,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html" data-id="cjxvh8iaj005usjs4js01co5d" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/27/it-management/remote-digital-signature.html" data-id="cjy3v4r5t0068bes4ddxsxbgp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1457,135 +1594,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">Find market/company need and transform IT team and IT development cycle(Core competency of real successful IT manager in Hong Kong)</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">
-            <time datetime="2018-08-25T02:28:21.000Z" itemprop="datePublished">2018-08-25</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <h1 id="What-is-find-market-company-need-in-real-life"><a href="#What-is-find-market-company-need-in-real-life" class="headerlink" title="What is find market/company need in real life?"></a>What is find market/company need in real life?</h1><p>For example,here is a startup CEO I have talked before.His company has a very successful product.He don’t specific mentioned his thinking process,but I notice his IT team and development cycle.</p>
-<h1 id="High-frequency-and-reliable-upgrade-of-product"><a href="#High-frequency-and-reliable-upgrade-of-product" class="headerlink" title="High frequency and reliable upgrade of product"></a>High frequency and reliable upgrade of product</h1><p>Because his product has many customer and his product need rapid changes to catch up the market change.His team <strong>focus</strong> on the continuous integration and continuous delivery(CICD).It allows his product can delivery feature update <strong>every day/hour</strong>.The delivery can <strong>rollback(it mean switch to previous version)</strong> immediately when things can wrong.</p>
-<h1 id="Long-life-cycle-product-and-rapid-development"><a href="#Long-life-cycle-product-and-rapid-development" class="headerlink" title="Long life cycle product and rapid development"></a>Long life cycle product and rapid development</h1><p>Because his product has very long life cycle and need to develop fast according to market change.His team <strong>focus</strong> on <strong>code quality</strong> and <strong>code standard</strong></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjxvh8iac0058sjs4n63srzer" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-it-management/backup-centos" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1642,7 +1650,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html" data-id="cjxvh8ia6004osjs4v21vyrwl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/backup-centos.html" data-id="cjy3v4r5f004zbes4ibq7ub0r" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1720,7 +1728,7 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-investment/real-estate-resource" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -1728,7 +1736,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/08/24/investment/real-estate-resource.html">Real estate investment reference material</a>
+            <a class="article-title" href="/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">Find market/company need and transform IT team and IT development cycle(Core competency of real successful IT manager in Hong Kong)</a>
         </h1>
     
 
@@ -1737,8 +1745,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/08/24/investment/real-estate-resource.html">
-            <time datetime="2018-08-24T02:28:21.000Z" itemprop="datePublished">2018-08-24</time>
+        <a href="/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">
+            <time datetime="2018-08-25T02:28:21.000Z" itemprop="datePublished">2018-08-25</time>
         </a>
     </div>
 
@@ -1746,7 +1754,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Investment/">Investment</a>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
     </div>
 
                                                 
@@ -1757,15 +1765,12 @@ ga('send', 'pageview');
                             
                                 <div class="article-entry" itemprop="articleBody">
                                     
-                                        <p>
-                                            The article has been encrypted, please enter your password to view.<br>
-                                        </p>
-                                        <p class="article-more-link">
-                                            <a href="/2018/08/24/investment/real-estate-resource.html#more">
-                                                查看更多
-                                            </a>
-                                        </p>
-                                        
+                                            
+                                                    <h1 id="What-is-find-market-company-need-in-real-life"><a href="#What-is-find-market-company-need-in-real-life" class="headerlink" title="What is find market/company need in real life?"></a>What is find market/company need in real life?</h1><p>For example,here is a startup CEO I have talked before.His company has a very successful product.He don’t specific mentioned his thinking process,but I notice his IT team and development cycle.</p>
+<h1 id="High-frequency-and-reliable-upgrade-of-product"><a href="#High-frequency-and-reliable-upgrade-of-product" class="headerlink" title="High frequency and reliable upgrade of product"></a>High frequency and reliable upgrade of product</h1><p>Because his product has many customer and his product need rapid changes to catch up the market change.His team <strong>focus</strong> on the continuous integration and continuous delivery(CICD).It allows his product can delivery feature update <strong>every day/hour</strong>.The delivery can <strong>rollback(it mean switch to previous version)</strong> immediately when things can wrong.</p>
+<h1 id="Long-life-cycle-product-and-rapid-development"><a href="#Long-life-cycle-product-and-rapid-development" class="headerlink" title="Long life cycle product and rapid development"></a>Long life cycle product and rapid development</h1><p>Because his product has very long life cycle and need to develop fast according to market change.His team <strong>focus</strong> on <strong>code quality</strong> and <strong>code standard</strong></p>
+
+                                                        
                                 </div>
                                 <footer class="article-footer">
                                     <div class="share-container">
@@ -1774,7 +1779,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html" data-id="cjxvh8iay006wsjs4kzaqrlgh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html" data-id="cjy3v4r5l005jbes4qcxwhxgp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1842,7 +1847,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/24/investment/real-estate-resource.html">评论</a>
+        <a href="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/25/it-management/core-competency-of-successful-it-manager-find-and-adapt-market-need.html">评论</a>
     
 
                                 </footer>
@@ -1853,7 +1858,7 @@ ga('send', 'pageview');
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/">下一页 &raquo;</a>
     </nav>
 </section>
             
@@ -1935,7 +1940,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1944,7 +1949,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
         </div>
     </div>
 

@@ -38,9 +38,11 @@ date: 2018-04-28 16:09:02
 
 - React
 - Redux
+- socket io
 - Node JS
 - Koa
 - Typeorm
+- Nestjs
 - Php
 - Laravel
 - Mysql

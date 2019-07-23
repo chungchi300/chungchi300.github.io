@@ -5,17 +5,17 @@
     
     <title>Websocket documentation | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons:  Respect open api 3  Nodejs official  support">
+    <meta name="description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons: Respect open api 3  Nodejs official  support  Implementation use script to">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Websocket documentation">
 <meta property="og:url" content="http://jeff-chung.com/2019/08/23/program-design/websocket-documentation.html">
 <meta property="og:site_name" content="Jeff Chung">
-<meta property="og:description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons:  Respect open api 3  Nodejs official  support">
+<meta property="og:description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons: Respect open api 3  Nodejs official  support  Implementation use script to">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-23T05:09:13.526Z">
+<meta property="og:updated_time" content="2019-07-23T05:51:35.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Websocket documentation">
-<meta name="twitter:description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons:  Respect open api 3  Nodejs official  support">
+<meta name="twitter:description" content="CurrentNo good existing solution for top 3 annotation tool  Swagger(Open api) RAML API Blue Print  My choiceAsyncapi Reasons: Respect open api 3  Nodejs official  support  Implementation use script to">
     
 
     
@@ -255,7 +255,7 @@ ga('send', 'pageview');
                                                     <strong class="toc-title">
                                                         文章目录
                                                     </strong>
-                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Current"><span class="toc-number">1.</span> <span class="toc-text">Current</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-choice"><span class="toc-number">2.</span> <span class="toc-text">My choice</span></a></li></ol>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Current"><span class="toc-number">1.</span> <span class="toc-text">Current</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-choice"><span class="toc-number">2.</span> <span class="toc-text">My choice</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Reasons"><span class="toc-number">2.1.</span> <span class="toc-text">Reasons:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Implementation"><span class="toc-number">2.2.</span> <span class="toc-text">Implementation</span></a></li></ol></li></ol>
                                                 </div>
                                                 
                                                     <h1 id="Current"><a href="#Current" class="headerlink" title="Current"></a>Current</h1><p>No good existing solution for top 3 annotation tool</p>
@@ -265,10 +265,13 @@ ga('send', 'pageview');
 <li>API Blue Print</li>
 </ol>
 <h1 id="My-choice"><a href="#My-choice" class="headerlink" title="My choice"></a>My choice</h1><p><a href="asyncapi.com">Asyncapi</a></p>
-<p>Reasons:</p>
-<ol>
+<h2 id="Reasons"><a href="#Reasons" class="headerlink" title="Reasons:"></a>Reasons:</h2><ol>
 <li>Respect open api 3 </li>
 <li><a href="https://github.com/asyncapi/generator" target="_blank" rel="noopener">Nodejs</a> official  support</li>
+</ol>
+<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><ol>
+<li>use script to generate websocket.html from websocket.yaml</li>
+<li>execute it before every commit using <a href="https://github.com/observing/pre-commit" target="_blank" rel="noopener">precommit</a></li>
 </ol>
 
                                                         

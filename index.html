@@ -169,7 +169,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                61
+                62
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -210,6 +210,144 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-program-design/websocket-documentation" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/08/23/program-design/websocket-documentation.html">Websocket documentation</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/08/23/program-design/websocket-documentation.html">
+            <time datetime="2019-08-23T02:28:44.000Z" itemprop="datePublished">2019-08-23</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Current"><a href="#Current" class="headerlink" title="Current"></a>Current</h1><p>No good existing solution for top 3 annotation tool</p>
+<ol>
+<li>Swagger(Open api)</li>
+<li>RAML</li>
+<li>API Blue Print</li>
+</ol>
+<h1 id="My-choice"><a href="#My-choice" class="headerlink" title="My choice"></a>My choice</h1><p><a href="asyncapi.com">Asyncapi</a></p>
+<p>Reasons:</p>
+<ol>
+<li>Respect open api 3 </li>
+<li><a href="https://github.com/asyncapi/generator" target="_blank" rel="noopener">Nodejs</a> official  support</li>
+</ol>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/08/23/program-design/websocket-documentation.html" data-id="cjyfd0izi0000a2s45ayozje9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/08/23/program-design/websocket-documentation.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/08/23/program-design/websocket-documentation.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-me/my-brain" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -611,6 +749,173 @@ ga('send', 'pageview');
 
 
 
+    <article id="post-it-management/communication-methodology" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/06/20/it-management/communication-methodology.html">How to improve your communication ability</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/20/it-management/communication-methodology.html">
+            <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h1><p>Communication is a <strong>technique</strong> which require Massive Practice and theory</p>
+<h1 id="Level"><a href="#Level" class="headerlink" title="Level"></a>Level</h1><ol>
+<li>You don’t know you don’t know</li>
+<li>You know you don’t know</li>
+<li>You know you know</li>
+<li>You don’t know you know(sub-conscious)</li>
+</ol>
+<h1 id="Six-criteria-for-improvement"><a href="#Six-criteria-for-improvement" class="headerlink" title="Six criteria for improvement"></a>Six criteria for improvement</h1><h2 id="Motive"><a href="#Motive" class="headerlink" title="Motive"></a>Motive</h2><p>You know it is very important. E.g How much you willing give for this skill. I am willing to give 20W for my speaking ability.</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>Whether the method is working</p>
+<ol>
+<li>Does it have high Ratio(&gt;0.5) of people succeed with this method.</li>
+<li>Whether those successful people have similar basic condition with me.</li>
+<li>Whether the resource required I am willing to me.</li>
+</ol>
+<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><ol>
+<li>Single</li>
+<li>Specific</li>
+<li>Realistic</li>
+<li>Measurable(Is that any standard)</li>
+</ol>
+<p>E.g<br>Language ability, month mind cooperation, thought delivery</p>
+<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><ol>
+<li>Immediate start</li>
+<li>Consistency(Half year)</li>
+<li>Frequency</li>
+</ol>
+<h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><ol>
+<li>Progress feedback</li>
+<li>Exercise quality feedback</li>
+<li>Problem feedback</li>
+</ol>
+<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ol>
+<li>Is it comfortable to use</li>
+<li>Is it convenient to train</li>
+</ol>
+<h1 id="Task-Framework-Focus-single-direction"><a href="#Task-Framework-Focus-single-direction" class="headerlink" title="Task Framework(Focus single direction)"></a>Task Framework(Focus single direction)</h1><p>10 class(one month per class) that can help you from</p>
+<p>Fear to talk=&gt;talk it out=&gt;talk smoothly=&gt;talk beautifully=&gt;talk good naturally.</p>
+<p>Every 5 class is good</p>
+<h2 id="Basic-1"><a href="#Basic-1" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Random-small-story"><a href="#Random-small-story" class="headerlink" title="Random small story"></a>Random small story</h3><p>Month brain cooperation</p>
+<h3 id="Mind-ability"><a href="#Mind-ability" class="headerlink" title="Mind ability"></a>Mind ability</h3><p>Talk to someone that you don’t want</p>
+<h3 id="Topic-Upgrade"><a href="#Topic-Upgrade" class="headerlink" title="Topic Upgrade"></a>Topic Upgrade</h3><h3 id="Immediate-listen-and-re-express"><a href="#Immediate-listen-and-re-express" class="headerlink" title="Immediate listen and re-express"></a>Immediate listen and re-express</h3><h3 id="Express-beautifully"><a href="#Express-beautifully" class="headerlink" title="Express beautifully"></a>Express beautifully</h3><h2 id="Advance"><a href="#Advance" class="headerlink" title="Advance"></a>Advance</h2><h3 id="Get-summary"><a href="#Get-summary" class="headerlink" title="Get summary"></a>Get summary</h3><h3 id="Said-I-what-learn"><a href="#Said-I-what-learn" class="headerlink" title="Said I what learn"></a>Said I what learn</h3><h3 id="Public-speech"><a href="#Public-speech" class="headerlink" title="Public speech"></a>Public speech</h3><h3 id="Express-immediately"><a href="#Express-immediately" class="headerlink" title="Express immediately"></a>Express immediately</h3><p>Talking framework</p>
+<h3 id="Talk-to-get-money"><a href="#Talk-to-get-money" class="headerlink" title="Talk to get money"></a>Talk to get money</h3>
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html" data-id="cjy3v4r5m005mbes40ujguhvs" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-program-design/integration-with-stripe-by-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -921,173 +1226,6 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-it-management/communication-methodology" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/20/it-management/communication-methodology.html">How to improve your communication ability</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/06/20/it-management/communication-methodology.html">
-            <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <h1 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h1><p>Communication is a <strong>technique</strong> which require Massive Practice and theory</p>
-<h1 id="Level"><a href="#Level" class="headerlink" title="Level"></a>Level</h1><ol>
-<li>You don’t know you don’t know</li>
-<li>You know you don’t know</li>
-<li>You know you know</li>
-<li>You don’t know you know(sub-conscious)</li>
-</ol>
-<h1 id="Six-criteria-for-improvement"><a href="#Six-criteria-for-improvement" class="headerlink" title="Six criteria for improvement"></a>Six criteria for improvement</h1><h2 id="Motive"><a href="#Motive" class="headerlink" title="Motive"></a>Motive</h2><p>You know it is very important. E.g How much you willing give for this skill. I am willing to give 20W for my speaking ability.</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>Whether the method is working</p>
-<ol>
-<li>Does it have high Ratio(&gt;0.5) of people succeed with this method.</li>
-<li>Whether those successful people have similar basic condition with me.</li>
-<li>Whether the resource required I am willing to me.</li>
-</ol>
-<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><ol>
-<li>Single</li>
-<li>Specific</li>
-<li>Realistic</li>
-<li>Measurable(Is that any standard)</li>
-</ol>
-<p>E.g<br>Language ability, month mind cooperation, thought delivery</p>
-<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><ol>
-<li>Immediate start</li>
-<li>Consistency(Half year)</li>
-<li>Frequency</li>
-</ol>
-<h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><ol>
-<li>Progress feedback</li>
-<li>Exercise quality feedback</li>
-<li>Problem feedback</li>
-</ol>
-<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ol>
-<li>Is it comfortable to use</li>
-<li>Is it convenient to train</li>
-</ol>
-<h1 id="Task-Framework-Focus-single-direction"><a href="#Task-Framework-Focus-single-direction" class="headerlink" title="Task Framework(Focus single direction)"></a>Task Framework(Focus single direction)</h1><p>10 class(one month per class) that can help you from</p>
-<p>Fear to talk=&gt;talk it out=&gt;talk smoothly=&gt;talk beautifully=&gt;talk good naturally.</p>
-<p>Every 5 class is good</p>
-<h2 id="Basic-1"><a href="#Basic-1" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Random-small-story"><a href="#Random-small-story" class="headerlink" title="Random small story"></a>Random small story</h3><p>Month brain cooperation</p>
-<h3 id="Mind-ability"><a href="#Mind-ability" class="headerlink" title="Mind ability"></a>Mind ability</h3><p>Talk to someone that you don’t want</p>
-<h3 id="Topic-Upgrade"><a href="#Topic-Upgrade" class="headerlink" title="Topic Upgrade"></a>Topic Upgrade</h3><h3 id="Immediate-listen-and-re-express"><a href="#Immediate-listen-and-re-express" class="headerlink" title="Immediate listen and re-express"></a>Immediate listen and re-express</h3><h3 id="Express-beautifully"><a href="#Express-beautifully" class="headerlink" title="Express beautifully"></a>Express beautifully</h3><h2 id="Advance"><a href="#Advance" class="headerlink" title="Advance"></a>Advance</h2><h3 id="Get-summary"><a href="#Get-summary" class="headerlink" title="Get summary"></a>Get summary</h3><h3 id="Said-I-what-learn"><a href="#Said-I-what-learn" class="headerlink" title="Said I what learn"></a>Said I what learn</h3><h3 id="Public-speech"><a href="#Public-speech" class="headerlink" title="Public speech"></a>Public speech</h3><h3 id="Express-immediately"><a href="#Express-immediately" class="headerlink" title="Express immediately"></a>Express immediately</h3><p>Talking framework</p>
-<h3 id="Talk-to-get-money"><a href="#Talk-to-get-money" class="headerlink" title="Talk to get money"></a>Talk to get money</h3>
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html" data-id="cjy3v4r5m005mbes40ujguhvs" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html">评论</a>
     
 
                                 </footer>
@@ -1534,150 +1672,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-it-management/good-auction-sass-we-need" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/06/it-management/good-auction-sass-we-need.html">Good auction software we need</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/06/06/it-management/good-auction-sass-we-need.html">
-            <time datetime="2019-06-06T02:20:15.000Z" itemprop="datePublished">2019-06-06</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <h1 id="Technical-side"><a href="#Technical-side" class="headerlink" title="Technical side"></a>Technical side</h1><ol>
-<li>quick internet biding (web socket,achieved by socket io)(with 0.5s delay)</li>
-<li>Live streaming floor bidding to increase accountability , branding (achieved by webrtc ,provided by opentok)(with 3-4s delay)</li>
-</ol>
-<h1 id="Business-Domain-side"><a href="#Business-Domain-side" class="headerlink" title="Business Domain side"></a>Business Domain side</h1><ol>
-<li>Good combination of prebid(absentee bid) &amp; live bid(floor bid &amp; internet bid)(achieved by good data-structure) to achieve efficient and safe selling process.</li>
-<li>Sass - scalable with the number of client, add one more client will only cost little human resource(achieved by single backend + multiple client)</li>
-<li>Good Notification&amp;flexible payments procedure</li>
-<li>Good China network because deployed to China</li>
-<li>Good live reporting - show total sale and sale per table to create better service for big clients(e.g if some table has very high sale, we serve them more wine)</li>
-<li>Good reporting and analysis tool to let us who is the good client and consignor and how to cooperate with them to reach maximum sale.</li>
-<li>Generate paper bidding records in case of system failure</li>
-</ol>
-<h1 id="Business-side"><a href="#Business-side" class="headerlink" title="Business side"></a>Business side</h1><ol>
-<li>Low,middle and high plan</li>
-<li>Already has famous client</li>
-<li>Charge much in manual process</li>
-</ol>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2019/06/06/it-management/good-auction-sass-we-need.html" data-id="cjy3v4r5o005vbes4myd3m0z8" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2019/06/06/it-management/good-auction-sass-we-need.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/06/it-management/good-auction-sass-we-need.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
     </nav>
@@ -1761,7 +1755,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1770,7 +1764,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">18</span></li></ul>
         </div>
     </div>
 

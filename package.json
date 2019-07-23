@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "pre-commit": [
+    "deploy"
+  ],
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-blog-encrypt": "^2.0.8",
@@ -20,10 +23,11 @@
     "hexo-tag-plantuml": "^1.0.0"
   },
   "devDependencies": {
-    "hexo-deployer-git": "^0.3.1"
+    "hexo-deployer-git": "^0.3.1",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
     "start": " hexo server ",
-    "deploy": "git add -A&&git commit -m'deploy'&&git push&&hexo deploy -g"
+    "deploy": "hexo deploy -g"
   }
 }

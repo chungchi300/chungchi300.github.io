@@ -13,7 +13,10 @@ No good existing solution for top 3 annotation tool
 # My choice
 [Asyncapi](asyncapi.com)
 
-Reasons:
+## Reasons:
 1. Respect open api 3 
 2. [Nodejs](https://github.com/asyncapi/generator) official  support
 
+## Implementation
+1. use script to generate websocket.html from websocket.yaml
+2. execute it before every commit using [precommit](https://github.com/observing/pre-commit)

@@ -40,7 +40,16 @@ https://www.rong360.com/calculator/wuxianyijin.html
 - {% asset_link robert-half.pdf robert half 2018 %}
 - {% asset_link robert-walters.pdf robert walters 2018 %}
 - [Canopy 2018](https://www.canopycareers.com/resources/salary-benchmark/software-development-salaries-hongkong-2018)
+- [Robert Half 2019](https://www.roberthalf.com.hk/sites/roberthalf.com.hk/files/documents_not_indexed/RH_0319_IAPDF_SG2019_HKG_ENG_SEC.pdf?utm_source=sfmc-transactional&utm_medium=Email&utm_campaign=email&i=2019salaryguide-ongoing)
 
 ## Robert Half
 
 70% has 15% budget increase
+
+# To my self
+the 75th of full-stack developer is 750,000. 
+
+The 75th means
+1. More experience than typical (checked)
+2. Strong skillset; may include specialised certification(going to get my aws/ali certification, creating my own course)
+3. Fairly complex role(checked)

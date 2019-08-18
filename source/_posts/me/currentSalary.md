@@ -24,6 +24,7 @@ Medical.Business.Financial Service Company
 - {% asset_link aftership.pdf Aftership 2018 %}
 - {% asset_link ikm_node_js.pdf  IKM Node JS 2019 %}
 - {% asset_link ikm_react_js.pdf  IKM React JS 2019 %}
+- Amazon Software Engineer 25/30 (83.3/100 , :) )
 
 ## HK TAX:
 
@@ -47,9 +48,9 @@ https://www.rong360.com/calculator/wuxianyijin.html
 70% has 15% budget increase
 
 # To my self
-the 75th of full-stack developer is 750,000. 
+the 75th of full-stack developer is 750,000. (57692 per month for 13 month)
 
 The 75th means
-1. More experience than typical (checked)
+1. More experience than typical (checked,React & Redux Master, SASS , China Experience)
 2. Strong skillset; may include specialised certification(going to get my aws/ali certification, creating my own course)
-3. Fairly complex role(checked)
+3. Fairly complex role(checked)(manage two developer & CTO in China)

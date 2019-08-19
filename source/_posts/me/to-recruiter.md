@@ -6,6 +6,22 @@ category: 关于我
 date: 2018-04-28 16:09:02
 ---
 
+# 谢谢阅读
+
+## 联系我
+
+请发邮件给 master-craftsman@jeff-chung.com or chungchi300@hotmail.com(personal email).
+
+## 简历
+
+[My English CV](/EnglishCV.pdf)
+[我的中文简历](/ChineseCV.pdf)
+
+
+## 当前工资和期望薪金
+
+[点击](/2018/04/28/me/currentSalary.html)
+
 # 优势
 
 ## 领域
@@ -90,18 +106,3 @@ date: 2018-04-28 16:09:02
 - 有竞争力的薪酬
 - 让我对工作做出 **更多的决定和更多的控制**
 - 我的领导者可以创造一种 **我们很棒** 和 **持续改进** 的文化。
-
-# 谢谢阅读
-
-## 联系我
-
-如果你阅读后仍然对我感兴趣，请发邮件给 master-craftsman@jeff-chung.com or chungchi300@hotmail.com(personal email)，题目是**向真正的用户提出真正的问题，解决真正的问题！**，我保证会在 30 分钟内回复你。
-
-## 简历
-
-[我的中文简历](/ChineseCV.pdf)
-[My English CV](/EnglishCV.pdf)
-
-## 当前工资和期望薪金
-
-[点击](/2018/04/28/me/currentSalary.html)

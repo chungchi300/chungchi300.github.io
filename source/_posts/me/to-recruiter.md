@@ -22,6 +22,9 @@ date: 2018-04-28 16:09:02
 
 [点击](/2018/04/28/me/currentSalary.html)
 
+# Technical Stack
+https://stackshare.io/mfwauction/mfwauction
+
 # 优势
 
 ## 领域

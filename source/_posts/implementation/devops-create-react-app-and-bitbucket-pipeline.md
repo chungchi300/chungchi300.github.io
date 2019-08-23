@@ -4,6 +4,7 @@ title: >-
 date: 2019-08-23 10:28:21
 category: Implementation
 ---
+```bitbucket-pipelines.yml```
 ```yml
 options:
   max-time: 5
@@ -47,7 +48,10 @@ pipelines:
 # Adv
 1. Notification of slack
 
-# Add on
+# Result
+![ ](http://tinyurl.com/y3mbpgf9)
+
+# Addon
 If you don't want to  check the linting rule on bitbucket, in your `package.json`
 
 ```json

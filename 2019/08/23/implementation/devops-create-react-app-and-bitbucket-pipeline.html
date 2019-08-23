@@ -3,22 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>How to explain Version control(git,svn) for non-IT guy | Jeff Chung</title>
+    <title>CICD for an Create React App using static server(e.g Apache )   | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Metaphor  Software is Movie Programmers are the screenwriters Programmer write source code(Screenwriter write scripts)  Movie Script ManagementScreenwriter write their script in their computer using M">
+    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334options:  max-time: 5pipelines:  default:    - step:        name: Build and test an CRA app        image: node:10.0.0        caches:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to explain Version control(git,svn) for non-IT guy">
-<meta property="og:url" content="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html">
+<meta property="og:title" content="CICD for an Create React App using static server(e.g Apache )  ">
+<meta property="og:url" content="http://jeff-chung.com/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html">
 <meta property="og:site_name" content="Jeff Chung">
-<meta property="og:description" content="Metaphor  Software is Movie Programmers are the screenwriters Programmer write source code(Screenwriter write scripts)  Movie Script ManagementScreenwriter write their script in their computer using M">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334options:  max-time: 5pipelines:  default:    - step:        name: Build and test an CRA app        image: node:10.0.0        caches:">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy/cover.jpg">
-<meta property="og:image" content="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy/git.gif">
-<meta property="og:updated_time" content="2019-05-06T04:24:36.277Z">
+<meta property="og:updated_time" content="2019-08-23T07:31:48.223Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to explain Version control(git,svn) for non-IT guy">
-<meta name="twitter:description" content="Metaphor  Software is Movie Programmers are the screenwriters Programmer write source code(Screenwriter write scripts)  Movie Script ManagementScreenwriter write their script in their computer using M">
-<meta name="twitter:image" content="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy/cover.jpg">
+<meta name="twitter:title" content="CICD for an Create React App using static server(e.g Apache )  ">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334options:  max-time: 5pipelines:  default:    - step:        name: Build and test an CRA app        image: node:10.0.0        caches:">
     
 
     
@@ -216,7 +213,7 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-it-management/how-to-explain-version-control-to-non-IT-guy" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-implementation/devops-create-react-app-and-bitbucket-pipeline" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -224,7 +221,7 @@ ga('send', 'pageview');
                             
     
         <h1 class="article-title" itemprop="name">
-            How to explain Version control(git,svn) for non-IT guy
+            CICD for an Create React App using static server(e.g Apache )  
         </h1>
     
 
@@ -233,8 +230,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html">
-            <time datetime="2018-08-28T02:20:15.000Z" itemprop="datePublished">2018-08-28</time>
+        <a href="/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html">
+            <time datetime="2019-08-23T02:28:21.000Z" itemprop="datePublished">2019-08-23</time>
         </a>
     </div>
 
@@ -242,7 +239,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+        <a class="article-category-link" href="/categories/Implementation/">Implementation</a>
     </div>
 
                                                 
@@ -258,28 +255,19 @@ ga('send', 'pageview');
                                                     <strong class="toc-title">
                                                         文章目录
                                                     </strong>
-                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Metaphor"><span class="toc-number">1.</span> <span class="toc-text">Metaphor</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Movie-Script-Management"><span class="toc-number">2.</span> <span class="toc-text">Movie Script Management</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Source-code-management"><span class="toc-number">3.</span> <span class="toc-text">Source code management</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#The-importance-of-version-control"><span class="toc-number">4.</span> <span class="toc-text">The importance of version control</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Service-provider"><span class="toc-number">5.</span> <span class="toc-text">Service provider</span></a></li></ol>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Requirement"><span class="toc-number">1.</span> <span class="toc-text">Requirement</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Adv"><span class="toc-number">2.</span> <span class="toc-text">Adv</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Add-on"><span class="toc-number">3.</span> <span class="toc-text">Add on</span></a></li></ol>
                                                 </div>
                                                 
-                                                    <h1 id="Metaphor"><a href="#Metaphor" class="headerlink" title="Metaphor"></a>Metaphor</h1><img src="/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy/cover.jpg">
-<ol>
-<li>Software is Movie</li>
-<li>Programmers are the screenwriters</li>
-<li>Programmer write source code(Screenwriter write scripts)</li>
+                                                    <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">options:</span></span><br><span class="line"><span class="attr">  max-time:</span> <span class="number">5</span></span><br><span class="line"><span class="attr">pipelines:</span></span><br><span class="line"><span class="attr">  default:</span></span><br><span class="line"><span class="attr">    - step:</span></span><br><span class="line"><span class="attr">        name:</span> <span class="string">Build</span> <span class="string">and</span> <span class="string">test</span> <span class="string">an</span> <span class="string">CRA</span> <span class="string">app</span></span><br><span class="line"><span class="attr">        image:</span> <span class="attr">node:10.0.0</span></span><br><span class="line"><span class="attr">        caches:</span></span><br><span class="line"><span class="bullet">          -</span> <span class="string">node</span></span><br><span class="line"><span class="attr">        script:</span></span><br><span class="line"><span class="bullet">          -</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"><span class="bullet">          -</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">test</span></span><br><span class="line"><span class="bullet">          -</span> <span class="string">npm</span> <span class="string">run</span> <span class="string">build</span></span><br><span class="line"><span class="attr">        artifacts:</span> <span class="comment"># defining the artifacts to be passed to each future step.</span></span><br><span class="line"><span class="bullet">          -</span> <span class="string">build/**</span></span><br><span class="line"><span class="attr">    - step:</span></span><br><span class="line"><span class="attr">        name:</span> <span class="string">Deploy</span> <span class="string">to</span> <span class="string">production</span></span><br><span class="line"><span class="attr">        deployment:</span> <span class="string">production</span></span><br><span class="line">        <span class="comment"># trigger: manual  # Uncomment to make this a manual deployment.</span></span><br><span class="line"><span class="attr">        script:</span></span><br><span class="line"><span class="attr">          - pipe:</span> <span class="string">atlassian/slack-notify:0.3.2</span></span><br><span class="line"><span class="attr">            variables:</span></span><br><span class="line"><span class="attr">              WEBHOOK_URL:</span> <span class="string">"https://hooks.slack.com/services/THQDW1RRV/BLWFER4/0gVW1b2uCyIBYeONX0bX0asdasdasd"</span></span><br><span class="line"><span class="attr">              MESSAGE:</span> <span class="string">"Deploying to gui portal to staging server"</span></span><br><span class="line"><span class="attr">          - pipe:</span> <span class="string">atlassian/scp-deploy:0.3.4</span></span><br><span class="line"><span class="attr">            variables:</span></span><br><span class="line"><span class="attr">              USER:</span> <span class="string">"webadmin"</span></span><br><span class="line"><span class="attr">              SERVER:</span> <span class="string">"123.123.123.123"</span></span><br><span class="line"><span class="attr">              REMOTE_PATH:</span> <span class="string">"/home/webadmin/mfwauction-cn/public"</span></span><br><span class="line"><span class="attr">              LOCAL_PATH:</span> <span class="string">"build/*"</span></span><br><span class="line"><span class="attr">          - pipe:</span> <span class="string">atlassian/slack-notify:0.3.2</span></span><br><span class="line"><span class="attr">            variables:</span></span><br><span class="line"><span class="attr">              WEBHOOK_URL:</span> <span class="string">"https://hooks.slack.com/services/THQDW1RRV/BLWFER4/0gVYtBWuCyIBYeONX0bX0asdasdasd"</span></span><br><span class="line"><span class="attr">              MESSAGE:</span> <span class="string">"Complete Deployment to gui portal to staging server"</span></span><br></pre></td></tr></table></figure>
+<h1 id="Requirement"><a href="#Requirement" class="headerlink" title="Requirement"></a>Requirement</h1><ol>
+<li>Enable SSH connection (public on server(e.g if centos, it is at /home/webadmin/mfwauction-cn/authorized_keys ), private cert on bitbucket)</li>
+<li>Slack web hook configure properly</li>
 </ol>
-<h1 id="Movie-Script-Management"><a href="#Movie-Script-Management" class="headerlink" title="Movie Script Management"></a>Movie Script Management</h1><p>Screenwriter write their script in their computer using <code>MS word</code> or <code>Text Editor</code>.However it’s dangerous when their computer break-down and causing the <strong>script lost</strong>.They also want to <strong>share script</strong> they written or <strong>collaborative write script</strong>.</p>
-<p>Therefore,they backup their script by uploading them to <strong>remote hard disk(like google drive)</strong>.Like <code>Revenger 3 - 20-5-2017.doc</code>,<code>Revenger 3 - 22-5-2017.doc</code>.</p>
-<h1 id="Source-code-management"><a href="#Source-code-management" class="headerlink" title="Source code management"></a>Source code management</h1><img src="/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy/git.gif">
-<p>The programmers also need to do the same thing but their tool <strong>is more advanced</strong>,they called is <code>version control</code>.They use tool like <code>git,svn</code>(your local google drive synchronization tool) and service provider like <code>github,bitbucket</code>(just like google drive).</p>
-<h1 id="The-importance-of-version-control"><a href="#The-importance-of-version-control" class="headerlink" title="The importance of version control"></a>The importance of version control</h1><p>No version control is similar scenario that you as the movie producer,and your screenwriters <strong>scripts</strong> are</p>
-<ol>
-<li>No backup,when their <strong>computer broke down</strong>,all your scripts will <strong>be lost</strong>.</li>
-<li><strong>Extreme low collaboration efficiency</strong> between screenwriters,screenwriters hard to know what other screenwriter script about <strong>same story</strong>,which lead to <strong>terrible movie script and movie,just like terrible source code and software</strong></li>
+<h1 id="Adv"><a href="#Adv" class="headerlink" title="Adv"></a>Adv</h1><ol>
+<li>Notification of slack</li>
 </ol>
-<h1 id="Service-provider"><a href="#Service-provider" class="headerlink" title="Service provider"></a>Service provider</h1><p>Some non-IT guy are strongly against using service provider like <code>github</code>.In fact they are more reliable option when you don’t have dedicated IT team.</p>
-<p>Using own <code>git server</code> is like using your <code>internal remote hard disk</code>.It is maintenance by your <code>internal team</code> which <code>lack of functions</code> and <code>not stable</code> when you don’t have dedicated IT team.</p>
-<p>Using own <code>github server</code> is like using your <code>google drive</code>.It is maintenance by your <code>google</code> which <code>pretty functions</code> and <code>very stable</code></p>
-
+<h1 id="Add-on"><a href="#Add-on" class="headerlink" title="Add on"></a>Add on</h1><p>If you don’t want to  check the linting rule on bitbucket, in your <code>package.json</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"build": "CI=false react-scripts     build",</span><br></pre></td></tr></table></figure>
                                                         
                                 </div>
                                 <footer class="article-footer">
@@ -289,7 +277,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html" data-id="cjy3v4r5m005obes4nk9h0o7f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html" data-id="cjznst19f0000kgs4nohryl0x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -357,7 +345,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html">评论</a>
+        <a href="http://jeff-chung.com/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html">评论</a>
     
 
                                 </footer>
@@ -366,19 +354,19 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/09/04/it-management/technical-growth-of-it-team.html" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/08/23/implementation/devops-issue-tracker.html" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">上一篇</strong>
             <div class="article-nav-title">
                 
-                    Wine IT position
+                    DevOps issue tracker
                 
             </div>
         </a>
     
     
-        <a href="/2018/08/27/it-management/remote-digital-signature.html" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/08/12/program-design/debug-on-connect-of-opentok.html" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">Remote digital signature of contract</div>
+            <div class="article-nav-title">Debug on connect of opentok</div>
         </a>
     
 </nav>
@@ -571,9 +559,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://jeff-chung.com/2018/08/28/it-management/how-to-explain-version-control-to-non-IT-guy.html';
+            this.page.url = 'http://jeff-chung.com/2019/08/23/implementation/devops-create-react-app-and-bitbucket-pipeline.html';
         
-        this.page.identifier = 'it-management/how-to-explain-version-control-to-non-IT-guy';
+        this.page.identifier = 'implementation/devops-create-react-app-and-bitbucket-pipeline';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

@@ -49,7 +49,7 @@ pipelines:
 1. Notification of slack
 
 # Result
-![ ](http://tinyurl.com/y3mbpgf9)
+![ ](https://www.awesomescreenshot.com/image/4193709/5ca22bfe1fa94116a7d9294d85568907)
 
 # Addon
 If you don't want to  check the linting rule on bitbucket, in your `package.json`

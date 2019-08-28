@@ -3,21 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>How to implement in your web application when your application is supporting REST | Jeff Chung</title>
+    <title>Stop overtrain your mind, progressively overload it | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Understand the problemSurface problem How to make a call to GraphQL Server How to provide an api in GraphQL  Actual problem What is the graphQL api model? How to describe the api and it’s query ? How">
+    <meta name="description" content="Things that happen recently.Recently I am improving my life via 3 things  Improve my algorithm and technical skill on https://github.com/chungchi300/headfirst-js-for-leetcode and https://frontendmaste">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to implement in your web application when your application is supporting REST">
-<meta property="og:url" content="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html">
+<meta property="og:title" content="Stop overtrain your mind, progressively overload it">
+<meta property="og:url" content="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html">
 <meta property="og:site_name" content="Jeff Chung">
-<meta property="og:description" content="Understand the problemSurface problem How to make a call to GraphQL Server How to provide an api in GraphQL  Actual problem What is the graphQL api model? How to describe the api and it’s query ? How">
+<meta property="og:description" content="Things that happen recently.Recently I am improving my life via 3 things  Improve my algorithm and technical skill on https://github.com/chungchi300/headfirst-js-for-leetcode and https://frontendmaste">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql/cover.jpeg">
-<meta property="og:updated_time" content="2019-05-06T04:24:35.478Z">
+<meta property="og:image" content="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it/391yra.jpg">
+<meta property="og:image" content="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it/iceberg.jpg">
+<meta property="og:updated_time" content="2019-08-28T02:22:11.567Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to implement in your web application when your application is supporting REST">
-<meta name="twitter:description" content="Understand the problemSurface problem How to make a call to GraphQL Server How to provide an api in GraphQL  Actual problem What is the graphQL api model? How to describe the api and it’s query ? How">
-<meta name="twitter:image" content="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql/cover.jpeg">
+<meta name="twitter:title" content="Stop overtrain your mind, progressively overload it">
+<meta name="twitter:description" content="Things that happen recently.Recently I am improving my life via 3 things  Improve my algorithm and technical skill on https://github.com/chungchi300/headfirst-js-for-leetcode and https://frontendmaste">
+<meta name="twitter:image" content="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it/391yra.jpg">
     
 
     
@@ -215,7 +216,7 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-front-end/how-to-implement-graphql" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-me/stop-overtrain-your-mind,progressively-overload-it" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -223,7 +224,7 @@ ga('send', 'pageview');
                             
     
         <h1 class="article-title" itemprop="name">
-            How to implement in your web application when your application is supporting REST
+            Stop overtrain your mind, progressively overload it
         </h1>
     
 
@@ -232,8 +233,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/08/14/front-end/how-to-implement-graphql.html">
-            <time datetime="2018-08-14T02:20:15.000Z" itemprop="datePublished">2018-08-14</time>
+        <a href="/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html">
+            <time datetime="2019-08-28T08:09:02.000Z" itemprop="datePublished">2019-08-28</time>
         </a>
     </div>
 
@@ -241,7 +242,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+        <a class="article-category-link" href="/categories/关于我/">关于我</a>
     </div>
 
                                                 
@@ -257,83 +258,41 @@ ga('send', 'pageview');
                                                     <strong class="toc-title">
                                                         文章目录
                                                     </strong>
-                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Understand-the-problem"><span class="toc-number">1.</span> <span class="toc-text">Understand the problem</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Surface-problem"><span class="toc-number">1.1.</span> <span class="toc-text">Surface problem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Actual-problem"><span class="toc-number">1.2.</span> <span class="toc-text">Actual problem</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Devise-a-plan"><span class="toc-number">2.</span> <span class="toc-text">Devise a plan</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Relation"><span class="toc-number">2.1.</span> <span class="toc-text">Relation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Graphql-API-Model"><span class="toc-number">2.1.1.</span> <span class="toc-text">Graphql API Model</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Description-of-API-and-it’s-query-in-graphQL"><span class="toc-number">2.1.2.</span> <span class="toc-text">Description of API and it’s query in graphQL</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Server"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">Server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Server-api-description-language-Schema"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">Server api description language - Schema</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Client"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">Client</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Client-api-query-language-Query"><span class="toc-number">2.1.2.4.</span> <span class="toc-text">Client api query language - Query</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GraphQL-Documentation-about-common-api-problem"><span class="toc-number">2.1.3.</span> <span class="toc-text">GraphQL Documentation about common api problem</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Plan"><span class="toc-number">2.2.</span> <span class="toc-text">Plan</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Carry-out-the-plan"><span class="toc-number">3.</span> <span class="toc-text">Carry out the plan</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#GraphQL-server-and-client-implementation"><span class="toc-number">3.1.</span> <span class="toc-text">GraphQL server and client implementation.</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Server-1"><span class="toc-number">3.1.1.</span> <span class="toc-text">Server</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Schema-Writing"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">Schema Writing</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Resolver-development"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">Resolver development</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Resolve-Helper-Create-80-of-your-resolver-automatically"><span class="toc-number">3.1.1.2.1.</span> <span class="toc-text">Resolve Helper(Create 80% of your resolver automatically)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Client-implementation"><span class="toc-number">3.1.2.</span> <span class="toc-text">Client implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Query-Writing"><span class="toc-number">3.1.2.1.</span> <span class="toc-text">Query Writing</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Select-proper-Query-Tool"><span class="toc-number">3.1.2.2.</span> <span class="toc-text">Select proper Query Tool</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-Step"><span class="toc-number">3.2.</span> <span class="toc-text">Final Step</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Verification"><span class="toc-number">4.</span> <span class="toc-text">Verification</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Misc"><span class="toc-number">5.</span> <span class="toc-text">Misc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tool"><span class="toc-number">5.1.</span> <span class="toc-text">Tool</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Writing-Methodology"><span class="toc-number">5.2.</span> <span class="toc-text">Writing Methodology</span></a></li></ol></li></ol>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Things-that-happen-recently"><span class="toc-number">1.</span> <span class="toc-text">Things that happen recently.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Things-I-observe"><span class="toc-number">2.</span> <span class="toc-text">Things I observe</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Things-I-thought"><span class="toc-number">3.</span> <span class="toc-text">Things I thought</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Things-I-observe-when-I-make-the-changes"><span class="toc-number">4.</span> <span class="toc-text">Things I observe when I make the changes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Final"><span class="toc-number">5.</span> <span class="toc-text">Final</span></a></li></ol>
                                                 </div>
                                                 
-                                                    <img src="/2018/08/14/front-end/how-to-implement-graphql/cover.jpeg">
-<h1 id="Understand-the-problem"><a href="#Understand-the-problem" class="headerlink" title="Understand the problem"></a>Understand the problem</h1><h2 id="Surface-problem"><a href="#Surface-problem" class="headerlink" title="Surface problem"></a>Surface problem</h2><ul>
-<li>How to make a call to GraphQL Server</li>
-<li>How to provide an api in GraphQL</li>
-</ul>
-<h2 id="Actual-problem"><a href="#Actual-problem" class="headerlink" title="Actual problem"></a>Actual problem</h2><ul>
-<li>What is the graphQL api model?</li>
-<li>How to describe the api and it’s query ?</li>
-<li>How to implement a graphQL API server and how to implement the query?</li>
-<li>What is the common implementation of specific api problem?</li>
-</ul>
-<h1 id="Devise-a-plan"><a href="#Devise-a-plan" class="headerlink" title="Devise a plan"></a>Devise a plan</h1><h2 id="Relation"><a href="#Relation" class="headerlink" title="Relation"></a>Relation</h2><h3 id="Graphql-API-Model"><a href="#Graphql-API-Model" class="headerlink" title="Graphql API Model"></a>Graphql API Model</h3><p>Rest: Entities based api<br>GraphQL: Tree based api</p>
-<p>GraphQL is still</p>
-<ul>
-<li><strong>server-client</strong> model</li>
-<li><strong>http protocol</strong></li>
-<li><strong>request body&amp;response body</strong> is <strong>json</strong></li>
-</ul>
-<h3 id="Description-of-API-and-it’s-query-in-graphQL"><a href="#Description-of-API-and-it’s-query-in-graphQL" class="headerlink" title="Description of API and it’s query in graphQL"></a>Description of API and it’s query in graphQL</h3><h4 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h4><ul>
-<li>API is a <strong>tree(Graph)</strong>.</li>
-<li>Each node correspond to a <strong>field and it’s argument</strong>.</li>
-</ul>
-<h4 id="Server-api-description-language-Schema"><a href="#Server-api-description-language-Schema" class="headerlink" title="Server api description language - Schema"></a>Server api description language - Schema</h4><p>The syntax is TypeScript like but looser</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">input bookFilter &#123;</span><br><span class="line">    id: ID</span><br><span class="line">    title: <span class="built_in">String</span></span><br><span class="line">    author: <span class="built_in">String</span></span><br><span class="line">    isbn: <span class="built_in">String</span></span><br><span class="line">    url: <span class="built_in">String</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// The Actual GraphQL Tree</span></span><br><span class="line">type Query &#123;</span><br><span class="line">  # arguments filter for filter is just an convention</span><br><span class="line">  allBook(filter: bookFilter): [Book!]!</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type Mutation &#123;</span><br><span class="line">  createBook(title: <span class="built_in">String</span>!, <span class="attr">author</span>: <span class="built_in">String</span>!): Book</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="Client"><a href="#Client" class="headerlink" title="Client"></a>Client</h4><ul>
-<li>Our query is a tree-like query language which describe the data it’s want based on server GraphQL API</li>
-</ul>
-<h4 id="Client-api-query-language-Query"><a href="#Client-api-query-language-Query" class="headerlink" title="Client api query language - Query"></a>Client api query language - Query</h4><p>Define fields and field parameter</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">query &#123;</span><br><span class="line">  allBooks &#123;</span><br><span class="line">    author,</span><br><span class="line">    title</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="GraphQL-Documentation-about-common-api-problem"><a href="#GraphQL-Documentation-about-common-api-problem" class="headerlink" title="GraphQL Documentation about common api problem"></a>GraphQL Documentation about common api problem</h3><p><a href="https://graphql.org/learn/queries" target="_blank" rel="noopener">Query</a><br><a href="https://graphql.org/learn/pagination/" target="_blank" rel="noopener">Pagination</a><br><a href="https://stackoverflow.com/questions/34321688/can-graphql-return-aggregate-counts" target="_blank" rel="noopener">Automatic Aggregation</a></p>
-<h2 id="Plan"><a href="#Plan" class="headerlink" title="Plan"></a>Plan</h2><ul>
-<li>Write the <strong>Schema</strong> for application</li>
-<li><strong>Implement</strong> the graphql api in server side</li>
-<li>Write the <strong>Query</strong> for client to query</li>
-<li>Front end application <strong>implement</strong> the <strong>query of graphql</strong></li>
-</ul>
-<h1 id="Carry-out-the-plan"><a href="#Carry-out-the-plan" class="headerlink" title="Carry out the plan"></a>Carry out the plan</h1><h2 id="GraphQL-server-and-client-implementation"><a href="#GraphQL-server-and-client-implementation" class="headerlink" title="GraphQL server and client implementation."></a>GraphQL server and client implementation.</h2><h3 id="Server-1"><a href="#Server-1" class="headerlink" title="Server"></a>Server</h3><p>You need to build</p>
+                                                    <h1 id="Things-that-happen-recently"><a href="#Things-that-happen-recently" class="headerlink" title="Things that happen recently."></a>Things that happen recently.</h1><p>Recently I am improving my life via 3 things</p>
 <ol>
-<li><strong>schema</strong></li>
-<li><strong>resolver</strong></li>
-<li><strong>Serve it as http api endpoint</strong></li>
+<li>Improve my algorithm and technical skill on <a href="https://github.com/chungchi300/headfirst-js-for-leetcode" target="_blank" rel="noopener">https://github.com/chungchi300/headfirst-js-for-leetcode</a> and <a href="https://frontendmasters.com/" target="_blank" rel="noopener">https://frontendmasters.com/</a></li>
+<li>Start my talking and sales class.</li>
+<li>Start my side project that is about reservation and discount.</li>
 </ol>
-<p>I suggest use <a href="https://github.com/apollographql/apollo-server" target="_blank" rel="noopener">appollo-server</a> as our tool to build things above,The following is the <strong>simplest server demo</strong></p>
-<p><a href="https://github.com/hemanth/graphql-demo" target="_blank" rel="noopener">Simplest</a></p>
-<h4 id="Schema-Writing"><a href="#Schema-Writing" class="headerlink" title="Schema Writing"></a>Schema Writing</h4><p><a href="https://launchpad.graphql.com/zr173pnqx7" target="_blank" rel="noopener">Online Schema and query playground</a>,Online schema &amp;query editor</p>
-<h4 id="Resolver-development"><a href="#Resolver-development" class="headerlink" title="Resolver development"></a>Resolver development</h4><h5 id="Resolve-Helper-Create-80-of-your-resolver-automatically"><a href="#Resolve-Helper-Create-80-of-your-resolver-automatically" class="headerlink" title="Resolve Helper(Create 80% of your resolver automatically)"></a>Resolve Helper(Create 80% of your resolver automatically)</h5><p><a href="https://github.com/mickhansen/graphql-sequelize" target="_blank" rel="noopener">graphql + sequelize(an orm) </a><br><a href="https://github.com/graphile/postgraphile" target="_blank" rel="noopener">Graphql + PostgreSQL</a></p>
-<p>P.S</p>
-<ul>
-<li>GraphQL’s strength is that it gives the frontend more power in determining what data specifically is returned. <strong>Some of what you write in GraphQL will be the same as what you would write for a REST API</strong>.</li>
-</ul>
-<h3 id="Client-implementation"><a href="#Client-implementation" class="headerlink" title="Client implementation"></a>Client implementation</h3><p>You need to build</p>
+<h1 id="Things-I-observe"><a href="#Things-I-observe" class="headerlink" title="Things I observe"></a>Things I observe</h1><p>In first few days, I am super motivated to do them using 9 pomodoro(I usually have 15 pomodoro everyday) and I find that I lost my motivation quickly.</p>
+<p>And I feel anxiety and self doubts that </p>
 <ol>
-<li><strong>query</strong></li>
-<li><strong>select proper query tool</strong></li>
-<li><strong>query it using proper query tool</strong></li>
+<li>What if it fails or not working? It means that I lost many time and effort.</li>
+<li>What if there is a better way to improve my life?</li>
 </ol>
-<h4 id="Query-Writing"><a href="#Query-Writing" class="headerlink" title="Query Writing"></a>Query Writing</h4><p><a href="https://launchpad.graphql.com/zr173pnqx7" target="_blank" rel="noopener">Online Schema and query playground</a>,Online schema &amp;query editor</p>
-<h4 id="Select-proper-Query-Tool"><a href="#Select-proper-Query-Tool" class="headerlink" title="Select proper Query Tool"></a>Select proper Query Tool</h4><p><a href="https://www.apollographql.com/docs/react/" target="_blank" rel="noopener">Apollo Client</a><br><a href="https://www.learnrelay.org/" target="_blank" rel="noopener">Relay</a><br><a href="https://github.com/prismagraphql/graphql-request" target="_blank" rel="noopener">Graphql-request</a></p>
-<p>P.S</p>
-<ul>
-<li>Apollo Client &amp; Relay are mostly sacrificing the predictable state change for simply api usage,(for complex front end application,<strong>predictable state change</strong> is very important). I prefer using <strong>redux-api-middleware</strong> &amp;&amp; Graphql-request to call the <strong>graphql api</strong></li>
-</ul>
-<h2 id="Final-Step"><a href="#Final-Step" class="headerlink" title="Final Step"></a>Final Step</h2><ol>
-<li>Use <a href="https://launchpad.graphql.com/zr173pnqx7" target="_blank" rel="noopener">Online Schema and query playground</a> to write schema</li>
-<li>Use <a href="https://github.com/graphile/postgraphile" target="_blank" rel="noopener">Graphql + PostgreSQL</a> to implement backend</li>
-<li>Use <a href="https://launchpad.graphql.com/zr173pnqx7" target="_blank" rel="noopener">Online Schema and query playground</a> to write query</li>
-<li>Use <a href="https://github.com/prismagraphql/graphql-request" target="_blank" rel="noopener">Graphql-request</a> to implement query</li>
+<h1 id="Things-I-thought"><a href="#Things-I-thought" class="headerlink" title="Things I thought"></a>Things I thought</h1><img src="/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it/391yra.jpg">
+<ol>
+<li>You should <strong>communicate and negotiating</strong> with yourself(just like how we train our body) instead of self-blame like. “you are a piece of shit or loser that has no motivation”</li>
+<li>I think the problem is the <strong>size of the changes and effort</strong> and the solution is <strong>progressively overload it</strong>. I mean your totally can <strong>start it every 2 pomodoro(which cause only 50 minutes) per day</strong> and sticks to it <strong>every single day</strong>. The Advantage is <ol>
+<li>Greatly reduce the <strong>pressure and self blame</strong>. Everyone can bear the lost of 50 minutes</li>
+<li>balance your life so that less stress from life</li>
 </ol>
-<h1 id="Verification"><a href="#Verification" class="headerlink" title="Verification"></a>Verification</h1><ul>
-<li>For graphql api,define unit test for graphql api</li>
-<li>End to End test for front end application that utilize graphql api</li>
-</ul>
-<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="Tool"><a href="#Tool" class="headerlink" title="Tool"></a>Tool</h2><p><a href="https://github.com/2fd/graphdoc" target="_blank" rel="noopener">GraphQL API to Static Pages</a>,Generate API Doc<br><a href="https://github.com/yarax/swagger-to-graphql" target="_blank" rel="noopener">Swagger to GraphQL</a>,easy migrating from Rest<br><a href="https://github.com/APIs-guru/graphql-apis" target="_blank" rel="noopener">Public GraphQL API</a>,very strong community(facebook,github)<br><a href="https://developer.github.com/v4/guides/migrating-from-rest/" target="_blank" rel="noopener">Rest to graphql migration api on github</a></p>
-<h2 id="Writing-Methodology"><a href="#Writing-Methodology" class="headerlink" title="Writing Methodology"></a>Writing Methodology</h2><p>This is written according to <a href="https://en.wikipedia.org/wiki/How_to_Solve_It" target="_blank" rel="noopener">How to solve it</a></p>
+</li>
+</ol>
+<h1 id="Things-I-observe-when-I-make-the-changes"><a href="#Things-I-observe-when-I-make-the-changes" class="headerlink" title="Things I observe when I make the changes"></a>Things I observe when I make the changes</h1><ol>
+<li>Less self blame.</li>
+<li>The improvements makes me want to increase the time of work every day like growth to 4 pomodoro as belows<ol>
+<li>I get 83 marks in technical interview in amazon.</li>
+<li>Know more talking model and understand my work in the business side of my boss.</li>
+<li>My side project start to able support my family business and greatly improve my daily work.</li>
+</ol>
+</li>
+</ol>
+<h1 id="Final"><a href="#Final" class="headerlink" title="Final"></a>Final</h1><img src="/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it/iceberg.jpg">
+<p>Success is an iceberg, so what to determine it is how we <strong>handle the negativity and meet the requirement below</strong></p>
 
                                                         
                                 </div>
@@ -344,7 +303,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html" data-id="cjy3v4r500045bes4571ij121" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html" data-id="cjzumqiry0000kus4p40v1xxh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -412,7 +371,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html">评论</a>
+        <a href="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html">评论</a>
     
 
                                 </footer>
@@ -421,19 +380,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    From 7 fps to 37 fps-How to use web worker on create react app(CRA) project
-                
-            </div>
-        </a>
     
-    
-        <a href="/2018/08/14/front-end/why-we-choose-graphql.html" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/08/23/implementation/devops-issue-tracker.html" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">Why we choose graphql</div>
+            <div class="article-nav-title">DevOps issue tracker</div>
         </a>
     
 </nav>
@@ -626,9 +576,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://jeff-chung.com/2018/08/14/front-end/how-to-implement-graphql.html';
+            this.page.url = 'http://jeff-chung.com/2019/08/28/me/stop-overtrain-your-mind,progressively-overload-it.html';
         
-        this.page.identifier = 'front-end/how-to-implement-graphql';
+        this.page.identifier = 'me/stop-overtrain-your-mind,progressively-overload-it';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

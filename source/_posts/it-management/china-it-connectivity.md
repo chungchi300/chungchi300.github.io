@@ -53,7 +53,7 @@ No ICP registration need!
 [AWS Reachability test](http://ec2-reachability.amazonaws.com/)
 
 ## Testing Tool
-
+* https://dnschecker.org/
 * http://tool.chinaz.com/speedtest/
 * https://icp.chinaz.com/
 * https://www.whois.com/

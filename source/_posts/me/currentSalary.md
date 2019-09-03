@@ -54,3 +54,31 @@ The 75th means
 1. More experience than typical (checked,React & Redux Master, SASS , China Experience)
 2. Strong skillset; may include specialised certification(going to get my aws/ali certification, creating my own course)
 3. Fairly complex role(checked)(manage two developer & CTO in China)
+
+
+
+
+
+
+
+# Previous Achievement
+
+
+
+# Future Achievement
+
+1. SASS model of auction service
+2. Collective legitimate(reliable check of single user) (Network Effect)
+3. Multi currency and multi language
+4. all in one consignment , client relationship manager and customer can check their consignment online and generate consignment report (Conversion cost)
+5. Shipping arrangement note (Conversion cost)
+6. Real time reporting to provide better service in real time
+7. Group pre bid
+8. Future Database Generation Center, TLB model basic asset
+9. Cooperation with mainland developer to create China Version
+10. Online Bidding Panel For Multiple user for telephone bidding
+11. Advanced Payment of Money(Tunnel Effect)
+12. Check In App 
+
+
+Auction (Conversion cost)

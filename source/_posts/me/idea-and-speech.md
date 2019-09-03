@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 隨意寫
+title: 隨筆
 category: 关于我
 keywords:
 date: 2019-09-03 16:09:02

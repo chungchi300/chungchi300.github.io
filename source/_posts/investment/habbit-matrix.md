@@ -1,13 +1,12 @@
 ---
 title: >-
   Habit matrix
-date: 2019-0-24 10:28:21
+date: 2019-09-24 10:28:21
 category: Investment
 password: jeffchung
 ---
 
 Good/Bad Habit matrix I am doing
-
 
 ```
                     high compound rate

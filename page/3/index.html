@@ -216,6 +216,143 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-front-end/small-redux-problem-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/05/16/front-end/small-redux-problem-1.html">Small Redux Problem 1</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/05/16/front-end/small-redux-problem-1.html">
+            <time datetime="2019-05-16T02:20:15.000Z" itemprop="datePublished">2019-05-16</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="Redux-state-design-domain-amp-ui"><a href="#Redux-state-design-domain-amp-ui" class="headerlink" title="Redux state design domain &amp; ui"></a>Redux state design domain &amp; ui</h1><ol>
+<li><a href="https://www.jsnoding.com/2017/11/22/redux-state-store/" target="_blank" rel="noopener">https://www.jsnoding.com/2017/11/22/redux-state-store/</a></li>
+<li><a href="https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape" target="_blank" rel="noopener">https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/27093191" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/27093191</a></li>
+</ol>
+<p>p.s<br><a href="https://en.wikipedia.org/wiki/Single_source_of_truth" target="_blank" rel="noopener">The domain state also honour Single source of truth</a></p>
+<h1 id="Http-API-library"><a href="#Http-API-library" class="headerlink" title="Http API library"></a>Http API library</h1><p>I think your need to your own logic by referencing this because your communication is webrtc](<a href="https://github.com/cantierecreativo/redux-bees" target="_blank" rel="noopener">https://github.com/cantierecreativo/redux-bees</a>)</p>
+<h1 id="React-Dialog"><a href="#React-Dialog" class="headerlink" title="React Dialog"></a>React Dialog</h1><ol>
+<li><a href="https://stackoverflow.com/questions/35623656/how-can-i-display-a-modal-dialog-in-redux-that-performs-asynchronous-actions/35641680" target="_blank" rel="noopener">React Dialog</a></li>
+</ol>
+<h1 id="Addon"><a href="#Addon" class="headerlink" title="Addon"></a>Addon</h1><p><a href="https://twitter.com/dan_abramov/status/741661275525132288" target="_blank" rel="noopener">State tree design</a></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html" data-id="cjy3v4r5c004sbes4t2fwk0o3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-program-design/effective-usage-jest" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -647,138 +784,6 @@ ga('send', 'pageview');
                                         
     
         <a href="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-investment/habbit-matrix" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/12/24/investment/habbit-matrix.html">Habit matrix</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/12/24/investment/habbit-matrix.html">
-            <time datetime="2018-12-24T02:28:21.000Z" itemprop="datePublished">2018-12-24</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Investment/">Investment</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                        <p>
-                                            The article has been encrypted, please enter your password to view.<br>
-                                        </p>
-                                        <p class="article-more-link">
-                                            <a href="/2018/12/24/investment/habbit-matrix.html#more">
-                                                查看更多
-                                            </a>
-                                        </p>
-                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/12/24/investment/habbit-matrix.html" data-id="ck04qlpie0000cjpukvuqc0q0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/12/24/investment/habbit-matrix.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/12/24/investment/habbit-matrix.html">评论</a>
     
 
                                 </footer>
@@ -1951,7 +1956,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
         </div>
     </div>
 

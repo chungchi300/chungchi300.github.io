@@ -20,10 +20,3 @@ Integrate Performance And Career politics
 
 4. Self known
 
-
-# Ambition Improvement
-2 year latter.
-
-1. Develop the new auction system which greatly improve operation efficiency and customer satisfaction on **auction and consignment side** that 
-2. SAAS model for our auction.
-3. Great wine estimator problem for TLB method which not only can greatly improve our consignment and other consignment.

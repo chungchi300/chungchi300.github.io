@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>归档: 2018 | Jeff Chung</title>
+    <title>React Code Splitting | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Jeff Chung">
-<meta property="og:url" content="http://jeff-chung.com/archives/2018/page/2/index.html">
+    <meta name="description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React Code Splitting">
+<meta property="og:url" content="http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html">
 <meta property="og:site_name" content="Jeff Chung">
+<meta property="og:description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-13T03:04:12.747Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jeff Chung">
+<meta name="twitter:title" content="React Code Splitting">
+<meta name="twitter:description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
     
 
     
@@ -215,329 +219,171 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2018</h1>
-            </div>
+            <section id="main"><article id="post-front-end/react-code-spliting" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
+                    
+                        <header class="article-header">
+                            
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/23/investment/real-estate.html">Real estate investment</a>
+        <h1 class="article-title" itemprop="name">
+            React Code Splitting
         </h1>
     
 
-                <div class="article-meta">
-                    
+                                
+                                    <div class="article-meta">
+                                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/08/23/investment/real-estate.html">
-            <time datetime="2018-08-23T02:28:21.000Z" itemprop="datePublished">2018-08-23</time>
+        <a href="/2018/09/13/front-end/react-code-spliting.html">
+            <time datetime="2018-09-13T02:20:15.000Z" itemprop="datePublished">2018-09-13</time>
         </a>
     </div>
 
 
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Investment/">Investment</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">Why we need to study data structure and algorithm,the answer is definitely not only Performance!</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/23/program-design/why-we-need-to-study-data-structure.html">
-            <time datetime="2018-08-23T02:20:15.000Z" itemprop="datePublished">2018-08-23</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/23/front-end/my-awesome-stack.html">My Awesome stack</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/23/front-end/my-awesome-stack.html">
-            <time datetime="2018-08-23T02:20:15.000Z" itemprop="datePublished">2018-08-23</time>
-        </a>
-    </div>
-
-
-                    
+                                            
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
     </div>
 
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html">From 7 fps to 37 fps-How to use web worker on create react app(CRA) project</a>
-        </h1>
-    
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                <div id="toc" class="toc-article">
+                                                    <strong class="toc-title">
+                                                        文章目录
+                                                    </strong>
+                                                    
+                                                </div>
+                                                
+                                                    <p>Combine React Lazy &amp; Suspense &amp; React timeout to avoid flicking</p>
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/17/front-end/from-7-fps-to-37-fps-how-to-use-web-worker-on-create-react-app-project.html">
-            <time datetime="2018-08-17T02:20:15.000Z" itemprop="datePublished">2018-08-17</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/14/front-end/why-we-choose-graphql.html">Why we choose graphql</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/14/front-end/why-we-choose-graphql.html">
-            <time datetime="2018-08-14T02:20:15.000Z" itemprop="datePublished">2018-08-14</time>
-        </a>
-    </div>
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
 
 
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
 
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/14/front-end/how-to-implement-graphql.html">How to implement in your web application when your application is supporting REST</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/14/front-end/how-to-implement-graphql.html">
-            <time datetime="2018-08-14T02:20:15.000Z" itemprop="datePublished">2018-08-14</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">Program design guidance and code standard in a React project for intermediate developer for effective development</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">
-            <time datetime="2018-08-09T02:20:15.000Z" itemprop="datePublished">2018-08-09</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/07/30/it-management/technical-growth-of-front-end-team.html">前端团队的技术成长</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/07/30/it-management/technical-growth-of-front-end-team.html">
-            <time datetime="2018-07-30T02:20:15.000Z" itemprop="datePublished">2018-07-30</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/06/27/program-design/rest-vs-grapth-ql.html">Rest VS GRAPHQL</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/06/27/program-design/rest-vs-grapth-ql.html">
-            <time datetime="2018-06-27T02:28:44.000Z" itemprop="datePublished">2018-06-27</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/06/27/program-design/efficiency-and-high-readability-transfer-protocol.html">Efficient and high readability transfer protocol</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/06/27/program-design/efficiency-and-high-readability-transfer-protocol.html">
-            <time datetime="2018-06-27T02:28:44.000Z" itemprop="datePublished">2018-06-27</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
-    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    
 </div>
 
-    <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2018/">&laquo; 上一页</a><a class="page-number" href="/archives/2018/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2018/page/3/">3</a><a class="page-number" href="/archives/2018/page/4/">4</a><a class="page-number" href="/archives/2018/page/5/">5</a><a class="extend next" rel="next" href="/archives/2018/page/3/">下一页 &raquo;</a>
-    </nav>
+    <a data-url="http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html" data-id="ck0tf1khd00004ys46vrt7jsv" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/10/06/it-management/first-week-in-new-company-as-it-specialist.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    First Week in my new company as IT Specialist
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2018/09/10/it-management/how-to-explain-you-need-aws(or cloud server)-to-non-IT-guy.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">How to explain you need aws(or cloud server) to non-IT guy</div>
+        </a>
+    
+</nav>
+
+
+            
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 </section>
+    
+
+        </section>
             
                 
     <aside id="sidebar">
@@ -711,11 +557,13 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html';
+        
+        this.page.identifier = 'front-end/react-code-spliting';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'jeffchung' + '.disqus.com/count.js';
+        s.src = '//' + 'jeffchung' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

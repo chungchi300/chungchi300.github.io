@@ -5,6 +5,31 @@ category: 关于我
 ? keywords
 date: 2018-04-28 16:09:02
 ---
+# Course
+
+## Now
+Dynamic programming - https://www.geeksforgeeks.org/dynamic-programming/  , https://www.freecodecamp.org/news/demystifying-dynamic-programming-24fbdb831d3a/
+
+~~Intermediate React~~ - ~~testing ,css in js~~,~~**code splitting**~~ , ~~**code organization**~~ - 
+
+
+
+Complete React v4 - async ui,context,portals,conclusion https://frontendmasters.com/courses/complete-react-v4/
+Node js(focusing on child process) - https://frontendmasters.com/courses/digging-into-node/
+
+https://frontendmasters.com/courses/chrome-dev-tools-v2/
+
+Typescript - https://frontendmasters.com/courses/typescript-v2/
+~~Stacks&Queues,  -  https://frontendmasters.com/courses/practical-algorithms/~~
+Recursion   -  https://frontendmasters.com/courses/practical-algorithms/
+Tree&Searching - https://frontendmasters.com/courses/trees-and-graphs/
+Hash Table - https://frontendmasters.com/courses/practical-algorithms/
+AWS for Front-End Engineers - https://frontendmasters.com/courses/aws-frontend-react/
+Functional programming - https://frontendmasters.com/courses/functional-javascript-v3/
+
+## Future
+https://frontendmasters.com/courses/servers-node-js/
+
 
 # English
 
@@ -22,7 +47,7 @@ How to solve it by computer + Leetcode(assume how to solve it by computer can he
 # Book
 
 《JavaScript 高级程序设计》：这本书我前前后后看了五六遍，真的是好书，遇到的面试题上面都有的
-
+   
 # Technical Knowledge hints
 
 - 设计原理。如 VueJS， ReactJS

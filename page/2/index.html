@@ -175,7 +175,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                76
+                77
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -216,6 +216,133 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-implementation/devops-issue-tracker" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/08/23/implementation/devops-issue-tracker.html">DevOps issue tracker</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/08/23/implementation/devops-issue-tracker.html">
+            <time datetime="2019-08-23T02:28:21.000Z" itemprop="datePublished">2019-08-23</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Implementation/">Implementation</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <h1 id="DevOps-bug-issue-tracker"><a href="#DevOps-bug-issue-tracker" class="headerlink" title="DevOps bug issue tracker"></a>DevOps bug issue tracker</h1><p>Jira/Excel<br>Instabug - web screen capture, android &amp; ios<br>Deployment of app - hockey app      </p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2019/08/23/implementation/devops-issue-tracker.html" data-id="cjznst1d20001kgs45g6em26l" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2019/08/23/implementation/devops-issue-tracker.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/08/23/implementation/devops-issue-tracker.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-program-design/debug-on-connect-of-opentok" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -224,7 +351,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2019/08/12/program-design/debug-on-connect-of-opentok.html">Debug on connect of opentok</a>
+            <a class="article-title" href="/2019/08/12/program-design/debug-on-connect-of-opentok.html">Debug on connect of opentok - a classic example of understanding the event loop can help you become better programmer</a>
         </h1>
     
 
@@ -886,150 +1013,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-program-design/integration-with-stripe-by-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">Integration with stripe by nodejs</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">
-            <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <h1 id="Background-knowledge"><a href="#Background-knowledge" class="headerlink" title="Background knowledge"></a>Background knowledge</h1><h2 id="Why-stripe"><a href="#Why-stripe" class="headerlink" title="Why stripe"></a>Why stripe</h2><ol>
-<li>Variety payment method(all famous credit card,ali pay,wechat pay)</li>
-<li>Developer friendly(so far easier doc)</li>
-<li>Cheaper charge(3.4% + HK$2.35 for credit card,2.2% + HK$2 for ali pay)</li>
-<li>Accept different currency(e.g usd,hkd)</li>
-</ol>
-<p><a href="https://ordermetrics.com/profit-guide/reduce-payment-processing-fees/how-to-negotiate-payment-processing-fees-with-stripe/" target="_blank" rel="noopener">Potential negotiation plan</a><br>At around $1m per year - 2.5% + $0.30<br>At around $2m per year - 1.9% + $0.30<br>At around $3m per year - 1.8% + $0.30</p>
-<h2 id="General-Flow-for-adding-and-charging-a-credit-card"><a href="#General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="General Flow for adding and charging a credit card"></a>General Flow for adding and charging a credit card</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
-<img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
-<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
-<p>We create customer ,source and charge in a general flow for adding and charging a credit card</p>
-<h2 id="Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card"><a href="#Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="Why not direct store the credit card info?why use the General Flow for adding and charging a credit card"></a>Why not direct store the credit card info?why use the General Flow for adding and charging a credit card</h2><p>You <strong>should not</strong> store credit card detail(<strong>card numbers and cvc code</strong>) on your own database as integrator, you should only use the token to <strong>retrieve and store</strong> the <strong>card id and user id of stripe</strong> for charging the credit card in future. It is avoid credit card data leakage and meeting the industry standard<a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener">Payment Card Industry Data Security Standards</a></p>
-<h2 id="Entity-Relationship"><a href="#Entity-Relationship" class="headerlink" title="Entity Relationship"></a>Entity Relationship</h2><h1 id="Backend-development-knowledge"><a href="#Backend-development-knowledge" class="headerlink" title="Backend development knowledge"></a>Backend development knowledge</h1><p>Use <a href="https://github.com/stripe/stripe-node" target="_blank" rel="noopener">Stripe Node</a> which support <strong>promise</strong> and <strong>types(of typescript)</strong></p>
-<h1 id="Frontend"><a href="#Frontend" class="headerlink" title="Frontend"></a>Frontend</h1><ol>
-<li>For Web,Use <a href="https://github.com/stripe/react-stripe-elements" target="_blank" rel="noopener">react-stripe-elements</a></li>
-<li>For App,Use <a href="https://github.com/tipsi/tipsi-stripe" target="_blank" rel="noopener">https://github.com/tipsi/tipsi-stripe</a> </li>
-</ol>
-<p>They must be used with <strong>https</strong> to pass the <strong>pci standard</strong></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html" data-id="cjy3v4r630074bes4qdqx2hrg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-it-management/communication-recognization" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1501,7 +1484,7 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-it-management/communication-improve-by-small-story" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-program-design/integration-with-stripe-by-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -1509,7 +1492,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/09/it-management/communication-improve-by-small-story.html">Improve your communication ability by small story</a>
+            <a class="article-title" href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">Integration with stripe by nodejs</a>
         </h1>
     
 
@@ -1518,8 +1501,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/06/09/it-management/communication-improve-by-small-story.html">
-            <time datetime="2019-06-09T02:28:21.000Z" itemprop="datePublished">2019-06-09</time>
+        <a href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">
+            <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
         </a>
     </div>
 
@@ -1527,7 +1510,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
     </div>
 
                                                 
@@ -1539,26 +1522,24 @@ ga('send', 'pageview');
                                 <div class="article-entry" itemprop="articleBody">
                                     
                                             
-                                                    <h1 id="Good"><a href="#Good" class="headerlink" title="Good"></a>Good</h1><ol>
-<li>Don’t need to think story</li>
-<li>Easy to understand</li>
+                                                    <h1 id="Background-knowledge"><a href="#Background-knowledge" class="headerlink" title="Background knowledge"></a>Background knowledge</h1><h2 id="Why-stripe"><a href="#Why-stripe" class="headerlink" title="Why stripe"></a>Why stripe</h2><ol>
+<li>Variety payment method(all famous credit card,ali pay,wechat pay)</li>
+<li>Developer friendly(so far easier doc)</li>
+<li>Cheaper charge(3.4% + HK$2.35 for credit card,2.2% + HK$2 for ali pay)</li>
+<li>Accept different currency(e.g usd,hkd)</li>
 </ol>
-<h1 id="5-Basic-Elements-of-small-story"><a href="#5-Basic-Elements-of-small-story" class="headerlink" title="5 Basic Elements of small story"></a>5 Basic Elements of small story</h1><ol>
-<li>Character</li>
-<li>Conflict - Dream vs Reality</li>
-<li>Decision/Action(Key element)(hero make different decision)</li>
-<li>Ending(normally used to prove decision is correct or not, but a good story must has a logical ending)</li>
-<li>Topic(What the writer want to express)</li>
+<p><a href="https://ordermetrics.com/profit-guide/reduce-payment-processing-fees/how-to-negotiate-payment-processing-fees-with-stripe/" target="_blank" rel="noopener">Potential negotiation plan</a><br>At around $1m per year - 2.5% + $0.30<br>At around $2m per year - 1.9% + $0.30<br>At around $3m per year - 1.8% + $0.30</p>
+<h2 id="General-Flow-for-adding-and-charging-a-credit-card"><a href="#General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="General Flow for adding and charging a credit card"></a>General Flow for adding and charging a credit card</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
+<img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
+<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
+<p>We create customer ,source and charge in a general flow for adding and charging a credit card</p>
+<h2 id="Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card"><a href="#Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="Why not direct store the credit card info?why use the General Flow for adding and charging a credit card"></a>Why not direct store the credit card info?why use the General Flow for adding and charging a credit card</h2><p>You <strong>should not</strong> store credit card detail(<strong>card numbers and cvc code</strong>) on your own database as integrator, you should only use the token to <strong>retrieve and store</strong> the <strong>card id and user id of stripe</strong> for charging the credit card in future. It is avoid credit card data leakage and meeting the industry standard<a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener">Payment Card Industry Data Security Standards</a></p>
+<h2 id="Entity-Relationship"><a href="#Entity-Relationship" class="headerlink" title="Entity Relationship"></a>Entity Relationship</h2><h1 id="Backend-development-knowledge"><a href="#Backend-development-knowledge" class="headerlink" title="Backend development knowledge"></a>Backend development knowledge</h1><p>Use <a href="https://github.com/stripe/stripe-node" target="_blank" rel="noopener">Stripe Node</a> which support <strong>promise</strong> and <strong>types(of typescript)</strong></p>
+<h1 id="Frontend"><a href="#Frontend" class="headerlink" title="Frontend"></a>Frontend</h1><ol>
+<li>For Web,Use <a href="https://github.com/stripe/react-stripe-elements" target="_blank" rel="noopener">react-stripe-elements</a></li>
+<li>For App,Use <a href="https://github.com/tipsi/tipsi-stripe" target="_blank" rel="noopener">https://github.com/tipsi/tipsi-stripe</a> </li>
 </ol>
-<h1 id="Three-Sector-Method"><a href="#Three-Sector-Method" class="headerlink" title="Three Sector Method"></a>Three Sector Method</h1><p>3 Picture as god angle </p>
-<p>Order</p>
-<ol>
-<li>Time based order</li>
-<li>Structural base order</li>
-</ol>
-<h2 id="First-picture"><a href="#First-picture" class="headerlink" title="First picture"></a>First picture</h2><p>Conflict</p>
-<h2 id="Second-picture"><a href="#Second-picture" class="headerlink" title="Second picture"></a>Second picture</h2><p>Actions</p>
-<h2 id="Third-picture"><a href="#Third-picture" class="headerlink" title="Third picture"></a>Third picture</h2><p>Ending</p>
+<p>They must be used with <strong>https</strong> to pass the <strong>pci standard</strong></p>
 
                                                         
                                 </div>
@@ -1569,7 +1550,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/09/it-management/communication-improve-by-small-story.html" data-id="cjy3v4r5k005hbes4nj1ckrry" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html" data-id="cjy3v4r630074bes4qdqx2hrg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1637,7 +1618,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2019/06/09/it-management/communication-improve-by-small-story.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/09/it-management/communication-improve-by-small-story.html">评论</a>
+        <a href="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">评论</a>
     
 
                                 </footer>
@@ -1730,7 +1711,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1739,7 +1720,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
         </div>
     </div>
 

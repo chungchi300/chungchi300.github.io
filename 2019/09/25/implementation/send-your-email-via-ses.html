@@ -3,19 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>Code Review - General(Javascript) | Jeff Chung</title>
+    <title>Everything your need to send your email via Amazon SES by Nestjs(nodejs) | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="不必要的额外的逻辑层1234567function getUserAccount()&amp;#123; if(Auth.isLogin())&amp;#123;   return Auth::user(); &amp;#125;else&amp;#123;   throw Error(&amp;apos;get user when user is not authorized&amp;apos;) &amp;#125;&amp;#125; 错误  程序员需要">
+    <meta name="description" content="Before ReadingWhat can you learn? Program for sending SES email Procedure to get the license to send email as production environment from sandbox  MainProgramNpm install related sdk1npm install aws-sd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Code Review - General(Javascript)">
-<meta property="og:url" content="http://jeff-chung.com/2018/04/28/code-review/general.html">
+<meta property="og:title" content="Everything your need to send your email via Amazon SES by Nestjs(nodejs)">
+<meta property="og:url" content="http://jeff-chung.com/2019/09/25/implementation/send-your-email-via-ses.html">
 <meta property="og:site_name" content="Jeff Chung">
-<meta property="og:description" content="不必要的额外的逻辑层1234567function getUserAccount()&amp;#123; if(Auth.isLogin())&amp;#123;   return Auth::user(); &amp;#125;else&amp;#123;   throw Error(&amp;apos;get user when user is not authorized&amp;apos;) &amp;#125;&amp;#125; 错误  程序员需要">
+<meta property="og:description" content="Before ReadingWhat can you learn? Program for sending SES email Procedure to get the license to send email as production environment from sandbox  MainProgramNpm install related sdk1npm install aws-sd">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-06T04:24:35.439Z">
+<meta property="og:updated_time" content="2019-09-25T10:19:39.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Code Review - General(Javascript)">
-<meta name="twitter:description" content="不必要的额外的逻辑层1234567function getUserAccount()&amp;#123; if(Auth.isLogin())&amp;#123;   return Auth::user(); &amp;#125;else&amp;#123;   throw Error(&amp;apos;get user when user is not authorized&amp;apos;) &amp;#125;&amp;#125; 错误  程序员需要">
+<meta name="twitter:title" content="Everything your need to send your email via Amazon SES by Nestjs(nodejs)">
+<meta name="twitter:description" content="Before ReadingWhat can you learn? Program for sending SES email Procedure to get the license to send email as production environment from sandbox  MainProgramNpm install related sdk1npm install aws-sd">
     
 
     
@@ -219,7 +219,7 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-code-review/general" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-implementation/send-your-email-via-ses" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -227,7 +227,7 @@ ga('send', 'pageview');
                             
     
         <h1 class="article-title" itemprop="name">
-            Code Review - General(Javascript)
+            Everything your need to send your email via Amazon SES by Nestjs(nodejs)
         </h1>
     
 
@@ -236,8 +236,8 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/04/28/code-review/general.html">
-            <time datetime="2018-04-28T08:09:02.000Z" itemprop="datePublished">2018-04-28</time>
+        <a href="/2019/09/25/implementation/send-your-email-via-ses.html">
+            <time datetime="2019-09-25T02:28:21.000Z" itemprop="datePublished">2019-09-25</time>
         </a>
     </div>
 
@@ -245,7 +245,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Code-Review/">Code Review</a>
+        <a class="article-category-link" href="/categories/Implementation/">Implementation</a>
     </div>
 
                                                 
@@ -261,36 +261,24 @@ ga('send', 'pageview');
                                                     <strong class="toc-title">
                                                         文章目录
                                                     </strong>
-                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#不必要的额外的逻辑层"><span class="toc-number">1.</span> <span class="toc-text">不必要的额外的逻辑层</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Retrieve-array-of-items-from-indexed-data-object-when-already-have-indexed-keys"><span class="toc-number">2.</span> <span class="toc-text">Retrieve array of items from indexed data object when already have indexed keys</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Unnecessary-extra-logic-layer-when-processing-overloading-function"><span class="toc-number">3.</span> <span class="toc-text">Unnecessary extra logic layer when processing overloading function</span></a></li></ol>
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Before-Reading"><span class="toc-number">1.</span> <span class="toc-text">Before Reading</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-can-you-learn"><span class="toc-number">1.1.</span> <span class="toc-text">What can you learn?</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Main"><span class="toc-number">2.</span> <span class="toc-text">Main</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Program"><span class="toc-number">2.1.</span> <span class="toc-text">Program</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Npm-install-related-sdk"><span class="toc-number">2.1.1.</span> <span class="toc-text">Npm install related sdk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Api-key"><span class="toc-number">2.1.2.</span> <span class="toc-text">Api key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Usage"><span class="toc-number">2.1.3.</span> <span class="toc-text">Usage</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Move-to-production-environment-from-sandbox-environment"><span class="toc-number">2.2.</span> <span class="toc-text">Move to production environment from sandbox environment</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Things-you-can-do-by-yourself"><span class="toc-number">2.2.1.</span> <span class="toc-text">Things you can do by yourself</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Things-require-AWS-approval"><span class="toc-number">2.2.2.</span> <span class="toc-text">Things require AWS approval</span></a></li></ol></li></ol></li></ol>
                                                 </div>
                                                 
-                                                    <h1 id="不必要的额外的逻辑层"><a href="#不必要的额外的逻辑层" class="headerlink" title="不必要的额外的逻辑层"></a>不必要的额外的逻辑层</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function getUserAccount()&#123;</span><br><span class="line"> if(Auth.isLogin())&#123;</span><br><span class="line">   return Auth::user();</span><br><span class="line"> &#125;else&#123;</span><br><span class="line">   throw Error(&apos;get user when user is not authorized&apos;)</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>错误</strong></p>
-<ul>
-<li>程序员需要额外的一层才能知道程序会抛出异常<strong>如果用户不满意</strong>。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function getUserAccount()&#123;</span><br><span class="line">if(!Auth.isLogin())&#123;</span><br><span class="line">  throw Error(&apos;get user when user is not authorized&apos;)</span><br><span class="line">&#125;</span><br><span class="line">  return Auth::user();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>改进</strong></p>
-<ul>
-<li>程序员知道调用者必须确保用户<strong>需要确保用户需要登录</strong>才能正确地调用**这个功能</li>
-</ul>
-<h1 id="Retrieve-array-of-items-from-indexed-data-object-when-already-have-indexed-keys"><a href="#Retrieve-array-of-items-from-indexed-data-object-when-already-have-indexed-keys" class="headerlink" title="Retrieve array of items from indexed data object when already have indexed keys"></a>Retrieve array of items from indexed data object when already have indexed keys</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function getUsers(usersById,targetUserIds)&#123;</span><br><span class="line">  return _.filter(usersById, user =&gt;</span><br><span class="line">    targetUserIds.includes(</span><br><span class="line">      user.id</span><br><span class="line">    )</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>错误</strong></p>
-<ul>
-<li>low performance and readability</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function getUsers(usersById,targetUserIds)&#123;</span><br><span class="line">  return targetUserIds.map(targetUserId=&gt;usersById[targetUserId])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>改进</strong></p>
-<ul>
-<li>better performance and readability</li>
-</ul>
-<h1 id="Unnecessary-extra-logic-layer-when-processing-overloading-function"><a href="#Unnecessary-extra-logic-layer-when-processing-overloading-function" class="headerlink" title="Unnecessary extra logic layer when processing overloading function"></a>Unnecessary extra logic layer when processing overloading function</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function getUser(idOrIds)&#123;</span><br><span class="line">  let relatedUser;</span><br><span class="line">  let predefinedUsers = [</span><br><span class="line">    &#123;&quot;name&quot;:&quot;jeff&quot;,age:&quot;20&quot;,id:&quot;id1&quot;&#125;,</span><br><span class="line">    &#123;&quot;name&quot;:&quot;mandy&quot;,age:&quot;20&quot;,id:&quot;id2&quot;&#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ];</span><br><span class="line">   if(Array.isArray(idOrIds))&#123;</span><br><span class="line">     return  predefinedUsers.filter(user=&gt;idOrIds.includes(user.id));</span><br><span class="line">   &#125;else&#123;</span><br><span class="line">     return  predefinedUsers.filter(user=&gt;user.id==idOrIds);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>错误</strong></p>
-<ul>
-<li>Should separation the type conversion and only have one process logic</li>
-</ul>
-<p><strong>改进</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">function getUser(idOrIds)&#123;</span><br><span class="line">  let relatedUser;</span><br><span class="line">  let predefinedUsers = [</span><br><span class="line">    &#123;&quot;name&quot;:&quot;jeff&quot;,age:&quot;20&quot;,id:&quot;id1&quot;&#125;,</span><br><span class="line">    &#123;&quot;name&quot;:&quot;mandy&quot;,age:&quot;20&quot;,id:&quot;id2&quot;&#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  ];</span><br><span class="line">   if(!Array.isArray(idOrIds))&#123;</span><br><span class="line">     idOrIds = [idOrIds];</span><br><span class="line">   &#125;</span><br><span class="line">  //One processing logic only</span><br><span class="line">   let results =   predefinedUsers.filter(user=&gt;idOrIds.includes(user.id));</span><br><span class="line"></span><br><span class="line">   if(Array.isArray(idOrIds))&#123;</span><br><span class="line">    return results;</span><br><span class="line">   &#125;else&#123;</span><br><span class="line">     return results[0];</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+                                                    <h1 id="Before-Reading"><a href="#Before-Reading" class="headerlink" title="Before Reading"></a>Before Reading</h1><h2 id="What-can-you-learn"><a href="#What-can-you-learn" class="headerlink" title="What can you learn?"></a>What can you learn?</h2><ol>
+<li>Program for sending SES email</li>
+<li>Procedure to get the license to send email as production environment from sandbox</li>
+</ol>
+<h1 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h1><h2 id="Program"><a href="#Program" class="headerlink" title="Program"></a>Program</h2><h3 id="Npm-install-related-sdk"><a href="#Npm-install-related-sdk" class="headerlink" title="Npm install related sdk"></a>Npm install related sdk</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aws-sdk --save</span><br></pre></td></tr></table></figure>
+<h3 id="Api-key"><a href="#Api-key" class="headerlink" title="Api key"></a>Api key</h3><p>Get your api <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> from Amazon. And set your personal email for testing because <strong>by default</strong>, every new email domain is <strong>in sandbox mode</strong></p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> AWS = <span class="built_in">require</span>(<span class="string">'aws-sdk'</span>);</span><br><span class="line">   AWS.config.update(&#123;</span><br><span class="line">      region: <span class="keyword">this</span>.config.get(<span class="string">'SES_REGION'</span>),</span><br><span class="line">      accessKeyId: <span class="keyword">this</span>.config.get(<span class="string">'AWS_ACCESS_KEY_ID'</span>),</span><br><span class="line">      secretAccessKey: <span class="keyword">this</span>.config.get(<span class="string">'AWS_SECRET_ACCESS_KEY'</span>),</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> ses = <span class="keyword">new</span> AWS.SES(&#123; <span class="attr">apiVersion</span>: <span class="string">'2010-12-01'</span> &#125;);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">var</span> params = &#123;</span><br><span class="line">      Destination: &#123;</span><br><span class="line">        <span class="comment">/* required */</span></span><br><span class="line">        CcAddresses: [</span><br><span class="line">          <span class="comment">/* more items */</span></span><br><span class="line">        </span><br><span class="line">        ],</span><br><span class="line">        ToAddresses: [</span><br><span class="line">          <span class="comment">// 'EMAIL_ADDRESS',</span></span><br><span class="line">         <span class="string">'chungchi300@hotmail.com'</span></span><br><span class="line">        ],</span><br><span class="line">      &#125;,</span><br><span class="line">      Message: &#123;</span><br><span class="line">        <span class="comment">/* required */</span></span><br><span class="line">        Body: &#123;</span><br><span class="line">          <span class="comment">/* required */</span></span><br><span class="line">          Html: &#123;</span><br><span class="line">            Charset: <span class="string">'UTF-8'</span>,</span><br><span class="line">            Data: <span class="string">`&lt;html&gt;Hello world!&lt;/html&gt;`</span>,</span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        Subject: &#123;</span><br><span class="line">          Charset: <span class="string">'UTF-8'</span>,</span><br><span class="line">          Data: <span class="string">`Your new email`</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;,</span><br><span class="line">      Source: <span class="string">'chungchi2008@hotmail.com'</span> <span class="comment">/* required */</span>,</span><br><span class="line">      ReplyToAddresses: [</span><br><span class="line">        <span class="string">'chungchi2008@hotmail.com'</span>,</span><br><span class="line">        <span class="comment">/* more items */</span></span><br><span class="line">      ],</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">      <span class="keyword">var</span> sendPromise = ses.sendEmail(params).promise();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">      <span class="keyword">let</span> res = <span class="keyword">await</span> sendPromise;</span><br></pre></td></tr></table></figure>
+<h2 id="Move-to-production-environment-from-sandbox-environment"><a href="#Move-to-production-environment-from-sandbox-environment" class="headerlink" title="Move to production environment from sandbox environment"></a>Move to production environment from sandbox environment</h2><h3 id="Things-you-can-do-by-yourself"><a href="#Things-you-can-do-by-yourself" class="headerlink" title="Things you can do by yourself"></a>Things you can do by yourself</h3><ol>
+<li>Domain ownership verification</li>
+<li>DKIM </li>
+</ol>
+<p>Both of them can be done by properly config DNS resolving record with proper CNAME or TXT value requested by AWS.</p>
+<h3 id="Things-require-AWS-approval"><a href="#Things-require-AWS-approval" class="headerlink" title="Things require AWS approval"></a>Things require AWS approval</h3><ol>
+<li>You need to go to support panel to request move the ses domain from the sandbox environment, mostly you  need to describe is your use case. It will at most costs AWS to reply  you at 1 day.</li>
+</ol>
 
                                                         
                                 </div>
@@ -301,7 +289,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2018/04/28/code-review/general.html" data-id="cjy3v4r4v003qbes4e0qgrdnh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/09/25/implementation/send-your-email-via-ses.html" data-id="ck0z60ww60000wws49de2mvo5" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -369,7 +357,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2018/04/28/code-review/general.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/04/28/code-review/general.html">评论</a>
+        <a href="http://jeff-chung.com/2019/09/25/implementation/send-your-email-via-ses.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/09/25/implementation/send-your-email-via-ses.html">评论</a>
     
 
                                 </footer>
@@ -378,19 +366,19 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/04/28/basic-social-ability/joint-friendly-group.html" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2019/09/25/implementation/stripe-in-production-environment.html" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">上一篇</strong>
             <div class="article-nav-title">
                 
-                    加入夥伴當中
+                    Collect credit card payment in Stripe v3 in nestjs(nodejs)
                 
             </div>
         </a>
     
     
-        <a href="/2018/04/28/code-review/helper.html" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/09/24/it-management/project-management.html" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">Code Review - Helper</div>
+            <div class="article-nav-title">Enterprise level project management</div>
         </a>
     
 </nav>
@@ -583,9 +571,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://jeff-chung.com/2018/04/28/code-review/general.html';
+            this.page.url = 'http://jeff-chung.com/2019/09/25/implementation/send-your-email-via-ses.html';
         
-        this.page.identifier = 'code-review/general';
+        this.page.identifier = 'implementation/send-your-email-via-ses';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

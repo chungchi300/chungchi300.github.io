@@ -175,7 +175,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                73
+                75
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -216,6 +216,297 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-front-end/why-we-choose-graphql" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/14/front-end/why-we-choose-graphql.html">Why we choose graphql</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/08/14/front-end/why-we-choose-graphql.html">
+            <time datetime="2018-08-14T02:20:15.000Z" itemprop="datePublished">2018-08-14</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <img src="/2018/08/14/front-end/why-we-choose-graphql/cover.jpeg">
+<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><h2 id="Why-we-choose-graphql-api-to-solve-our-problem"><a href="#Why-we-choose-graphql-api-to-solve-our-problem" class="headerlink" title="Why we choose graphql api to solve our problem?"></a>Why we choose <strong>graphql</strong> api to solve our problem?</h2><ul>
+<li><a href="https://dev-blog.apollodata.com/why-graphql-is-the-future-3bec28193807" target="_blank" rel="noopener">Why GraphQL is the future – Apollo GraphQL</a></li>
+</ul>
+<p>In summary,we have <strong>critical</strong> problem</p>
+<ul>
+<li>Over-fetching</li>
+<li>Too many round trip</li>
+</ul>
+<p>on api network layer</p>
+<p>We also want to solve problems like</p>
+<ul>
+<li>Versioning</li>
+<li>API Transparency</li>
+</ul>
+<h1 id="Relation"><a href="#Relation" class="headerlink" title="Relation"></a>Relation</h1><p>GraphQL documentation have show the ability</p>
+<ul>
+<li>Ability to avoid over fetching of field</li>
+<li>Ability to describe nested api</li>
+<li>Ability of versioning</li>
+<li>API transparency is very high</li>
+</ul>
+<h1 id="Execution"><a href="#Execution" class="headerlink" title="Execution"></a>Execution</h1><p>Start to use graphql in a mini project that have our existing problem</p>
+<h1 id="Verification"><a href="#Verification" class="headerlink" title="Verification"></a>Verification</h1><p>Check whether the problem still exist when using graphQL as our <strong>api layer</strong></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html" data-id="cjy3v4r59004nbes4vcncqouh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/14/front-end/why-we-choose-graphql.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+                    
+                        <header class="article-header">
+                            
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">Program design guidance and code standard in a React project for intermediate developer for effective development</a>
+        </h1>
+    
+
+                                
+                                    <div class="article-meta">
+                                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">
+            <time datetime="2018-08-09T02:20:15.000Z" itemprop="datePublished">2018-08-09</time>
+        </a>
+    </div>
+
+
+                                            
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Web-Development/">Web Development</a>
+    </div>
+
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            
+                                <div class="article-entry" itemprop="articleBody">
+                                    
+                                            
+                                                    <img src="/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer/cover.jpeg">
+<h1 id="Design-Principle"><a href="#Design-Principle" class="headerlink" title="Design Principle"></a>Design Principle</h1><ul>
+<li><a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank" rel="noopener">KISS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener">DRY</a><ul>
+<li>single source of truth</li>
+<li>no repeat code</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank" rel="noopener">Single responsibility principle</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99" target="_blank" rel="noopener">Open close principle</a></li>
+</ul>
+<h1 id="Implementation-standard"><a href="#Implementation-standard" class="headerlink" title="Implementation standard"></a>Implementation standard</h1><h2 id="React-Smart-Component"><a href="#React-Smart-Component" class="headerlink" title="React Smart Component"></a>React Smart Component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class SeriesPage extends React.Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;&#123;this.props.hello&#125;&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function mapStateToProps()&#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">function mapDispatchToProps()&#123;</span><br><span class="line">...</span><br><span class="line">&#125;</span><br><span class="line">export default withRouter(</span><br><span class="line">  connect(</span><br><span class="line">    mapStateToProps,</span><br><span class="line">    mapDispatchToProps</span><br><span class="line">  )(SeriesPage`)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>For more,please reference <a href="http://jeff-chung.com/2018/04/28/it-management/different-methodology-and-coding-structure-to-get-good-result-in-different-software.html">blog</a></p>
+<h2 id="React-dummy-component"><a href="#React-dummy-component" class="headerlink" title="React dummy component"></a>React dummy component</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// bad</span><br><span class="line">class Listing extends React.Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;&#123;this.props.hello&#125;&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// bad (relying on function name inference is discouraged)</span><br><span class="line">const Listing = (&#123; hello &#125;) =&gt; (</span><br><span class="line">  &lt;div&gt;&#123;hello&#125;&lt;/div&gt;</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">// good</span><br><span class="line">function Listing(&#123; hello &#125;) &#123;</span><br><span class="line">  return &lt;div&gt;&#123;hello&#125;&lt;/div&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>For more,please reference <a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener">airbnb</a></p>
+
+                                                        
+                                </div>
+                                <footer class="article-footer">
+                                    <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html" data-id="cjy3v4r500042bes41jgb05t4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                                        
+    
+        <a href="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/08/09/front-end/effective-program-design-and-code-standard-in-a-react-project-for-intermediate-developer.html">评论</a>
+    
+
+                                </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-it-management/technical-growth-of-front-end-team" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1403,295 +1694,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-product/vy" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/05/10/product/vy.html">全香港最大的P2P葡萄酒网上销售平台 - www.vy.hk</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/05/10/product/vy.html">
-            <time datetime="2018-05-10T08:09:02.000Z" itemprop="datePublished">2018-05-10</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/我的产品/">我的产品</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <p><a href="http://www.vy.hk" target="_blank" rel="noopener">www.vy.hk - 全香港最大的 P2P 葡萄酒网上销售平台</a></p>
-<h1 id="Success"><a href="#Success" class="headerlink" title="Success"></a>Success</h1><ul>
-<li>Over 500 vendor</li>
-<li>Over 10k wines</li>
-</ul>
-<h1 id="Business-Feature"><a href="#Business-Feature" class="headerlink" title="Business Feature"></a>Business Feature</h1><h2 id="Platform"><a href="#Platform" class="headerlink" title="Platform"></a>Platform</h2><p>Allow different vendor sell and wine collector to <strong>quote</strong> and <strong>purchase</strong> high class wines.</p>
-<h2 id="Multiple-Vendor"><a href="#Multiple-Vendor" class="headerlink" title="Multiple Vendor"></a>Multiple Vendor</h2><p>For different vendor,their is a <strong>admin panel</strong> for <strong>reply quotations</strong> and <strong>fulfill orders</strong>.</p>
-<h2 id="Wine-collector-quote-and-purchase-wine"><a href="#Wine-collector-quote-and-purchase-wine" class="headerlink" title="Wine collector quote and purchase wine"></a>Wine collector quote and purchase wine</h2><p>Wine collector can <strong>quote specific wine</strong> and <strong>purchase quoted wine</strong>.</p>
-<h2 id="Notification-by-email"><a href="#Notification-by-email" class="headerlink" title="Notification by email"></a>Notification by email</h2><p>The entire <strong>quotation and purchase</strong> process will notify <strong>wine collectors and vendor</strong> by <strong>email,web notification</strong></p>
-<h2 id="Complex-Search"><a href="#Complex-Search" class="headerlink" title="Complex Search"></a>Complex Search</h2><p>Wine collector can search over 10k wine massive wine by complex wine conditions in 1 seco</p>
-<h2 id="Wine-price-history"><a href="#Wine-price-history" class="headerlink" title="Wine price history"></a>Wine price history</h2><p>Provide previous wine price trend for wine collector to decide whether should purchase wine.</p>
-<h2 id="Multi-language"><a href="#Multi-language" class="headerlink" title="Multi-language"></a>Multi-language</h2><p>Support Chinese and English</p>
-<h1 id="Technical-Feature"><a href="#Technical-Feature" class="headerlink" title="Technical Feature"></a>Technical Feature</h1><p>Technical</p>
-<h2 id="Cloud"><a href="#Cloud" class="headerlink" title="Cloud"></a>Cloud</h2><p>Run on aws elastic beanstalk,highly scalable using <strong>mysql on rds</strong> and <strong>php on ec2</strong></p>
-<h2 id="Tdd"><a href="#Tdd" class="headerlink" title="Tdd"></a>Tdd</h2><p>phpunit,100% test coverage on</p>
-<ul>
-<li>Search</li>
-<li>Quotation and purchase flow</li>
-</ul>
-<h1 id="What-I-can-help-you"><a href="#What-I-can-help-you" class="headerlink" title="What I can help you?"></a>What I can help you?</h1><p>I can provide detail consulting services on</p>
-<ul>
-<li>business requirement</li>
-<li>technical</li>
-</ul>
-<p>To help you build successful business!My email <a href="mailto:master-craftsman@jeff-chung.com">master-craftsman@jeff-chung.com</a></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/05/10/product/vy.html" data-id="cjy3v4r5z006pbes49ruymi4h" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/05/10/product/vy.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/05/10/product/vy.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-product/adshare" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-                    
-                        <header class="article-header">
-                            
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/05/09/product/adshare.html">定點、電腦及手機自助廣告播放一站式平台 - www.abshare.com</a>
-        </h1>
-    
-
-                                
-                                    <div class="article-meta">
-                                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/05/09/product/adshare.html">
-            <time datetime="2018-05-09T08:09:02.000Z" itemprop="datePublished">2018-05-09</time>
-        </a>
-    </div>
-
-
-                                            
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/我的产品/">我的产品</a>
-    </div>
-
-                                                
-                                    </div>
-                                    
-                        </header>
-                        
-                            
-                                <div class="article-entry" itemprop="articleBody">
-                                    
-                                            
-                                                    <p><a href="http://www.abshare.com" target="_blank" rel="noopener">www.abshare.com - 定點、電腦及手機自助廣告播放一站式平台</a></p>
-<h1 id="Business-Feature"><a href="#Business-Feature" class="headerlink" title="Business Feature"></a>Business Feature</h1><h2 id="Platform"><a href="#Platform" class="headerlink" title="Platform"></a>Platform</h2><p>Allow different user to <strong>create advertising design </strong> and <strong>select advertising location online</strong></p>
-<h2 id="Designer"><a href="#Designer" class="headerlink" title="Designer"></a>Designer</h2><p>The advertising designer is a power-point like web-based application that allow user to create advertisement online</p>
-<h2 id="Multi-platform"><a href="#Multi-platform" class="headerlink" title="Multi-platform"></a>Multi-platform</h2><p>The website support <strong>desktop</strong> and <strong>mobile</strong> version.</p>
-<h2 id="Approvement-flow"><a href="#Approvement-flow" class="headerlink" title="Approvement flow"></a>Approvement flow</h2><p>For different advertisement,here is an approve/reject flow in admin</p>
-<h2 id="Multi-language"><a href="#Multi-language" class="headerlink" title="Multi-language"></a>Multi-language</h2><p>Support Chinese and English</p>
-<h1 id="What-I-can-help-you"><a href="#What-I-can-help-you" class="headerlink" title="What I can help you?"></a>What I can help you?</h1><p>I can provide detail consulting services on</p>
-<ul>
-<li>business requirement</li>
-<li>technical</li>
-</ul>
-<p>To help you build successful business!My email <a href="mailto:master-craftsman@jeff-chung.com">master-craftsman@jeff-chung.com</a></p>
-
-                                                        
-                                </div>
-                                <footer class="article-footer">
-                                    <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://jeff-chung.com/2018/05/09/product/adshare.html" data-id="cjy3v4r5v006fbes495tm169m" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-                                        
-    
-        <a href="http://jeff-chung.com/2018/05/09/product/adshare.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2018/05/09/product/adshare.html">评论</a>
-    
-
-                                </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <a class="extend prev" rel="prev" href="/page/4/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/6/">下一页 &raquo;</a>
     </nav>
@@ -1775,7 +1777,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Code-Review/">Code Review</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Implementation/">Implementation</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Investment/">Investment</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Program-design/">Program design</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Development/">Web Development</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/management-and-cooperation/">management and cooperation</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/关于我/">关于我</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基本社交技能/">基本社交技能</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我的产品/">我的产品</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
@@ -1784,7 +1786,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">19</span></li></ul>
         </div>
     </div>
 

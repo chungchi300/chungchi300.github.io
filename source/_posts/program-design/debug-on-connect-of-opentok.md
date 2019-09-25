@@ -1,5 +1,5 @@
 ---
-title: Debug on connect of opentok
+title: Debug on connect of opentok - a classic example of understanding the event loop can help you become better programmer
 date: 2019-08-12 10:28:21
 category: Program design
 ---

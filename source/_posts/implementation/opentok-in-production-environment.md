@@ -16,7 +16,7 @@ category: Implementation
 
 # Main
 ## What can you do with opentok
-Video Streaming with Maximum 3000 users.
+Video Streaming with Maximum 3000 users.(Webrtc as bottom layer, can upgrade to RTMP implementation)
 
 ## Program
 

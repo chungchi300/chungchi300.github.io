@@ -3,19 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>React Code Splitting | Jeff Chung</title>
+    <title>From 884KB to 180KB, 3 major things you need to reduce your create react app bundle size | Jeff Chung</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
+    <meta name="description" content="Dependency package analyzeEjection is not required!, all your need is add this to your dependency package 1&quot;analyze&quot;: &quot;npm run build -- --stats&amp;amp;&amp;amp;npx webpack-bundle-analyzer ./build/bundle-stat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React Code Splitting">
+<meta property="og:title" content="From 884KB to 180KB, 3 major things you need to reduce your create react app bundle size">
 <meta property="og:url" content="http://jeff-chung.com/2018/09/13/front-end/react-code-spliting.html">
 <meta property="og:site_name" content="Jeff Chung">
-<meta property="og:description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
+<meta property="og:description" content="Dependency package analyzeEjection is not required!, all your need is add this to your dependency package 1&quot;analyze&quot;: &quot;npm run build -- --stats&amp;amp;&amp;amp;npx webpack-bundle-analyzer ./build/bundle-stat">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-13T03:04:12.747Z">
+<meta property="og:updated_time" content="2019-09-26T03:42:27.551Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React Code Splitting">
-<meta name="twitter:description" content="Combine React Lazy &amp;amp; Suspense &amp;amp; React timeout to avoid flicking">
+<meta name="twitter:title" content="From 884KB to 180KB, 3 major things you need to reduce your create react app bundle size">
+<meta name="twitter:description" content="Dependency package analyzeEjection is not required!, all your need is add this to your dependency package 1&quot;analyze&quot;: &quot;npm run build -- --stats&amp;amp;&amp;amp;npx webpack-bundle-analyzer ./build/bundle-stat">
     
 
     
@@ -227,7 +227,7 @@ ga('send', 'pageview');
                             
     
         <h1 class="article-title" itemprop="name">
-            React Code Splitting
+            From 884KB to 180KB, 3 major things you need to reduce your create react app bundle size
         </h1>
     
 
@@ -261,10 +261,22 @@ ga('send', 'pageview');
                                                     <strong class="toc-title">
                                                         文章目录
                                                     </strong>
-                                                    
+                                                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Dependency-package-analyze"><span class="toc-number">1.</span> <span class="toc-text">Dependency package analyze</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#For-dependency-package-that-is-never-used-but-imported-you-should-remove-it"><span class="toc-number">1.1.</span> <span class="toc-text">For dependency package that is never used but imported, you should remove it</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#For-dependency-package-that-has-tree-shaking"><span class="toc-number">1.2.</span> <span class="toc-text">For dependency package that has tree shaking</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dependency-package-that-has-not-import-and-analyze"><span class="toc-number">1.3.</span> <span class="toc-text">Dependency package that has not import and analyze</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Code-Splitting"><span class="toc-number">2.</span> <span class="toc-text">Code Splitting</span></a></li></ol>
                                                 </div>
                                                 
-                                                    <p>Combine React Lazy &amp; Suspense &amp; React timeout to avoid flicking</p>
+                                                    <h1 id="Dependency-package-analyze"><a href="#Dependency-package-analyze" class="headerlink" title="Dependency package analyze"></a>Dependency package analyze</h1><p><strong>Ejection is not required!</strong>, all your need is add this to your dependency package</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"analyze": "npm run build -- --stats&amp;&amp;npx webpack-bundle-analyzer ./build/bundle-stats.json",</span><br></pre></td></tr></table></figure>
+<p>and then run it</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run analyze</span><br></pre></td></tr></table></figure>
+<p>then you can find the related report at <code>http://127.0.0.1:8888/</code></p>
+<h2 id="For-dependency-package-that-is-never-used-but-imported-you-should-remove-it"><a href="#For-dependency-package-that-is-never-used-but-imported-you-should-remove-it" class="headerlink" title="For dependency package that is never used but imported, you should remove it"></a>For dependency package that is never used but imported, you should remove it</h2><p>e.g I remove <code>XLSX</code> dependency package that is huge but it just imported but never used which help me reduce <code>300KB</code>.</p>
+<h2 id="For-dependency-package-that-has-tree-shaking"><a href="#For-dependency-package-that-has-tree-shaking" class="headerlink" title="For dependency package that has tree shaking"></a>For dependency package that has tree shaking</h2><p>e.g I has included entire <code>material ui</code> but I can reduce <code>200KB</code> by more specific import,e.g <code>import { createMuiTheme, MuiThemeProvider } from &quot;@material-ui/core/styles&quot;;</code></p>
+<h2 id="Dependency-package-that-has-not-import-and-analyze"><a href="#Dependency-package-that-has-not-import-and-analyze" class="headerlink" title="Dependency package that has not import and analyze"></a>Dependency package that has not import and analyze</h2><p>Although it will not reduce the package size, but it reduce dead dependency &amp; readability of <code>package.json</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"unused": "npx depcheck .&amp;",</span><br></pre></td></tr></table></figure>
+<p>and then run it</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run unused</span><br></pre></td></tr></table></figure>
+<h1 id="Code-Splitting"><a href="#Code-Splitting" class="headerlink" title="Code Splitting"></a>Code Splitting</h1><p>User don’t need to download entire app when he just watch one page. We can serve one page code for this scenario which call <strong><a href="https://reactjs.org/docs/code-splitting.html" target="_blank" rel="noopener">code split</a></strong>. Code Split has <strong>official support</strong> in <strong>React</strong> which are <strong>Lazy and Suspense</strong>.<br>You can combine them with React timeout to avoid flicking</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Suspense, lazy &#125; <span class="keyword">from</span> <span class="string">"react"</span>;</span><br></pre></td></tr></table></figure>
 
                                                         
                                 </div>

@@ -25,9 +25,17 @@ then you can find the related report at `http://127.0.0.1:8888/`
 
 e.g I remove `XLSX` dependency package that is huge but it just imported but never used which help me reduce `300KB`.
 
-## For dependency package that has tree shaking
+## For dependency package that has modular export
 
 e.g I has included entire `material ui` but I can reduce `200KB` by more specific import,e.g `import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";`
+
+## For dependency package that is big but has no modular export
+
+You can write or find smaller replacement,for example I just used `isEmail` function from `class-validator` which has big dependency of `libphoneNumber` and they don't support tree shaking yet, so I create my own `isEmail` function which also help reduce `200KB`
+
+P.S
+Class Validator start to working on [modular export](https://github.com/typestack/class-validator/pull/258), you can use tree shaking after it is released.
+
 
 ## Dependency package that has not import and analyze
 

@@ -10,7 +10,7 @@ date: 2018-04-28 16:09:02
 
 ## 联系我
 
-请发邮件给 master-craftsman@jeff-chung.com or chungchi300@hotmail.com(personal email).
+请发邮件给 chungchi300@hotmail.com(personal email).
 
 ## 简历
 
@@ -18,7 +18,7 @@ date: 2018-04-28 16:09:02
 [我的中文简历](/ChineseCV.pdf)
 
 
-## 当前工资和期望薪金
+## 当前工资和期望薪金(Current Salary and expected Salary)
 
 [点击](/2018/04/28/me/currentSalary.html)
 
@@ -79,6 +79,7 @@ https://stackshare.io/mfwauction/mfwauction
 
 ## 学习能力
 
+
 - 刻意学习
 - 心流
 - 启发式的思考
@@ -109,3 +110,16 @@ https://stackshare.io/mfwauction/mfwauction
 - 有竞争力的薪酬
 - 让我对工作做出 **更多的决定和更多的控制**
 - 我的领导者可以创造一种 **我们很棒** 和 **持续改进** 的文化。
+
+
+
+实现了全局 state 、处理全局 state 的方式和统一的数据处理中心 - backend (Global single store of store) (Pure function more predictable)---Transaction telemetry (auto-logging action objects).
+
+Context -> Sub Context    Context 模拟全局 state，但是我们还不能优雅的模拟 dispatch、reducer。
+
+Dispatch Action -> Reducer mechansim is the **core point**
+
+React Hooks can use do  that 
+
+
+https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672

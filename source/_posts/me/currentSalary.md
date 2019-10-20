@@ -9,11 +9,13 @@ password: hihr
 
 # Current Salary
 
-30000(HKD) x 12 + at least one month bonus
+30000(HKD) x 12 + one month guarantee bonus
 
 # Expected Salary
 
 40000-45000(HKD) x 12 + at least one month bonus
+
+Price can be lower if I can work from home 2-3 days work from home.
 
 # Interested Domain
 

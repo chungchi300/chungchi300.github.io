@@ -43,20 +43,18 @@ Long Term
 1. Good Engineer skill
 2. Good Algorithm skill
 
-# End of September => All material prepared
+# September
 
 ## Company
 
 ### Own customer platform
 
-1. Notification of online bidding platform
+Notification of online bidding platform being outbid
 
 ### MFWAuction platform
 
-Launching of new website(accumulate email of DKIM and domain verification & sandbox)
+~~Launching of new website(accumulate email of DKIM and domain verification & sandbox)~~
 Multi currency of new platform
-
-Web
 
 ### Personal
 
@@ -65,9 +63,9 @@ Master Dynamic Programming problem
 
 planing landing page
 
-1. Use hexo to build the Chinese Landing Page
+~~1. Use hexo to build the Chinese Landing Page~~
 
-Having own company
+~~Having own company~~
 
 # October => App prepared & Start Sale
 

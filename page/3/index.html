@@ -216,7 +216,7 @@ ga('send', 'pageview');
 
             
             <section id="main">
-    <article id="post-it-management/communication-recognization" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-program-design/integration-with-stripe-by-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -224,7 +224,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/20/it-management/communication-recognization.html">Recognition of good communication ability</a>
+            <a class="article-title" href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">Integration with stripe by nodejs</a>
         </h1>
     
 
@@ -233,7 +233,7 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/06/20/it-management/communication-recognization.html">
+        <a href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">
             <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
         </a>
     </div>
@@ -242,7 +242,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
+        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
     </div>
 
                                                 
@@ -254,55 +254,24 @@ ga('send', 'pageview');
                                 <div class="article-entry" itemprop="articleBody">
                                     
                                             
-                                                    <h1 id="What-is-good-communication-ability"><a href="#What-is-good-communication-ability" class="headerlink" title="What is good communication ability?"></a>What is good communication ability?</h1><p>An ability to inspire <strong>people</strong> with <strong>specific thoughts</strong> by <strong>talking cooperatively</strong> without <strong>specific scripts</strong>.</p>
-<h1 id="What-make-good-or-bad-communication-ability"><a href="#What-make-good-or-bad-communication-ability" class="headerlink" title="What make good or bad communication ability?"></a>What make good or bad communication ability?</h1><h2 id="Bad-misunderstanding"><a href="#Bad-misunderstanding" class="headerlink" title="Bad misunderstanding"></a>Bad misunderstanding</h2><h3 id="100-Natural-Gift"><a href="#100-Natural-Gift" class="headerlink" title="100% Natural Gift"></a>100% Natural Gift</h3><p>Opposite example</p>
-<ol>
-<li>Kingspeech</li>
-<li>Churchill</li>
+                                                    <h1 id="Background-knowledge"><a href="#Background-knowledge" class="headerlink" title="Background knowledge"></a>Background knowledge</h1><h2 id="Why-stripe"><a href="#Why-stripe" class="headerlink" title="Why stripe"></a>Why stripe</h2><ol>
+<li>Variety payment method(all famous credit card,ali pay,wechat pay)</li>
+<li>Developer friendly(so far easier doc)</li>
+<li>Cheaper charge(3.4% + HK$2.35 for credit card,2.2% + HK$2 for ali pay)</li>
+<li>Accept different currency(e.g usd,hkd)</li>
 </ol>
-<h3 id="Introvert-cannot-have-good-communication-ability"><a href="#Introvert-cannot-have-good-communication-ability" class="headerlink" title="Introvert cannot have good communication ability"></a>Introvert cannot have good communication ability</h3><p>Half and half<br>Good for sensitive for <strong>people need</strong> and good at <strong>specific thoughts</strong><br>Bad for <strong>talking cooperatively</strong> and <strong>bad mental ability of communication</strong><br>The important thing is more training &amp; more positive experience.Increase the willing to talk.</p>
-<h2 id="Good-truth"><a href="#Good-truth" class="headerlink" title="Good truth"></a>Good truth</h2><ol>
-<li>Related to your growth experience,e.g are you willing to think ,talk and express.</li>
+<p><a href="https://ordermetrics.com/profit-guide/reduce-payment-processing-fees/how-to-negotiate-payment-processing-fees-with-stripe/" target="_blank" rel="noopener">Potential negotiation plan</a><br>At around $1m per year - 2.5% + $0.30<br>At around $2m per year - 1.9% + $0.30<br>At around $3m per year - 1.8% + $0.30</p>
+<h2 id="General-Flow-for-adding-and-charging-a-credit-card"><a href="#General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="General Flow for adding and charging a credit card"></a>General Flow for adding and charging a credit card</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
+<img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
+<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
+<p>We create customer ,source and charge in a general flow for adding and charging a credit card</p>
+<h2 id="Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card"><a href="#Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="Why not direct store the credit card info?why use the General Flow for adding and charging a credit card"></a>Why not direct store the credit card info?why use the General Flow for adding and charging a credit card</h2><p>You <strong>should not</strong> store credit card detail(<strong>card numbers and cvc code</strong>) on your own database as integrator, you should only use the token to <strong>retrieve and store</strong> the <strong>card id and user id of stripe</strong> for charging the credit card in future. It is avoid credit card data leakage and meeting the industry standard<a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener">Payment Card Industry Data Security Standards</a></p>
+<h2 id="Entity-Relationship"><a href="#Entity-Relationship" class="headerlink" title="Entity Relationship"></a>Entity Relationship</h2><h1 id="Backend-development-knowledge"><a href="#Backend-development-knowledge" class="headerlink" title="Backend development knowledge"></a>Backend development knowledge</h1><p>Use <a href="https://github.com/stripe/stripe-node" target="_blank" rel="noopener">Stripe Node</a> which support <strong>promise</strong> and <strong>types(of typescript)</strong></p>
+<h1 id="Frontend"><a href="#Frontend" class="headerlink" title="Frontend"></a>Frontend</h1><ol>
+<li>For Web,Use <a href="https://github.com/stripe/react-stripe-elements" target="_blank" rel="noopener">react-stripe-elements</a></li>
+<li>For App,Use <a href="https://github.com/tipsi/tipsi-stripe" target="_blank" rel="noopener">https://github.com/tipsi/tipsi-stripe</a> </li>
 </ol>
-<h1 id="Why-some-people-looks-never-train-for-it-but-have-good-communication-ability-how-to-have-good-communication-ability"><a href="#Why-some-people-looks-never-train-for-it-but-have-good-communication-ability-how-to-have-good-communication-ability" class="headerlink" title="Why some people looks never train for it but have good communication ability(how to have good communication ability)"></a>Why some people looks never train for it but have good communication ability(how to have good communication ability)</h1><h2 id="Study"><a href="#Study" class="headerlink" title="Study"></a>Study</h2><p>They study a lot from their parent and friend.</p>
-<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><p>They practice a lot in daily life.</p>
-<h2 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h2><p>They normally use it in daily life for living.</p>
-<h2 id="Accumulation"><a href="#Accumulation" class="headerlink" title="Accumulation"></a>Accumulation</h2><p>For each application, they need to improve a lot.</p>
-<h2 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h2><p>They normally have rich live experience.</p>
-<h2 id="Good-cycle"><a href="#Good-cycle" class="headerlink" title="Good cycle"></a>Good cycle</h2><p>Good communication ability =&gt; improve their life a lot.</p>
-<h1 id="Dimension-of-good-communication"><a href="#Dimension-of-good-communication" class="headerlink" title="Dimension of good communication"></a>Dimension of good communication</h1><p>like gun game</p>
-<h2 id="single-direction"><a href="#single-direction" class="headerlink" title="single direction"></a>single direction</h2><p>analogy: shooting a target</p>
-<p>Basic:</p>
-<ol>
-<li>month&amp;mind Cooperative ability(analogy:ability to shoot)</li>
-<li>guts &amp; willing to talk(analogy:willing to shoot)</li>
-<li>thinking ability(analogy:bullets power)</li>
-</ol>
-<p>e.g Report to talk, talk about movie or travel experience to other, talk story to kid,</p>
-<h2 id="bi-direction"><a href="#bi-direction" class="headerlink" title="bi-direction"></a>bi-direction</h2><p>It is complex ability.It includes</p>
-<ol>
-<li>Listen</li>
-<li>Ability to raise question</li>
-<li>Single direction communication</li>
-</ol>
-<p>analogy: one to one gun fight</p>
-<p>e.g talk to specific friend,communication with purpose,sale talk ,business negotiation</p>
-<h2 id="Mult-direction"><a href="#Mult-direction" class="headerlink" title="Mult-direction"></a>Mult-direction</h2><p>It is multi-complex ability.It includes</p>
-<ol>
-<li>Bi-direction</li>
-<li>Control entire environment ability</li>
-<li>Whether the topic is good</li>
-</ol>
-<p>analogy: crazy west multiple people gun fight</p>
-<p>e.g meeting, lunch speech</p>
-<h2 id="P-S"><a href="#P-S" class="headerlink" title="P.S"></a>P.S</h2><p>Public speech is like nuclear weapon, no need to focus first</p>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>It really inspired me by real example. It inspires me a lot about communication and help me to create good model of communication. It also demonstrate many skill such as</p>
-<ol>
-<li>Break down to items</li>
-<li>Raise questions and answer it</li>
-<li>Show by example</li>
-<li>Analogy</li>
-</ol>
+<p>They must be used with <strong>https</strong> to pass the <strong>pci standard</strong></p>
 
                                                         
                                 </div>
@@ -313,7 +282,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html" data-id="cjy3v4r5j005cbes47exv4uma" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html" data-id="ck1yyk0cl00732gs4xlcwzzny" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -381,7 +350,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html">评论</a>
+        <a href="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">评论</a>
     
 
                                 </footer>
@@ -480,7 +449,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html" data-id="cjy3v4r5m005mbes40ujguhvs" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-methodology.html" data-id="ck1yyk0by005g2gs4ivwzcizg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -558,7 +527,7 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-program-design/integration-with-stripe-by-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-it-management/communication-recognization" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
                     
@@ -566,7 +535,7 @@ ga('send', 'pageview');
                             
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">Integration with stripe by nodejs</a>
+            <a class="article-title" href="/2019/06/20/it-management/communication-recognization.html">Recognition of good communication ability</a>
         </h1>
     
 
@@ -575,7 +544,7 @@ ga('send', 'pageview');
                                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">
+        <a href="/2019/06/20/it-management/communication-recognization.html">
             <time datetime="2019-06-20T02:28:21.000Z" itemprop="datePublished">2019-06-20</time>
         </a>
     </div>
@@ -584,7 +553,7 @@ ga('send', 'pageview');
                                             
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Program-design/">Program design</a>
+        <a class="article-category-link" href="/categories/management-and-cooperation/">management and cooperation</a>
     </div>
 
                                                 
@@ -596,24 +565,55 @@ ga('send', 'pageview');
                                 <div class="article-entry" itemprop="articleBody">
                                     
                                             
-                                                    <h1 id="Background-knowledge"><a href="#Background-knowledge" class="headerlink" title="Background knowledge"></a>Background knowledge</h1><h2 id="Why-stripe"><a href="#Why-stripe" class="headerlink" title="Why stripe"></a>Why stripe</h2><ol>
-<li>Variety payment method(all famous credit card,ali pay,wechat pay)</li>
-<li>Developer friendly(so far easier doc)</li>
-<li>Cheaper charge(3.4% + HK$2.35 for credit card,2.2% + HK$2 for ali pay)</li>
-<li>Accept different currency(e.g usd,hkd)</li>
+                                                    <h1 id="What-is-good-communication-ability"><a href="#What-is-good-communication-ability" class="headerlink" title="What is good communication ability?"></a>What is good communication ability?</h1><p>An ability to inspire <strong>people</strong> with <strong>specific thoughts</strong> by <strong>talking cooperatively</strong> without <strong>specific scripts</strong>.</p>
+<h1 id="What-make-good-or-bad-communication-ability"><a href="#What-make-good-or-bad-communication-ability" class="headerlink" title="What make good or bad communication ability?"></a>What make good or bad communication ability?</h1><h2 id="Bad-misunderstanding"><a href="#Bad-misunderstanding" class="headerlink" title="Bad misunderstanding"></a>Bad misunderstanding</h2><h3 id="100-Natural-Gift"><a href="#100-Natural-Gift" class="headerlink" title="100% Natural Gift"></a>100% Natural Gift</h3><p>Opposite example</p>
+<ol>
+<li>Kingspeech</li>
+<li>Churchill</li>
 </ol>
-<p><a href="https://ordermetrics.com/profit-guide/reduce-payment-processing-fees/how-to-negotiate-payment-processing-fees-with-stripe/" target="_blank" rel="noopener">Potential negotiation plan</a><br>At around $1m per year - 2.5% + $0.30<br>At around $2m per year - 1.9% + $0.30<br>At around $3m per year - 1.8% + $0.30</p>
-<h2 id="General-Flow-for-adding-and-charging-a-credit-card"><a href="#General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="General Flow for adding and charging a credit card"></a>General Flow for adding and charging a credit card</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/addCreditCard.jpeg">
-<img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/chargeCreditCard.jpeg">
-<h2 id="Entity"><a href="#Entity" class="headerlink" title="Entity"></a>Entity</h2><img src="/2019/06/20/program-design/integration-with-stripe-by-nodejs/entity.jpg">
-<p>We create customer ,source and charge in a general flow for adding and charging a credit card</p>
-<h2 id="Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card"><a href="#Why-not-direct-store-the-credit-card-info-why-use-the-General-Flow-for-adding-and-charging-a-credit-card" class="headerlink" title="Why not direct store the credit card info?why use the General Flow for adding and charging a credit card"></a>Why not direct store the credit card info?why use the General Flow for adding and charging a credit card</h2><p>You <strong>should not</strong> store credit card detail(<strong>card numbers and cvc code</strong>) on your own database as integrator, you should only use the token to <strong>retrieve and store</strong> the <strong>card id and user id of stripe</strong> for charging the credit card in future. It is avoid credit card data leakage and meeting the industry standard<a href="https://www.pcisecuritystandards.org/pci_security/" target="_blank" rel="noopener">Payment Card Industry Data Security Standards</a></p>
-<h2 id="Entity-Relationship"><a href="#Entity-Relationship" class="headerlink" title="Entity Relationship"></a>Entity Relationship</h2><h1 id="Backend-development-knowledge"><a href="#Backend-development-knowledge" class="headerlink" title="Backend development knowledge"></a>Backend development knowledge</h1><p>Use <a href="https://github.com/stripe/stripe-node" target="_blank" rel="noopener">Stripe Node</a> which support <strong>promise</strong> and <strong>types(of typescript)</strong></p>
-<h1 id="Frontend"><a href="#Frontend" class="headerlink" title="Frontend"></a>Frontend</h1><ol>
-<li>For Web,Use <a href="https://github.com/stripe/react-stripe-elements" target="_blank" rel="noopener">react-stripe-elements</a></li>
-<li>For App,Use <a href="https://github.com/tipsi/tipsi-stripe" target="_blank" rel="noopener">https://github.com/tipsi/tipsi-stripe</a> </li>
+<h3 id="Introvert-cannot-have-good-communication-ability"><a href="#Introvert-cannot-have-good-communication-ability" class="headerlink" title="Introvert cannot have good communication ability"></a>Introvert cannot have good communication ability</h3><p>Half and half<br>Good for sensitive for <strong>people need</strong> and good at <strong>specific thoughts</strong><br>Bad for <strong>talking cooperatively</strong> and <strong>bad mental ability of communication</strong><br>The important thing is more training &amp; more positive experience.Increase the willing to talk.</p>
+<h2 id="Good-truth"><a href="#Good-truth" class="headerlink" title="Good truth"></a>Good truth</h2><ol>
+<li>Related to your growth experience,e.g are you willing to think ,talk and express.</li>
 </ol>
-<p>They must be used with <strong>https</strong> to pass the <strong>pci standard</strong></p>
+<h1 id="Why-some-people-looks-never-train-for-it-but-have-good-communication-ability-how-to-have-good-communication-ability"><a href="#Why-some-people-looks-never-train-for-it-but-have-good-communication-ability-how-to-have-good-communication-ability" class="headerlink" title="Why some people looks never train for it but have good communication ability(how to have good communication ability)"></a>Why some people looks never train for it but have good communication ability(how to have good communication ability)</h1><h2 id="Study"><a href="#Study" class="headerlink" title="Study"></a>Study</h2><p>They study a lot from their parent and friend.</p>
+<h2 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h2><p>They practice a lot in daily life.</p>
+<h2 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h2><p>They normally use it in daily life for living.</p>
+<h2 id="Accumulation"><a href="#Accumulation" class="headerlink" title="Accumulation"></a>Accumulation</h2><p>For each application, they need to improve a lot.</p>
+<h2 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a>Experience</h2><p>They normally have rich live experience.</p>
+<h2 id="Good-cycle"><a href="#Good-cycle" class="headerlink" title="Good cycle"></a>Good cycle</h2><p>Good communication ability =&gt; improve their life a lot.</p>
+<h1 id="Dimension-of-good-communication"><a href="#Dimension-of-good-communication" class="headerlink" title="Dimension of good communication"></a>Dimension of good communication</h1><p>like gun game</p>
+<h2 id="single-direction"><a href="#single-direction" class="headerlink" title="single direction"></a>single direction</h2><p>analogy: shooting a target</p>
+<p>Basic:</p>
+<ol>
+<li>month&amp;mind Cooperative ability(analogy:ability to shoot)</li>
+<li>guts &amp; willing to talk(analogy:willing to shoot)</li>
+<li>thinking ability(analogy:bullets power)</li>
+</ol>
+<p>e.g Report to talk, talk about movie or travel experience to other, talk story to kid,</p>
+<h2 id="bi-direction"><a href="#bi-direction" class="headerlink" title="bi-direction"></a>bi-direction</h2><p>It is complex ability.It includes</p>
+<ol>
+<li>Listen</li>
+<li>Ability to raise question</li>
+<li>Single direction communication</li>
+</ol>
+<p>analogy: one to one gun fight</p>
+<p>e.g talk to specific friend,communication with purpose,sale talk ,business negotiation</p>
+<h2 id="Mult-direction"><a href="#Mult-direction" class="headerlink" title="Mult-direction"></a>Mult-direction</h2><p>It is multi-complex ability.It includes</p>
+<ol>
+<li>Bi-direction</li>
+<li>Control entire environment ability</li>
+<li>Whether the topic is good</li>
+</ol>
+<p>analogy: crazy west multiple people gun fight</p>
+<p>e.g meeting, lunch speech</p>
+<h2 id="P-S"><a href="#P-S" class="headerlink" title="P.S"></a>P.S</h2><p>Public speech is like nuclear weapon, no need to focus first</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>It really inspired me by real example. It inspires me a lot about communication and help me to create good model of communication. It also demonstrate many skill such as</p>
+<ol>
+<li>Break down to items</li>
+<li>Raise questions and answer it</li>
+<li>Show by example</li>
+<li>Analogy</li>
+</ol>
 
                                                         
                                 </div>
@@ -624,7 +624,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html" data-id="cjy3v4r630074bes4qdqx2hrg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html" data-id="ck1yyk0bx005c2gs4eppmsd66" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -692,7 +692,7 @@ ga('send', 'pageview');
 
                                         
     
-        <a href="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/program-design/integration-with-stripe-by-nodejs.html">评论</a>
+        <a href="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://jeff-chung.com/2019/06/20/it-management/communication-recognization.html">评论</a>
     
 
                                 </footer>
@@ -770,7 +770,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/09/it-management/communication-improve-by-small-story.html" data-id="cjy3v4r5k005hbes4nj1ckrry" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/09/it-management/communication-improve-by-small-story.html" data-id="ck1yyk0bz005k2gs4kax5bhxf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -932,7 +932,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/07/it-management/auction-it.html" data-id="cjy3v4r5d004ubes4qstlvwfd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/07/it-management/auction-it.html" data-id="ck1yyk0bu00532gs4657o8l77" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1061,7 +1061,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/07/front-end/typescript-function-loading.html" data-id="cjy3v4r56004ibes40u7cn5h7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/07/front-end/typescript-function-loading.html" data-id="ck1yyk0bh004i2gs4ko7jo0b4" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1205,7 +1205,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/06/06/it-management/good-auction-sass-we-need.html" data-id="cjy3v4r5o005vbes4myd3m0z8" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/06/06/it-management/good-auction-sass-we-need.html" data-id="ck1yyk0c1005q2gs4m4l6dkqe" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1342,7 +1342,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html" data-id="cjy3v4r5c004sbes4t2fwk0o3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/16/front-end/small-redux-problem-1.html" data-id="ck1yyk0bb00482gs4dml4ngfx" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1493,7 +1493,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html" data-id="cjy3v4r60006ubes4do24tlwn" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/10/program-design/effective-usage-jest.html" data-id="ck1yyk0ci006y2gs4prjlwvbm" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1782,7 +1782,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="cjy3v4r5g0054bes4azh892br" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jeff-chung.com/2019/05/06/it-management/china-it-connectivity.html" data-id="ck1yyk0ch006u2gs4ahuzfmut" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

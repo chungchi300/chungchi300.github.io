@@ -6,11 +6,7 @@ category: 关于我
 date: 2018-04-28 16:09:02
 ---
 
-# 谢谢阅读
-
-## 联系我
-
-请发邮件给 chungchi300@hotmail.com(personal email).
+# Highlights
 
 ## 简历
 
@@ -22,8 +18,13 @@ date: 2018-04-28 16:09:02
 
 [点击](/2018/04/28/me/currentSalary.html)
 
-# Technical Stack
+## Technical Stack
 https://stackshare.io/mfwauction/mfwauction
+
+## 联系我
+
+请发邮件给 chungchi300@hotmail.com(personal email).My Phone 67348649
+
 
 # 优势
 

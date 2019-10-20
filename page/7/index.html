@@ -733,9 +733,9 @@ ga('send', 'pageview');
                                 <div class="article-entry" itemprop="articleBody">
                                     
                                             
-                                                    <h1 id="谢谢阅读"><a href="#谢谢阅读" class="headerlink" title="谢谢阅读"></a>谢谢阅读</h1><h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><p>请发邮件给 <a href="mailto:master-craftsman@jeff-chung.com">master-craftsman@jeff-chung.com</a> or <a href="mailto:chungchi300@hotmail.com" target="_blank" rel="noopener">chungchi300@hotmail.com</a>(personal email).</p>
+                                                    <h1 id="谢谢阅读"><a href="#谢谢阅读" class="headerlink" title="谢谢阅读"></a>谢谢阅读</h1><h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><p>请发邮件给 <a href="mailto:chungchi300@hotmail.com" target="_blank" rel="noopener">chungchi300@hotmail.com</a>(personal email).</p>
 <h2 id="简历"><a href="#简历" class="headerlink" title="简历"></a>简历</h2><p><a href="/EnglishCV.pdf">My English CV</a><br><a href="/ChineseCV.pdf">我的中文简历</a></p>
-<h2 id="当前工资和期望薪金"><a href="#当前工资和期望薪金" class="headerlink" title="当前工资和期望薪金"></a>当前工资和期望薪金</h2><p><a href="/2018/04/28/me/currentSalary.html">点击</a></p>
+<h2 id="当前工资和期望薪金-Current-Salary-and-expected-Salary"><a href="#当前工资和期望薪金-Current-Salary-and-expected-Salary" class="headerlink" title="当前工资和期望薪金(Current Salary and expected Salary)"></a>当前工资和期望薪金(Current Salary and expected Salary)</h2><p><a href="/2018/04/28/me/currentSalary.html">点击</a></p>
 <h1 id="Technical-Stack"><a href="#Technical-Stack" class="headerlink" title="Technical Stack"></a>Technical Stack</h1><p><a href="https://stackshare.io/mfwauction/mfwauction" target="_blank" rel="noopener">https://stackshare.io/mfwauction/mfwauction</a></p>
 <h1 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h1><h2 id="领域"><a href="#领域" class="headerlink" title="领域"></a>领域</h2><h3 id="软件工程领域能力"><a href="#软件工程领域能力" class="headerlink" title="软件工程领域能力"></a>软件工程领域能力</h3><ul>
 <li>程序设计</li>
@@ -808,6 +808,11 @@ ga('send', 'pageview');
 <li>让我对工作做出 <strong>更多的决定和更多的控制</strong></li>
 <li>我的领导者可以创造一种 <strong>我们很棒</strong> 和 <strong>持续改进</strong> 的文化。</li>
 </ul>
+<p>实现了全局 state 、处理全局 state 的方式和统一的数据处理中心 - backend (Global single store of store) (Pure function more predictable)—Transaction telemetry (auto-logging action objects).</p>
+<p>Context -&gt; Sub Context    Context 模拟全局 state，但是我们还不能优雅的模拟 dispatch、reducer。</p>
+<p>Dispatch Action -&gt; Reducer mechansim is the <strong>core point</strong></p>
+<p>React Hooks can use do  that </p>
+<p><a href="https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672" target="_blank" rel="noopener">https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672</a></p>
 
                                                         
                                 </div>

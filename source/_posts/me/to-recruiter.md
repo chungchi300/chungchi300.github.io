@@ -103,7 +103,7 @@ https://stackshare.io/mfwauction/mfwauction
 
 # 我是否在找工作？
 
-虽然薪水不高,但我对老板和同事很满意,但如果真的有一份
+Yes
 
 - 更大的平台
 - **做自己的产品** 的公司.
@@ -112,15 +112,3 @@ https://stackshare.io/mfwauction/mfwauction
 - 让我对工作做出 **更多的决定和更多的控制**
 - 我的领导者可以创造一种 **我们很棒** 和 **持续改进** 的文化。
 
-
-
-实现了全局 state 、处理全局 state 的方式和统一的数据处理中心 - backend (Global single store of store) (Pure function more predictable)---Transaction telemetry (auto-logging action objects).
-
-Context -> Sub Context    Context 模拟全局 state，但是我们还不能优雅的模拟 dispatch、reducer。
-
-Dispatch Action -> Reducer mechansim is the **core point**
-
-React Hooks can use do  that 
-
-
-https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672

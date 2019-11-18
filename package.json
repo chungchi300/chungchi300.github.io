@@ -5,10 +5,9 @@
   "hexo": {
     "version": "3.8.0"
   },
-  "pre-commit": [
-    "deploy"
-  ],
+  "pre-commit": [],
   "dependencies": {
+    "express": "^4.17.1",
     "hexo": "^3.2.0",
     "hexo-blog-encrypt": "^2.0.8",
     "hexo-generator-archive": "^0.1.4",
@@ -20,7 +19,8 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "hexo-tag-plantuml": "^1.0.0"
+    "hexo-tag-plantuml": "^1.0.0",
+    "pm2": "^3.5.1"
   },
   "devDependencies": {
     "hexo-deployer-git": "^0.3.1",
@@ -28,6 +28,9 @@
   },
   "scripts": {
     "start": " hexo server ",
-    "deploy": "hexo deploy -g"
+    "server": "node app.js",
+    "production": "pm2 start app.js",
+    "generate": "hexo generate&&npm run upload",
+    "upload": "rsync -av  public/* root@47.52.75.121:/root/chungchi300.github.io/public"
   }
 }

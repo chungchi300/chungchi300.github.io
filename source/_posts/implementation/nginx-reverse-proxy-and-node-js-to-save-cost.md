@@ -5,7 +5,10 @@ date: 2019-11-19 10:28:21
 category: Implementation
 ---
 
+![Img](https://webapplicationconsultant.com/wp-content/uploads/reverseproxy.png)
+
 # Material needs
+
 1. Ecs from Alibaba cloud(or ecs from AWS)
 2. SSL at good discount at Godaddy
 3. I currently has two nodejs application(https://jeff-chung.com and https://o2o-auction.com) which are both nodejs application.
@@ -13,6 +16,7 @@ category: Implementation
 ## Nodejs applications
 
 ### o2o-auction
+
 ```javascript
 const fs = require("fs");
 const https = require("https");
@@ -44,6 +48,7 @@ console.log("3080 watched");
 ```
 
 ### jeff-chung.com
+
 ```javascript
 const fs = require("fs");
 const http = require("http");
@@ -74,20 +79,21 @@ console.log("3081 watched");
 
 Both of them are ran by `pm2` which are visible at http://jeff-chung.com:3081/ and http://o2o-auction.com:3080/
 
+# Reverse Proxy of nginx
 
-# Reverse Proxy of nginx 
 ## Preparation of ssl cert
+
 I download the `private key(careful this one only download for once)` and combined the `public.crt&bundle.crt` to `chain.crt` on godaddy and upload them to `/etc/nginx/ssl/public.crt` and `/etc/nginx/ssl/private.key` on the remote `server`
 
 P.S
-You should double  `private key` and `chain.crt` by following command to ensure they have same hash before upload.
+You should double `private key` and `chain.crt` by following command to ensure they have same hash before upload.
 
 `openssl x509 -noout -modulus -in ssl/chain.crt | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl/private.key | openssl md5`
 
-
 ## Configuration of nginx
+
 I use centos 7 so I edit the config file at `/etc/nginx/conf.d/default.conf`
 
 ```
@@ -140,14 +146,14 @@ server {
 }
 ```
 
-Restart after every configuration change 
+Restart after every configuration change
 `systemctl restart nginx`
 
 P.S
-You can use `nginx -t ` to check whether the configuration working.
-
+You can use `nginx -t` to check whether the configuration working.
 
 # Reference
+
 https://knowledge.digicert.com/solution/SO17751.html
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7#step-4-%E2%80%94-setting-up-an-nginx-reverse-proxy-server

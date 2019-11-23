@@ -159,3 +159,5 @@ https://knowledge.digicert.com/solution/SO17751.html
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7#step-4-%E2%80%94-setting-up-an-nginx-reverse-proxy-server
 
 https://stackoverflow.com/questions/13240840/nginx-reverse-proxy-multiple-backends
+
+https://serverfault.com/questions/938419/nginx-as-reverse-proxy-with-several-domains-hosts

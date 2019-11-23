@@ -1,6 +1,6 @@
 ---
 title: Review React State management strategy and how React Hooks Change it without any code
-date: 2019-05-16 10:20:15
+date: 2019-11-23 10:20:15
 tags:
 category: Web Development
 ---

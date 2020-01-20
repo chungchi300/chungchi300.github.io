@@ -1,6 +1,6 @@
 ---
 title: Explain to your business partner about building engineer team in developing software  using a robotic restaurant and an  actual restaurant in 5 minutes !
-date: 2019-06-07 10:20:15
+date: 2020-01-20 10:20:15
 tags:
 category: management and cooperation
 ---

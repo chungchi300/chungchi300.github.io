@@ -16,7 +16,7 @@ customer <-- backend: WS connection
 
 auctioneer -> backend: bid(with price 4000 and registration 1(paddle 8)) via https
 
-backend  -> auctioneer: bid&newLotStatus($4000)  via websocket
-backend  -> customer: bid&newLotStatus($4000)  via websocket
+backend -> auctioneer: bid&newLotStatus($4000)  via websocket
+backend  -> customer: bid&newLotStatus($4000) via websocket
 
 {% endplantuml %}

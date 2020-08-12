@@ -11,13 +11,13 @@ Life can be meaningful enough to be justify suffering.
 
 # Schedule
 
-1. Pull in my house
-2. Chest+Squat in gym room
-3. Pull in my house
-4. Chest+Deadlift in gym room
-5. rest
-6. Pull
+1. Weighted Pull Up(target 90lb ) + elastic band superset
+2. Weighted Dips in gym room/house +  Ring Push Up/Cable trainning for inner chest (https://www.youtube.com/watch?v=fzasKdJnoeQ)
+3. Squat+Deadlift in gym room
+4. Weighted Pull Up + elastic band superset
+5. Handstand push up with parallel bar
+6. Single Leg exercise + accessary chest exercise(dive bomber, bridge, crawler)
 7. rest
 
+Deload weight Pull up every 4 week & dips by ring form 
 
-https://www.bilibili.com/video/BV14W411b7SE?from=search&seid=8710836014772068139

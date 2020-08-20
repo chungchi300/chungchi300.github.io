@@ -89,6 +89,11 @@ Know that seafood company don't suit me
 Keep doing thing every single day
 Become A good boss and good employee
 
-# Knowledge
+# Home Working Routine
+Self Improvement(Study + Gym)=> Before 10:00 am
+Work Session 1=>10:00-12:00
+Work Session 2=>1:30-6:30
+Part time Work Session=>6:30-8:30
+Creation Study=>9:30-11:00
 
-Goal
+

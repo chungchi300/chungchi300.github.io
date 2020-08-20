@@ -48,6 +48,10 @@ Learn Jordan Peterson everything.
 29-DFS(Achieved)
 21-DFS(Achieved)
 22-DFS with memorization(Achieved)
+23-dynamic programming
+24-dynamic programming z- index
+25
+26
 
 16/48 = 33.3%
 

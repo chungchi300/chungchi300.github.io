@@ -1,28 +1,92 @@
-My gift for entering to 30 years old goal.
+My Goal for entering to 30 years old goal. If I die in 30 , what thing I leave with?
 
-# Ability
+# 8
 
-## What I want
+https://www.jiuzhang.com/ (from 60% to 100%)
+## Career
+Implement the frontend design
+Implement the general admin design(3 pages)
 
-1. To sale
-2. To run a business
-3. Learn to be in disagreeable
+# 9
+## Mentally
+https://www.bilibili.com/video/BV1AW411M7vL?from=search&seid=12883529317901673015
 
-## Method
+## Knowledge:
+https://www.jiuzhang.com/ (from 60% to 100%)
 
-1. Be 100% of HK sale & UI & Upwork achievement
-2. Doing sale in Shenzhen with my mum that have all my salary
+https://frontendmasters.com/courses/advanced-react-patterns/
+
+## Career:
+Interview with tencent
+Interview with remote works 
+
+Full Admin Design
+Mobile Version
+https://frontendmasters.com/courses/react-native/
+
+# 10
+
+## Wealth
+Hit hard with Alibaba Ant(65% of all my money)(October)
+
+## Knowledge
+https://www.jiuzhang.com/ (100%, Really crack down the lintcode question about it)
+https://frontendmasters.com/courses/web-performance/
+https://frontendmasters.com/courses/advanced-async-js/
+
+## Career
+Actively selling & Find Job
+50 potential Customers Meeting
+
+# 11
+
+## Knowledge
+https://frontendmasters.com/courses/css-grids-flexbox/
+
+## Career
+Actively selling & Find Job
+50 potential Customers Meeting
+
+# 12
+
+## Wealth
+Rentable House
+
+## Knowledge
+https://frontendmasters.com/courses/js-fundamentals-functional-v2/
+
+
+
+
+
+
+
+
+# Career
 
 # Mentally
 
 ## What I want
 
-Be a good boss and employer.
-Learn Jordan Peterson everything.
+1. Be a good boss and employer.(Schedule Every Month)
+2. Learn Jordan Peterson.
+3. Stoicism
 
 ## Method
 
-1. Use my free time to watch all his course in bilibili
+
+
+# Wealth
+
+Rent my shenzhen house(achieved)
+Hit hard with Alibaba Ant(65% of all my money)(October)
+Buy another rentable Home in Hong Kong(Or Shenzhen)
+
+
+# Family
+
+Take care of my family(nephew and grandma), show strength during the cov  19. Have kid that have close relationship to me, and I am someone that are proud of and feeling I love him.
+
 
 # Knowledge
 
@@ -52,8 +116,12 @@ Learn Jordan Peterson everything.
 24-dynamic programming z- index
 25
 26
+28
+29
 
-16/48 = 33.3%
+
+
+22/48 = 45.8%
 
 ### Deep Down React&JS computer science(One month One course):
 
@@ -80,17 +148,6 @@ About Face Study
 1. One month study 1 course.(Achieved)
 2. Study full about face course.(Achieved)
 
-# Career
-
-## What I want
-
-Run a SAAS business/any kind of business(o2o business). Earn 42W per year.(Without Boss,start my own business)
-
-## Method
-
-# Family
-
-Have kid that have close relationship to me, and I am someone that are proud of and feeling I love him.
 
 # Relationship - not actively looking, but keep monitoring and expand my social circle
 
@@ -108,6 +165,7 @@ Clearly no:
 1. Club lady
 2. No kids philosophy
 3. Suspicious lady, need hope to insist.
+
 
 # Health(Achieved)
 
@@ -128,10 +186,19 @@ Know the vegetables I like to eat
 Find enough best suite recipe.
 瓜,意大利面，雞腿 ，蝦，魚 ，豬里肌 ，番茄,咖喱,沙薑，egg,crab,oyster,bean,onion, brocoli
 
-# Wealth
+# Ability(Achieved)
 
-Have a full-paid house in shenzhen(Continue paying them)
-Have a 比亚迪-秦新能源 2018 款 1.5T 尊贵型 7.00 万
+## What I want
+
+1. To sale(Done)
+2. To run a business(Done)
+3. Learn to be in disagreeable(Done)
+
+## Method
+
+1. Be 100% of HK sale & UI & Upwork achievement(Done)
+2. Doing sale in Shenzhen in my seafood business(Done)
+
 
 # If I keep steady
 

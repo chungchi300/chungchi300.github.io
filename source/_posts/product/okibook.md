@@ -70,4 +70,4 @@ I can provide detail consulting services on
 * business requirement
 * technical
 
-To help you build successful business!My email [master-craftsman@jeff-chung.com](mailto:master-craftsman@jeff-chung.com)
+To help you build successful business!My email [chungchi300@hotmail.com](mailto:chungchi300@hotmail.com)

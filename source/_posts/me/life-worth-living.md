@@ -3,64 +3,69 @@ My Goal for entering to 30 years old goal. If I die in 30 , what thing I leave w
 # 8
 
 https://www.jiuzhang.com/ (from 60% to 100%)
+
 ## Career
+
 Implement the frontend design
 Implement the general admin design(3 pages)
 
 # 9
+
 ## Mentally
+
 https://www.bilibili.com/video/BV1AW411M7vL?from=search&seid=12883529317901673015
 
 ## Knowledge:
-https://www.jiuzhang.com/ (from 60% to 100%)
+
+~~https://www.jiuzhang.com/ (from 60% to 100%)~~
 
 https://frontendmasters.com/courses/advanced-react-patterns/
 
 ## Career:
-Interview with tencent
-Interview with remote works 
 
-Full Admin Design
-Mobile Version
+~~Interview with tencent,Interview with remote works~~
+
+~~Full Admin Design~~
+~~Mobile Version~~
 https://frontendmasters.com/courses/react-native/
 
 # 10
 
 ## Wealth
+
 Hit hard with Alibaba Ant(65% of all my money)(October)
 
 ## Knowledge
+
 https://www.jiuzhang.com/ (100%, Really crack down the lintcode question about it)
 https://frontendmasters.com/courses/web-performance/
 https://frontendmasters.com/courses/advanced-async-js/
 
 ## Career
+
 Actively selling & Find Job
 50 potential Customers Meeting
 
 # 11
 
 ## Knowledge
+
 https://frontendmasters.com/courses/css-grids-flexbox/
 
 ## Career
+
 Actively selling & Find Job
 50 potential Customers Meeting
 
 # 12
 
 ## Wealth
+
 Rentable House
 
 ## Knowledge
+
 https://frontendmasters.com/courses/js-fundamentals-functional-v2/
-
-
-
-
-
-
-
 
 # Career
 
@@ -74,19 +79,15 @@ https://frontendmasters.com/courses/js-fundamentals-functional-v2/
 
 ## Method
 
-
-
 # Wealth
 
 Rent my shenzhen house(achieved)
 Hit hard with Alibaba Ant(65% of all my money)(October)
 Buy another rentable Home in Hong Kong(Or Shenzhen)
 
-
 # Family
 
-Take care of my family(nephew and grandma), show strength during the cov  19. Have kid that have close relationship to me, and I am someone that are proud of and feeling I love him.
-
+Take care of my family(nephew and grandma), show strength during the cov 19. Have kid that have close relationship to me, and I am someone that are proud of and feeling I love him.
 
 # Knowledge
 
@@ -119,8 +120,6 @@ Take care of my family(nephew and grandma), show strength during the cov  19. Ha
 28
 29
 
-
-
 22/48 = 45.8%
 
 ### Deep Down React&JS computer science(One month One course):
@@ -148,7 +147,6 @@ About Face Study
 1. One month study 1 course.(Achieved)
 2. Study full about face course.(Achieved)
 
-
 # Relationship - not actively looking, but keep monitoring and expand my social circle
 
 Have a partner that I can tolerate her and her can tolerate my fault. We can talk about money easily and hard decision in life.
@@ -165,7 +163,6 @@ Clearly no:
 1. Club lady
 2. No kids philosophy
 3. Suspicious lady, need hope to insist.
-
 
 # Health(Achieved)
 
@@ -198,7 +195,6 @@ Find enough best suite recipe.
 
 1. Be 100% of HK sale & UI & Upwork achievement(Done)
 2. Doing sale in Shenzhen in my seafood business(Done)
-
 
 # If I keep steady
 

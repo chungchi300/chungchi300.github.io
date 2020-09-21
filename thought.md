@@ -24,10 +24,6 @@ With my 140W cash
 165W 四季御园 loan, 100W Cash to pay the remain.(Full Pay) 1 is done.
 Every month: 3200. I can sit there and do anything I want which can also pay my hk house
 
-# Marriage & Kid
-
-Don’t worry about that, if it has, parent can help, that’s the only advantage to be born in this family. Also have the heritage benefits.
-
 # Career
 
 # Age 30
@@ -105,3 +101,44 @@ Swagger(Runtime generate documentation)
 Design (Backend)
 multi-tenancy
 dependency injection(run time for bidding+ persistence database design)
+
+# Interview problem(Every day 3 question)
+
+https://www.lintcode.com/problem/?level=1&tag=two-pointers
+https://www.lintcode.com/problem/?tag=binary-search&level=1
+https://www.lintcode.com/problem/?level=1&tag=sorted-array
+https://www.lintcode.com/problem/?level=1&tag=merge-sort
+https://www.lintcode.com/problem/?level=1&tag=sort
+https://www.lintcode.com/problem/?level=1&tag=quick-sort
+https://www.lintcode.com/problem/?level=1&tag=recursion
+https://www.lintcode.com/problem/?level=1&tag=divide-and-conquer
+https://www.lintcode.com/problem/?level=1&tag=permutation
+https://www.lintcode.com/problem/?level=1&tag=dynamic-programming
+https://www.lintcode.com/problem/?level=1&tag=basic-implementation
+
+https://www.lintcode.com/problem/?level=1&tag=mathematics
+https://www.lintcode.com/problem/?level=1&tag=forward-backward-traversal
+https://www.lintcode.com/problem/?level=1&tag=backtracking
+https://www.lintcode.com/problem/?level=1&tag=backpack
+
+# Business
+
+As a developer,want to do deeper or wider
+
+做深->front end application, react & redux  
+做大->back end application,nodejs & java(j2ee)
+
+(scalable & extreme & more extreme performance tuning)
+
+domain:  
+e-commerce,auction, financial, medical, crypto
+
+reputation:
+Big Company
+
+title:
+SA
+
+Preference:
+Big Company in Shenzhen
+Mid-size: insurance, virtual bank in HK, insurance in hk

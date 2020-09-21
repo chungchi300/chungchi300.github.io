@@ -1,30 +1,25 @@
 ---
 layout: post
-title: 你好，招聘人员!
+title: To Recruiter 你好，招聘人员!
 category: 关于我
-? keywords
-date: 2018-04-28 16:09:02
+keywords:
+date: 2020-09-21 16:09:02
 ---
 
 # Highlights
 
 ## 简历
 
-[My English CV](/EnglishCV.pdf)
-[我的中文简历](/ChineseCV.pdf)
-
-
-## 当前工资和期望薪金(Current Salary and expected Salary)
-
-[点击](/2018/04/28/me/currentSalary.html)
+[My English CV](/jeff-chung-cv_senior-full-stack-developer,67348649.pdf)
+[我的中文简历](/钟子富-高级全栈开发-14716488649.pdf)
 
 ## Technical Stack
+
 https://stackshare.io/mfwauction/mfwauction
 
 ## 联系我
 
 请发邮件给 chungchi300@hotmail.com(personal email).My Phone 67348649
-
 
 # 优势
 
@@ -80,7 +75,6 @@ https://stackshare.io/mfwauction/mfwauction
 
 ## 学习能力
 
-
 - 刻意学习
 - 心流
 - 启发式的思考
@@ -111,4 +105,3 @@ Yes
 - 有竞争力的薪酬
 - 让我对工作做出 **更多的决定和更多的控制**
 - 我的领导者可以创造一种 **我们很棒** 和 **持续改进** 的文化。
-

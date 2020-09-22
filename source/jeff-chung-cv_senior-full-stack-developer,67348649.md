@@ -205,9 +205,8 @@ Mid-size: insurance, virtual bank in HK, insurance in hk
 
 ## my last job salary: 30000 hkd/month, 1 month guarantee bonus
 
-30000hkd \* 13 = 390K / year
-work from home 60% of my time
-Good food and wine
+30000hkd \* 13 = 390K / year  
+Work from home policy
 
 ## expected salary:
 

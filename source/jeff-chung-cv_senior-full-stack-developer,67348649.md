@@ -42,6 +42,8 @@ Bidflows is a platform that has
 - Batch Image Upload
 - Batch Product/Lot Import
 - Drag and drop page builder
+- Use bitbucket pipeline which allows me to build the front end and backend application & environment using docker image
+- Use JIRA for issue tracker.
 
 ### Legal document & Cooperation
 

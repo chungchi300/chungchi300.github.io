@@ -5,13 +5,13 @@ tags:
 category: Web Development
 ---
 
-# Problem we have for front end application
+# 1. Problem we have for front end application
 
 Since we have lot of API calling, that's why all application naturally have **Async&Mutation** property by default which is naturally hard to write but after we choose proper architecture to separate them, we can manage the complexity of program linearly.
 
 By default, we mark **Async&Mutation** as 100(100 for most, 0 for easier to read&write).
 
-# Redux=>Separate the async&mutation
+# 2. Redux=>Separate the async&mutation
 
 Redux has **synchronous** action&reduce + three principle
 
@@ -26,7 +26,7 @@ help us know
 
 and redux by default don't directly handle the **async(async itself can be complicated)**, it just outsource it by **middleware**.
 
-# Redux middleware=>Make async easier
+# 3. Redux middleware=>Make async easier
 
 1. Thunk(Easy to understand&Easy to use)
 2. Saga(Extensible & For complex Async Logic)
@@ -34,6 +34,6 @@ and redux by default don't directly handle the **async(async itself can be compl
 
 Finally we have **Async&Mutation=>High Readability&Writable Async + Mutation**(20).
 
-# React
+# 4. React
 
 React is just a view library that's can use with redux, and the `react-redux` happens to be very efficient to use with redux. Please check this

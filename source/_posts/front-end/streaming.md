@@ -9,12 +9,12 @@ Streaming Model maybe properly the most innovative model(other then event-loop) 
 
 {% asset_img streaming_model.jpg %}
 
-# Adv
+# 1. Adv
 
 1. Composable
 2. Efficient(in memory usage&Back Pressure)
 3. Know the progression.
 
-# Ref
+# 2. Ref
 
 https://github.com/substack/stream-handbook

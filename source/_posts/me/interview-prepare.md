@@ -16,3 +16,11 @@
 ## show the quality
 
 check the job description & the interviewer
+
+# Five Years from now
+
+System Analyst
+
+# Why company want me?
+
+# Why i want company?

@@ -17,6 +17,10 @@ There is an example for how **setTimeout**(IO kind) works.
 
 There is also how real life scenario we can see in daily life.
 
+P.S
+
+1. In nodejs , the webapi part sometimes called (event demulitplexer + Low Level IO), the task queue also call event queue.
+
 # Vs Thread Pool
 
 Java use thread pool. If there is 10 request in the same that they can only handle 5 thread(the maximum number in thread pool) but event loop model can handle limitless.

@@ -13,14 +13,14 @@ middleware is
 # Thunk
 
 ```javascript
-export const thunk = (store)=>(next)=>(action)=>{
-    if(instanceof action=='function'){
-        let actionAsFunc = action;
-        return action(store.dispatch,store.getState);
-    }else{
-        next(action)
-    }
-}
+export const thunk = (store) => (next) => (action) => {
+  if (typeof action == "function") {
+    let actionAsFunc = action;
+    return action(store.dispatch, store.getState);
+  } else {
+    next(action);
+  }
+};
 ```
 
 Usage

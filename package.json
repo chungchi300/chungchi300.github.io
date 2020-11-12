@@ -31,8 +31,8 @@
   "scripts": {
     "start": " hexo server ",
     "server": "node app.js",
-    "production": "pm2 start app.js",
+    "production": "pm2 start app.js  --name 'web-interface'",
     "generate": "hexo generate&&npm run upload",
-    "upload": "rsync -av  public/* root@47.52.75.121:/root/chungchi300.github.io/public"
+    "upload": "rsync -av  public/* root@172.104.56.187:/root/chungchi300.github.io/public"
   }
 }
